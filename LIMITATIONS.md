@@ -1,23 +1,23 @@
-# LIMITATIONS (honest list)
+# LIMITATIONS (R2)
 
 ## Data
-1. **Latest provincial year differs by indicator**: 2025 for population, GDP, GDP per capita, disposable income, retail sales; 2024 for the rest (yearbook-based statistics for 2025 not yet released on 2026-11-24). National values exist for 2025 for most indicators.
-2. **65+ share** — provincial values in non-census years are computed from the annual 1‰ population sample survey (sample counts), small provinces (Tibet, Qinghai, Ningxia) have large sampling error; 2020 uses the 7th census bulletin (different caliber); 2000/2001/2010/2025 provincial values are not available from the sources used.
-3. **Urbanization** — 2015–2024 are official ratios hand-transcribed from Yearbook 2025 table 2-6 (bound-checked); 2005–2014 and national 2000–2004/2025 are computed from 万人-rounded counts (±≤0.2 pp for small provinces). Provincial 2025 urban population was not yet published.
-4. **Physicians per 1,000** — computed with the current (post-7th-census revised) resident population; Yearbook values for ≤2020 use pre-revision population and are 0.01–0.03 higher nationally. Documented, not hidden.
-5. **GDP** — 2025 values are preliminary; 2024 values are final-verified (differ from the Yearbook 2025 preliminary figures; NBS notice of 2025-12-26 confirms the national revision; provincial revisions not individually confirmed by a second source).
-6. **Disposable income** starts in 2013 (integrated household survey); earlier values in the database are a different/back-estimated caliber and are excluded.
-7. **Hospital beds per 1,000** — provincial series effectively starts 2008 (2009 missing in the database).
-8. **Verification depth** — 72 values individually verified against independent official publications (≥5 for every core indicator); 7,085 more are `partially_verified` (indicator-level). Provincial 2025 values were not checked against provincial communiqués (only news reprints found; not used as evidence).
-9. **Publication dates** are blank in many rows: the database does not state per-value publication dates; we do not guess.
-
-## Licensing / redistribution
-- Data authenticity: verified as described. Legal access: public pages/endpoints, no login, no captcha, rate-limited.
-- Redistribution: no explicit open-data licence was found for the NBS database. Statistical values are shown with attribution for research/citation; **status = pending review**. Yearbook images (© 中国统计出版社) and copies of web pages are kept only as local evidence (excluded from git and the public site; included in the private Drive delivery as evidence).
-- The GitHub repository was made public at the user's request (2026-11-24). It contains the derived dataset and raw NBS API responses (official statistics with attribution) but no yearbook images or copied web pages. Redistribution status remains pending review.
+1. Latest *complete* provincial year is 2024 for 31 of 42 indicators; 2025 for population, GDP, GDP per capita, primary/secondary/tertiary VA, disposable income (all/urban/rural), consumption, retail sales (as published by NBS on 2026-11-24).
+2. Graduate students: NBS provincial database has no provincial series → national-only indicator; no broad “higher-education total” is produced.
+3. Counts stored in the NBS database in 万人 (students, physicians, nurses) carry ±50-person rounding; exact-count yearbook tables were not systematically ingested.
+4. 65+, 0–14, 15–64 provincial shares in non-census years come from the 1‰ sample survey (large error for small provinces); 2020 = census; 2000/2001/2010 provincial missing.
+5. Forest coverage changes only per national forest inventory; repeated values across years are not independent observations.
+6. Population-series back-revisions 2011–2019 (7th census) and 2001–2009 (6th census) are taken from the current database / Yearbook 2025; no stand-alone revision notice was located (marked “revision notice not located”).
+7. Independent cross-checks (E3) cover 84 values; E4 (revision with notice) 764. Everything else is E2 (read directly from the official database, not independently re-checked).
+8. One conflict remains unresolved (Codex, Shanghai 2016 disposable income 54,032 vs NBS 54,305).
+9. Grok's R1 dataset could not be imported (ZIP 21.4 MB > 10 MB connector limit); the prompt's “125 physician records” difference was therefore not reproduced.
 
 ## Product
-- No geographic map (compliance; see methodology). No English UI yet (data fields are bilingual). No scatter/cross-indicator chart or PNG/SVG export yet.
-- Interactive controls work after JavaScript hydration; on slow networks a tap made before hydration does nothing (observed once in testing on the deployed site).
-- Mainland-China network access and WeChat in-app browser compatibility were **not** verified. Mobile tested only in Chromium mobile emulation (390 px).
-- Deployment: Vercel CLI made the first deploy of this new project its Production deployment (no pre-existing production was touched); Preview deployments are protected by Vercel Authentication (HTTP 302 for anonymous users), so the public, tested URL is the project's production domain.
+- No geographic map (see research/MAP_COMPLIANCE_RESEARCH.md). No full English UI (data fields bilingual).
+- Research Query Engine is rule-based (5 question templates), not an AI assistant.
+- Interactive controls need JavaScript hydration; static HTML carries the key numbers for SEO/no-JS.
+- Mainland-China network access and WeChat in-app browser **not verified**; mobile tested with Chromium emulation (Pixel 7, 390 px) only.
+- Lighthouse indicator page: performance 94, best-practices 96 (font-size audit; source maps not shipped).
+
+## Process / delivery
+- First Vercel CLI deploy of the new project became that project's production (no existing deployment touched). Preview deployments are login-protected.
+- R2 GitHub repo is private (data-rights review pending). Other models' R1 files are not redistributed (hashes + Drive IDs only).

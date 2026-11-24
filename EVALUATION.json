@@ -1,86 +1,181 @@
 {
- "project_version": "R1",
+ "round": 2,
  "model": "Claude Opus 5.5 (claude-opus-5-5)",
- "core_indicators_target": 12,
+ "r1_models_reviewed": 10,
+ "r1_models_deeply_audited": 8,
+ "r1_datasets_imported": 8,
+ "confirmed_p0_findings": 1,
+ "confirmed_p1_findings": 3,
+ "confirmed_p2_findings": 4,
+ "findings_total": 19,
+ "findings_by_status": {
+  "Confirmed Issue": 10,
+  "Official Revision": 4,
+  "Definition Difference": 3,
+  "Not Independently Verified": 1,
+  "Environment Limitation": 1
+ },
+ "conflicts_detected": 4247,
+ "conflicts_resolved": 4246,
+ "conflicts_unresolved": 1,
+ "conflict_categories": {
+  "Source Not Verifiable": 254,
+  "Definition Difference": 150,
+  "Official Revision": 1780,
+  "Match Within Official Rounding": 2051,
+  "Conflicting Value": 12
+ },
+ "r1_source_rows_imported": 32209,
+ "r1_distinct_keys": 11527,
  "core_indicators_available": 12,
- "core_indicators_verified": 11,
- "core_indicators_verified_definition": ">=5 data points individually matched against an independent official publication, no unexplained mismatch",
- "additional_indicators": 2,
- "unique_valid_observations": 10416,
- "unique_valid_observations_core": 8818,
- "verified_observations": 78,
- "partially_verified_observations": 7911,
- "official_sources": 7,
- "regions_covered": 31,
+ "core_indicators_complete": 12,
+ "additional_indicators": 30,
+ "unique_valid_observations": 30418,
+ "unique_valid_observations_core": 9110,
+ "evidence_level_counts": {
+  "E2": 29570,
+  "E3": 84,
+  "E4": 764,
+  "E1": 101,
+  "E0": 31
+ },
+ "extraction_method_counts_published": {
+  "API": 23925,
+  "Derived": 6142,
+  "Manual": 320,
+  "HTML": 31
+ },
+ "official_source_count": 9,
  "earliest_data_year": 2000,
  "latest_data_year": 2025,
+ "latest_provincial_coverage": {
+  "population": 2025,
+  "birth_rate": 2024,
+  "urbanization_rate": 2024,
+  "population_65plus": 2024,
+  "gdp": 2025,
+  "gdp_per_capita": 2025,
+  "disposable_income": 2025,
+  "retail_sales": 2025,
+  "higher_education_students": 2024,
+  "higher_education_institutions": 2024,
+  "physicians_per_1000": 2024,
+  "hospital_beds_per_1000": 2024
+ },
  "data_quality_errors": 0,
  "data_quality_warnings": 2,
- "tests_passed": 88,
+ "province_pages": 31,
+ "data_stories": 6,
+ "map_status": "not_implemented: compliance (审图/licence) unverified; non-geographic region matrix with year switch, hover, click, legend, missing-value marking; replaceable ProvinceMapAdapter interface",
+ "data_explorer_status": "implemented_and_tested: multi-indicator/province, line/bar/scatter/bubble, index/yoy/CAGR, Pearson r with n, evidence filter, CSV/PNG/SVG, share links",
+ "research_assistant_status": "Research Query Engine (rule-based templates over the published data; no LLM, no paid API); 5 question types; refuses unparsed questions",
+ "automatic_update_status": "implemented: check→stage→sha256→validate→review report→approve (new vintage)→rollback; simulation passed=True; GitHub Actions weekly check (review artifact only, never publishes)",
+ "tests_passed": 146,
  "tests_failed": 0,
  "tests_not_run": 2,
  "tests_breakdown": {
-  "pytest_data_unit": {
-   "passed": 16,
+  "pytest": {
+   "passed": 34,
    "failed": 0
   },
   "playwright_local": {
-   "startTime": "2026-11-24T13:14:00.667Z",
-   "duration": 18810.265,
-   "expected": 36,
+   "startTime": "2026-11-24T15:18:03.609Z",
+   "duration": 25000.457000000002,
+   "expected": 56,
    "skipped": 1,
    "unexpected": 0,
    "flaky": 0
   },
   "playwright_deployed": {
-   "startTime": "2026-11-24T13:14:20.075Z",
-   "duration": 21864.863,
-   "expected": 36,
+   "startTime": "2026-11-24T15:17:30.680Z",
+   "duration": 32473.828,
+   "expected": 56,
    "skipped": 1,
    "unexpected": 0,
    "flaky": 0
   },
-  "not_run_note": "Task H (mobile-only) is skipped by design in the desktop project of each run"
+  "update_simulation": {
+   "new_year_detected": true,
+   "revision_detected": true,
+   "missing_field_blocked": true,
+   "unchanged_ignored": true,
+   "nothing_published_before_approval": true,
+   "revision_kept_old_vintage": true,
+   "approved_value_current": true,
+   "rollback_restores_snapshot": true,
+   "real_data_untouched": true
+  }
  },
- "acceptance_tasks_passed": 10,
+ "acceptance_tasks_passed": 20,
  "acceptance_tasks_partial": 0,
  "acceptance_tasks_failed": 0,
- "acceptance_environment": "deployed site (also passed on local build)",
- "lighthouse_mobile": {
-  "home": {
-   "performance": 98,
+ "acceptance_tasks_total": 20,
+ "lighthouse": {
+  "r1-explorer": {
+   "performance": 97,
    "accessibility": 100,
    "best-practices": 100,
    "seo": 100
   },
-  "indicator": {
+  "r1-home": {
+   "performance": 100,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  "r1-indicator": {
    "performance": 96,
    "accessibility": 100,
    "best-practices": 100,
    "seo": 100
   },
-  "explorer": {
-   "performance": 97,
+  "r2-compare": {
+   "performance": 96,
+   "accessibility": 98,
+   "best-practices": 100,
+   "seo": 100
+  },
+  "r2-explorer": {
+   "performance": 95,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  "r2-home": {
+   "performance": 100,
+   "accessibility": 100,
+   "best-practices": 100,
+   "seo": 100
+  },
+  "r2-indicator": {
+   "performance": 94,
+   "accessibility": 100,
+   "best-practices": 96,
+   "seo": 100
+  },
+  "r2-province": {
+   "performance": 100,
    "accessibility": 100,
    "best-practices": 100,
    "seo": 100
   }
  },
- "map_status": "not_implemented_by_design: no boundary data with confirmed 审图号/licence for interactive choropleth; replaced by ranked bars, ranking tables and a labelled non-geographic 7-region matrix",
- "redistribution_status": "pending_review: official NBS statistics shown with attribution; no explicit open-data licence found; yearbook images and page copies not redistributed publicly",
- "deployment_status": "deployed: new independent Vercel project china-data-atlas-claude-opus-5-5-r1-run3 (first CLI deploy became the new project's production; preview deployments exist but are behind Vercel Authentication)",
- "github_url": "https://github.com/timkok/china-data-atlas-claude-opus-5-5-r1-run3 (public)",
- "pull_request_url": "https://github.com/timkok/china-data-atlas-claude-opus-5-5-r1-run3/pull/1",
- "preview_url": "https://china-data-atlas-claude-opus-5-5-r1-run3.vercel.app",
- "drive_folder_url": "https://drive.google.com/drive/folders/1vGwrABTN7SaRX31Fet0A8ekE6MmTPUfd",
+ "mainland_access_status": "not verified (no mainland network available)",
+ "wechat_browser_status": "not verified (no WeChat client available; Chromium mobile emulation only)",
+ "redistribution_status": "official statistics published with attribution — pending formal review; yearbook images, page copies and other models' files not redistributed",
+ "deployment_status": "deployed: new independent Vercel project china-data-atlas-claude-opus-5-5-r2 (first CLI deploy = that project's production; preview deployments login-protected); R1 untouched",
+ "github_url": "https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2 (private)",
+ "pull_request_url": null,
+ "preview_url": "https://china-data-atlas-claude-opus-5-5-r2.vercel.app",
+ "drive_folder_url": "https://drive.google.com/drive/folders/19yZxGJE3--18ychQ3_FbjKxq6imAgjiz",
  "known_limitations": [
-  "Latest provincial year is 2024 for 7 of 12 core indicators (2025 for population, GDP, GDP per capita, income, retail)",
-  "65+ provincial shares are sample-survey based except 2020 (census); 2025 provincial not available",
-  "Urbanization 2015-2024 hand-transcribed from Yearbook 2025 table image (bound-checked); other years derived from rounded counts",
-  "GDP 2024 values are final-verified and differ from Yearbook 2025 preliminary figures; provincial revisions not confirmed by a second source",
-  "Physicians per 1000 uses current revised population; Yearbook values for <=2020 differ by 0.01-0.03",
-  "No geographic map; no English UI; no PNG/SVG export or scatter plot yet",
-  "Mainland China network access and WeChat browser not verified",
-  "Redistribution licence not confirmed (pending review); GitHub repo is public (made public at the user's request) while redistribution status remains pending review"
+  "Grok R1 dataset not importable (21.4 MB ZIP > 10 MB connector limit)",
+  "No geographic map (compliance unverified; Tianditu/MNR sites unreachable from environment)",
+  "Latest complete provincial year 2024 for most indicators (2025 for population, GDP, GDP pc, income, retail, consumption)",
+  "Graduate students national-only (no provincial series in NBS database)",
+  "Student/physician counts from 万人-rounded database values (±50 persons)",
+  "1 unresolved conflict (Shanghai 2016 disposable income)",
+  "Mainland access and WeChat not verified",
+  "Population-series revision notice (2011–2019) not located; relies on Yearbook 2025 revised series"
  ]
 }

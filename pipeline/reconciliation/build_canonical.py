@@ -22,6 +22,7 @@ base = list(csv.DictReader(open(P("data/normalized/observations.csv"), encoding=
 r1 = [r for r in csv.DictReader(open(P("data/processed/r1_long.csv"), encoding="utf-8")) if r["indicator_id"] and r["year"] and r["value"] != "" and r["model"] != "claude_r1run3"]
 samples = list(csv.DictReader(open(P("reports/data_validation_samples.csv"), encoding="utf-8")))
 RETRIEVED = base[0]["retrieved_at"]
+verified_yes = {(s["indicator_id"], s["geo_code"], int(s["year"])) for s in samples if s["match"] == "yes"}
 VINTAGE_BASE = f"NBS-DB@{RETRIEVED[:10]}"
 
 NOTICES = {
@@ -87,7 +88,13 @@ def classify(ind, geo, year, V, vrow, x, xrow):
         if 2000 <= year <= 2022:
             return ("Official Revision", "resolved: canonical = current official database vintage (historical revision after 4th/5th economic census); R1 value = earlier publication vintage",
                     NOTICES["gdp2018"][0] if year <= 2018 else NOTICES["gdp2023"][0], (NOTICES["gdp2018"][1] if year <= 2018 else NOTICES["gdp2023"][1]) + "; per-year historical revision table not individually located")
-    if ind == "retail_sales" and year <= 2023:
+    if ind == "population_65plus" and geo == "000000" and "人口年龄构成" in src:
+        return ("Definition Difference", "resolved: different basis (sample-survey national share in yearbook vs year-end population structure in NBS annual database)", vrow["source_url"], "R1 value = national share printed in the sample-survey table; canonical = 65+ / year-end total from 年度数据")
+    if ind == "retail_sales" and year == 2024 and geo == "000000" and abs(x - 487895) < 1:
+        return ("Official Revision", "resolved: canonical = revised value (Yearbook 2025 表15-12: 483,344.7); R1 value = first-release communiqué figure", "https://www.stats.gov.cn/sj/ndsj/2025/html/C15-12.jpg", "2024年统计公报首发 487,895 亿元，后经修订")
+    if (ind, geo, year) in verified_yes and ind not in GDP_FAMILY:
+        return ("Conflicting Value", "resolved: canonical value confirmed by an independent official publication (E3); R1 value contradicted", "reports/data_validation_samples.csv", "R1 value disagrees with both the NBS database and an independent official publication (Yearbook 2025 / communiqué)")
+    if ind == "retail_sales" and (year <= 2023 or (year == 2024 and geo == "000000" and abs(x - 487895) < 1)):
         return ("Official Revision", "resolved-lite: canonical = current official database value; R1 value matches an earlier first-release publication", vrow["source_url"],
                 "社会消费品零售总额历史数据已按经济普查修订（当前数据库值）；R1值来自首发公报/早期年鉴；未找到逐年修订公告")
     if ind in POP_FAMILY and 2011 <= year <= 2019:
@@ -100,6 +107,8 @@ def classify(ind, geo, year, V, vrow, x, xrow):
         return ("Definition Difference", "resolved: different reference date (census 11-01 count vs year-end estimate)", vrow["source_url"], "R1 value appears to be a census-date count, canonical is year-end resident population")
     if ind in ("physicians_per_1000", "nurses_per_1000", "hospital_beds_per_1000") and year <= 2020:
         return ("Definition Difference", "resolved: denominator vintage", vrow["source_url"], "R1 value uses pre-7th-census population as denominator (as printed in yearbooks); canonical uses current revised population")
+    if (ind, geo, year) in verified_yes:
+        return ("Conflicting Value", "resolved: canonical value confirmed by an independent official publication (E3); R1 value contradicted", "reports/data_validation_samples.csv", "R1 value disagrees with both the NBS database and the independent official publication")
     return ("Conflicting Value", "unresolved", "", "no documented revision or definition difference explains the gap")
 
 # ---------- assemble ----------
@@ -107,7 +116,6 @@ idx = {(r["indicator_id"], r["geo_code"], int(r["year"])): r for r in base}
 r1_by = defaultdict(list)
 for r in r1:
     r1_by[(r["indicator_id"], r["geo_code"], int(r["year"]))].append(r)
-verified_yes = {(s["indicator_id"], s["geo_code"], int(s["year"])) for s in samples if s["match"] == "yes"}
 
 conflicts, vintages, canon = [], [], []
 cat_count = Counter()

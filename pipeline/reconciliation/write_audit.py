@@ -117,6 +117,14 @@ cs = [c for c in C if c["r1_model"] in ("muse", "gpt62") and c["indicator_id"] =
 add("Muse Spark 1.3 / GPT-6.2", "P3", "superseded_vintage", "Official Revision",
     "National 2024 retail sales 487,895 亿元 is the first-release communiqué figure; the current NBS database and Yearbook 2025 table 15-12 give 483,344.7. Not labelled as superseded.", "Compare with 《中国统计年鉴2025》表15-12.", "Use the revised value; keep first release as a vintage.",
     ind="retail_sales", geo="000000", year="2024", rep="487895", exp="483344.7", url="https://www.stats.gov.cn/sj/ndsj/2025/html/C15-12.jpg", loc="表15-12 全国 2024")
+gr = [c for c in C if c["r1_model"] == "gemini" and c["category"] == "Conflicting Value" and "contradicted" in c["resolution"]]
+add("Gemini (Model Version Unavailable)", "P1", "wrong_value", "Confirmed Issue",
+    f"{len(gr)} values contradict both the NBS database and an independent official publication, mainly 2024 provincial retail sales labelled '2024年主要消费大省社零总额': Zhejiang 33,900 vs 37,707.7 亿元, Guangdong 47,872.8 vs 45,029.2, Jiangsu 47,662.3 vs 44,922.1 (Yearbook 2025 table 15-12); also Hubei 2024 65+ share 16.12% vs 17.29% (table 2-11) and Xinjiang 2024 physicians/beds per 1000.",
+    "Filter data/reconciliation/conflicts.csv: r1_model=gemini, category=Conflicting Value; compare with the yearbook images listed in reports/data_validation_samples.csv.", "Replace with official values; never use aggregator summaries as the source.",
+    ind="retail_sales", geo="330000", year="2024", rep="33900", exp="37707.7", url="https://www.stats.gov.cn/sj/ndsj/2025/html/C15-12.jpg", loc="表15-12 浙江 2024")
+add("Codex GPT-6", "P2", "wrong_value", "Confirmed Issue",
+    "Jiangsu 2023 retail sales 45,547.5 亿元 (from Jiangsu Statistical Yearbook appendix) contradicts the NBS database and Yearbook 2025 table 15-12 (42,940.6). Shanghai 2016 disposable income 54,032 vs NBS 54,305 remains unresolved (no independent official source found for 2016).",
+    "conflicts.csv rows retail_sales/320000/2023 and disposable_income/310000/2016.", "Use NBS unified provincial figures for cross-province series.", ind="retail_sales", geo="320000", year="2023", rep="45547.5", exp="42940.6", url="https://www.stats.gov.cn/sj/ndsj/2025/html/C15-12.jpg", loc="表15-12 江苏 2023")
 add("Codex GPT-6 (site)", "P3", "ux_stale_headline", "Confirmed Issue", "Homepage feature chart 'Which provinces have the most residents' shows 2024 although the site's own data include 2025 provincial population.", "Open https://china-data-atlas-codex-r1-1123.vercel.app/ (observed 2026-11-24).", "Headline the latest complete year.", ind="population", year="2024", file="https://china-data-atlas-codex-r1-1123.vercel.app/")
 with open(P("audit/findings.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=list(F[0].keys())); w.writeheader(); w.writerows(F)

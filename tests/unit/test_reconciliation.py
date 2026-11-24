@@ -19,5 +19,8 @@ def test_gdp_2024_revision():
 def test_unit_error():
     assert NS["classify"]("population", "440000", 2015, 11678, row("population", 11678), 116780000, x())[0] == "Unit Conversion Difference"
 def test_unexplained_stays_unresolved():
-    c = NS["classify"]("hospital_beds_per_1000", "440000", 2024, 5.04, row("hospital_beds_per_1000", 5.04), 6.5, x())
+    c = NS["classify"]("hospital_beds_per_1000", "450000", 2023, 5.04, row("hospital_beds_per_1000", 5.04), 6.5, x())
     assert c[0] == "Conflicting Value" and c[1] == "unresolved"
+def test_contradicted_by_independent_publication_is_resolved():
+    c = NS["classify"]("retail_sales", "330000", 2024, 37707.7, row("retail_sales", 37707.7), 33900, x())
+    assert c[0] == "Conflicting Value" and "contradicted" in c[1]

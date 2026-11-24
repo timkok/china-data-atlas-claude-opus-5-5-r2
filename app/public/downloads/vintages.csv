@@ -2314,14 +2314,10 @@ population_65plus,000000,2011,9.1,NBS-DB@2026-11-24,current,年度数据 > 人�
 population_65plus,000000,2012,9.4,NBS-DB@2026-11-24,current,年度数据 > 人口 > 人口年龄结构和抚养比,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
 population_65plus,000000,2013,9.7,NBS-DB@2026-11-24,current,年度数据 > 人口 > 人口年龄结构和抚养比,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
 population_65plus,000000,2014,10.1,NBS-DB@2026-11-24,current,年度数据 > 人口 > 人口年龄结构和抚养比,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
-population_65plus,000000,2015,10.47,earlier publication per claude_r1a,superseded,中国统计年鉴2016 2-12 分地区人口年龄构成和抚养比(2015年),https://www.stats.gov.cn/sj/ndsj/2016/html/0212CH.jpg,https://www.stats.gov.cn/sj/ndsj/2025/indexch.htm
 population_65plus,000000,2015,10.5,NBS-DB@2026-11-24,current,年度数据 > 人口 > 人口年龄结构和抚养比,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
-population_65plus,000000,2016,10.85,earlier publication per claude_r1a,superseded,中国统计年鉴2017 2-12 分地区人口年龄构成和抚养比(2016年),https://www.stats.gov.cn/sj/ndsj/2017/html/CH0212.jpg,https://www.stats.gov.cn/sj/ndsj/2025/indexch.htm
 population_65plus,000000,2016,10.8,NBS-DB@2026-11-24,current,年度数据 > 人口 > 人口年龄结构和抚养比,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
 population_65plus,000000,2017,11.4,NBS-DB@2026-11-24,current,年度数据 > 人口 > 人口年龄结构和抚养比,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
-population_65plus,000000,2018,11.94,earlier publication per claude_r1a,superseded,中国统计年鉴2019 2-12 分地区人口年龄构成和抚养比(2018年),https://www.stats.gov.cn/sj/ndsj/2019/html/C0212.jpg,https://www.stats.gov.cn/sj/ndsj/2025/indexch.htm
 population_65plus,000000,2018,11.9,NBS-DB@2026-11-24,current,年度数据 > 人口 > 人口年龄结构和抚养比,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
-population_65plus,000000,2019,12.57,earlier publication per claude_r1a,superseded,中国统计年鉴2020 2-12 分地区人口年龄构成和抚养比(2019年),https://www.stats.gov.cn/sj/ndsj/2020/html/C0212.jpg,https://www.stats.gov.cn/sj/ndsj/2025/indexch.htm
 population_65plus,000000,2019,12.6,NBS-DB@2026-11-24,current,年度数据 > 人口 > 人口年龄结构和抚养比,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
 population_65plus,000000,2020,13.5,NBS-DB@2026-11-24,current,年度数据 > 人口 > 人口年龄结构和抚养比,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
 population_65plus,000000,2021,14.2,NBS-DB@2026-11-24,current,年度数据 > 人口 > 人口年龄结构和抚养比,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
@@ -6879,6 +6875,8 @@ retail_sales,000000,2023,471495.0,earlier publication per muse,superseded,中华
 retail_sales,000000,2023,471495.2,earlier publication per codex_gpt6,superseded,江苏统计年鉴2024 · 附录1-11国内外贸易（2023年）,https://tj.jiangsu.gov.cn/2024/nj23/nj2311.htm,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData
 retail_sales,000000,2023,471495.0,earlier publication per gemini,superseded,公报全文,https://www.stats.gov.cn/sj/zxfb/202402/t20240228_1947915.html,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData
 retail_sales,000000,2023,467098.0,NBS-DB@2026-11-24,current,年度数据 > 社会消费品零售总额,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
+retail_sales,000000,2024,487895.0,earlier publication per muse,superseded,中华人民共和国国民经济和社会发展统计公报；月度社会消费品零售总额,https://data.mofcom.gov.cn/article/zxtj/202502/62665.html,https://www.stats.gov.cn/sj/ndsj/2025/html/C15-12.jpg
+retail_sales,000000,2024,487895.0,earlier publication per gpt62,superseded,2024年12月份社会消费品零售总额,https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202501/t20250117_1958327.html,https://www.stats.gov.cn/sj/ndsj/2025/html/C15-12.jpg
 retail_sales,000000,2024,483344.7,NBS-DB@2026-11-24,current,年度数据 > 社会消费品零售总额,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
 retail_sales,000000,2025,501202.4,NBS-DB@2026-11-24,current,年度数据 > 社会消费品零售总额,https://data.stats.gov.cn/dg/website/page.html#/pc/national/yearData,
 retail_sales,110000,2000,1760.3,NBS-DB@2026-11-24,current,分省年度数据 > 社会消费品零售总额,https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData,
@@ -7227,7 +7225,6 @@ retail_sales,320000,2021,42702.65,earlier publication per codex_gpt6,superseded,
 retail_sales,320000,2021,41261.1,NBS-DB@2026-11-24,current,分省年度数据 > 社会消费品零售总额,https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData,
 retail_sales,320000,2022,42752.1,earlier publication per codex_gpt6,superseded,江苏统计年鉴2023 · 附录1-13国内外贸易（2022年）,https://tj.jiangsu.gov.cn/2023/nj23/nj2313.htm,https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData
 retail_sales,320000,2022,40803.0,NBS-DB@2026-11-24,current,分省年度数据 > 社会消费品零售总额,https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData,
-retail_sales,320000,2023,45547.5,earlier publication per codex_gpt6,superseded,江苏统计年鉴2024 · 附录1-11国内外贸易（2023年）,https://tj.jiangsu.gov.cn/2024/nj23/nj2311.htm,https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData
 retail_sales,320000,2023,42940.6,NBS-DB@2026-11-24,current,分省年度数据 > 社会消费品零售总额,https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData,
 retail_sales,320000,2024,44922.1,NBS-DB@2026-11-24,current,分省年度数据 > 社会消费品零售总额,https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData,
 retail_sales,320000,2025,46394.2,NBS-DB@2026-11-24,current,分省年度数据 > 社会消费品零售总额,https://data.stats.gov.cn/dg/website/page.html#/pc/national/fsYearData,

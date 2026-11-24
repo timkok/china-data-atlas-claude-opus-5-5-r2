@@ -114,7 +114,7 @@ export default function CrossExplorer() {
         <aside className="space-y-4 text-sm">
           <fieldset><legend className="font-semibold mb-1">1. 指标（最多4个）</legend>
             {CATEGORIES.map((c) => (
-              <details key={c.id} open={c.id === "population" || c.id === "economy"} className="mb-1"><summary className="cursor-pointer text-xs text-[var(--muted)]">{c.zh}</summary>
+              <details key={c.id} open={c.id === "population" || c.id === "economy"} className="mb-1"><summary className="cursor-pointer text-xs text-[var(--muted)] py-2">{c.zh}</summary>
                 <div className="flex flex-wrap gap-1 mt-1">{INDICATORS.filter((i) => i.category === c.id).map((i) => (
                   <button key={i.id} aria-pressed={inds.includes(i.id)} className={`chip ${inds.includes(i.id) ? "chip-on" : ""}`} data-ind={i.id} onClick={() => setInds((s) => toggle(s, i.id, 4).length ? toggle(s, i.id, 4) : s)}>{i.name_zh}</button>))}</div>
               </details>))}

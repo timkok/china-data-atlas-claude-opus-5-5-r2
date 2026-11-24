@@ -49,10 +49,10 @@ export default function ProvinceCompare() {
       <div className="overflow-x-auto"><table className="tbl" data-testid="compare-table">
         <thead><tr><th>指标</th><th>年份</th>{geos.map((g) => <th key={g} className="text-right">{GEO[g].short_zh}</th>)}<th className="text-right">全国</th></tr></thead>
         <tbody>{table.map((r) => (
-          <tr key={r.m}><td><a className="hover:underline" href={`/indicators/${r.m}/`}>{r.ind.name_zh}</a> <span className="text-[10px] text-[var(--muted)]">{r.ind.unit}</span></td>
-            <td className="tabular-nums text-xs">{r.y ?? "—"}{r.y && r.own && r.y !== r.own ? <span className="text-amber-700" title={`该指标最新省级年份为 ${r.own}`}> *</span> : null}</td>
-            {r.vals.map((v, i) => <td key={i} className={`text-right tabular-nums ${v === r.max ? "font-semibold" : ""}`}>{fmt(v, r.ind.unit)}</td>)}
-            <td className="text-right tabular-nums text-[var(--muted)]">{fmt(r.nat, r.ind.unit)}</td></tr>))}</tbody></table></div>
+          <tr key={r.m} className="h-9"><td className="whitespace-nowrap min-w-[11rem]"><a className="hover:underline" href={`/indicators/${r.m}/`}>{r.ind.name_zh}</a> <span className="text-[10px] text-[var(--muted)]">{r.ind.unit}</span></td>
+            <td className="tabular-nums text-xs whitespace-nowrap min-w-[3.5rem]">{r.y ?? "—"}{r.y && r.own && r.y !== r.own ? <span className="text-amber-700" title={`该指标最新省级年份为 ${r.own}`}> *</span> : null}</td>
+            {r.vals.map((v, i) => <td key={i} className={`text-right tabular-nums whitespace-nowrap min-w-[6.5rem] ${v === r.max ? "font-semibold" : ""}`}>{fmt(v, r.ind.unit)}</td>)}
+            <td className="text-right tabular-nums whitespace-nowrap min-w-[6.5rem] text-[var(--muted)]">{fmt(r.nat, r.ind.unit)}</td></tr>))}</tbody></table></div>
       <p className="text-[11px] text-[var(--muted)] mt-1">加粗 = 所选省份中最高（不代表优劣）。* = 共同可比年份早于该指标最新年份。</p>
       <div className="flex items-center gap-2 mt-6 mb-2 text-sm"><h3 className="font-semibold">{from}年以来的变化</h3>
         <label>起始年<select className="ctl ml-1" value={from} onChange={(e) => setFrom(+e.target.value)}>{[2000, 2005, 2010, 2013, 2015, 2018, 2020].map((y) => <option key={y}>{y}</option>)}</select></label></div>

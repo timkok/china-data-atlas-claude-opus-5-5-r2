@@ -1,114 +1,115 @@
-# DELIVERY_REPORT — China Data Atlas | 中国数据地图 · Round 1
+# DELIVERY_REPORT — China Data Atlas Round 2 · Claude Opus 5.5 (claude-opus-5-5)
 
-## 1. Model
-**Claude Opus 5.5**, model ID **claude-opus-5-5** (stated by the runtime configuration), running in Claude Code (Claude desktop app) on macOS. Run id `china-data-atlas-claude-opus-5-5-r1-run3-20261124` (an earlier run by the same model exists in a separate Drive folder; it was not opened or reused).
+## A. Executive summary
+**Completed**: cross-model audit of all accessible R1 deliveries (10 folders inventoried, 8 datasets imported, 32,209 source rows / 11,527 keys compared record-by-record); an independent canonical candidate (30,418 published official observations, 12 core + 30 extension indicators, 2000–2025, E0–E4 evidence, vintage table); a substantially upgraded site (detail engine, province pages & comparison, cross-indicator Explorer, 6 data stories, Research Query Engine, quality/conflict views); an update pipeline with a passing simulation; 146 automated tests passed (0 failed), acceptance A–T 20/20 on the live site; deployed to a new Vercel project.
 
-## 2–5. Links
-| | URL |
+**Five most important new findings**
+1. Of 4,247 cross-model value differences, **only 12 were real conflicts**; 2,051 are official rounding, 1,780 official revisions (economic/population census back-revisions, GDP final verification), 254 non-official sources, 150 definition differences. 11 of the 12 are settled by an independent official publication; 1 is unresolved.
+2. **Gemini (MVU) sources 541 values from Wikipedia** (GDP, GDP per capita, population) and its 2024 provincial retail values contradict Yearbook 2025 (Zhejiang 33,900 vs 37,707.7).
+3. **Gemini 4 Neon labels all 9,110 rows “verified”** with 60 independent checks; its values match the NBS database (99.4% identical to this project's extraction), which is shared provenance, not independent verification.
+4. **Codex GPT-6 mixes first-release and revised vintages** in GDP/retail series (2023 GDP 1,260,582 vs revised 1,294,272 per NBS notice 2024-12-27), distorting growth (7.0% vs 4.2%).
+5. **Own R1** lost precision on 万人-based counts and deleted 288 official 2000–2012 income back-estimates; both corrected.
+
+**Substantive improvements vs R1**: 3× published observations (10,416 → 30,418), 14 → 42 indicators, evidence levels that no longer inflate unsampled records, data vintages with official revision evidence, cross-model reconciliation, research tools (scatter/correlation/CAGR, comparison, stories, query engine), update pipeline.
+**Open core issues**: no geographic map; latest complete provincial year mostly 2024; mainland/WeChat unverified; Grok dataset not importable.
+
+## B. Round 1 model comparison
+| Question | Answer (evidence) |
 |---|---|
-| Google Drive folder | https://drive.google.com/drive/folders/1vGwrABTN7SaRX31Fet0A8ekE6MmTPUfd |
-| GitHub repository (public) | https://github.com/timkok/china-data-atlas-claude-opus-5-5-r1-run3 |
-| Pull request | https://github.com/timkok/china-data-atlas-claude-opus-5-5-r1-run3/pull/1 |
-| Live site (public, tested) | https://china-data-atlas-claude-opus-5-5-r1-run3.vercel.app |
-| Vercel preview (login-protected) | https://china-data-atlas-claude-opus-5-5-r1-run3-2uz6shdnv.vercel.app |
+| Best data acquisition | NBS new-portal public endpoints — used by Grok (self-reported), Gemini 4 Neon and this project; reproducible, covers 31 provinces × 2000–2025 (research/DATA_SOURCE_RESEARCH.md). |
+| Best data verification | Claude run 3 / Grok style: explicit independent samples against other official publications, labelled separately (Grok 122 samples, Claude run3 83+). Gemini 4 Neon's blanket "verified" is not acceptable. |
+| Best raw-evidence preservation | Claude first run (cell locators, file hashes, double OCR) and GPT-6 Astra (evidence_file per row); Claude run3/R2 (1,003 hashed API responses). |
+| Best software architecture | Static Next.js + config-driven indicator engine (Claude run3 → R2); Gemini 4 Neon comparable. |
+| Best product experience | Gemini 4 Neon homepage matrix; Codex editorial typography; R2 detail engine + Explorer (this run). |
+| Into the final version | NBS endpoint ingestion + raw hashing; E0–E4 + vintages + reconciliation rules; per-row evidence pointers; detail engine; region-matrix interaction; exact-count yearbook tables once vintage-normalised. |
+Details: `audit/cross_model_audit.md`, `audit/model_comparison.csv`, `audit/findings.csv`.
 
-## 6–8. Indicators (12 core + 2 extension)
-Columns: years = first year with any value (national or provincial) — latest provincial year; independent checks = individually matched / total reference points (see `reports/data_validation_samples.csv`).
+## C. Data reconciliation report
+| Item | Value |
+|---|---|
+| R1 datasets imported | 8 (Grok unavailable; Codex-MVU had no data) |
+| Source rows / distinct keys | 32,209 / 11,527 |
+| Key classes (raw, before rules) | exact 6,751 · within rounding 739 · single model 2,389 · conflicting 1,648 |
+| Classified differences vs canonical | 4,247: rounding 2,051 · official revision 1,780 · source not verifiable 254 · definition 150 · conflicting 12 |
+| Resolved / unresolved | 4,246 / 1 |
+| Vintages | 32,198 rows: 30,418 current + 1,780 superseded earlier-publication values |
+| Canonical candidate | 30,550 rows: E2 29,570 · E3 84 · E4 764 (published 30,418) · E1 101 · E0 31 (not published) |
+| Rules | latest officially verified value; earlier vintages kept; no majority vote / averaging / splicing different calibers; unreliable data excluded from default view |
 
-| id | 指标 | type | unit | years | latest prov. year | latest national | valid obs. | independent checks | official table |
+### Indicators
+| id | 指标 | 类 | 单位 | 年份 | 完整省级最新 | 全国最新 | 观测 | E2/E3/E4 | 冲突(未决) |
 |---|---|---|---|---|---|---|---|---|---|
-| population | 年末常住人口 | 核心 | 万人 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 8/8 | 年末常住人口 |
-| birth_rate | 人口出生率 | 核心 | ‰ | 2000—2024 | 2024 (31/31) | 2025 | 799 | 7/7 | 人口出生率 |
-| urbanization_rate | 常住人口城镇化率 | 核心 | % | 2000—2024 | 2024 (31/31) | 2025 | 646 | 7/7 | 城镇人口 / 年末常住人口 |
-| population_65plus | 65岁及以上人口占比 | 核心 | % | 2000—2024 | 2024 (31/31) | 2025 | 708 | 8/8 | 人口年龄构成和抚养比 |
-| gdp | 地区生产总值（现价） | 核心 | 亿元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 5/10 | 地区生产总值 |
-| gdp_per_capita | 人均地区生产总值（现价） | 核心 | 元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 3/8 | 人均地区生产总值 |
-| disposable_income | 居民人均可支配收入 | 核心 | 元 | 2013—2025 | 2025 (31/31) | 2025 | 416 | 8/8 | 居民人均可支配收入 |
-| retail_sales | 社会消费品零售总额 | 核心 | 亿元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 7/7 | 社会消费品零售总额 |
-| higher_education_students | 普通高等教育本专科在校生数 | 核心 | 人 | 2000—2024 | 2024 (31/31) | 2025 | 801 | 7/7 | 普通、职业高等学校和普通、职业本专科学生情况 |
-| higher_education_institutions | 普通高等学校数量 | 核心 | 所 | 2000—2024 | 2024 (31/31) | 2024 | 800 | 6/6 | 普通、职业高等学校和普通、职业本专科学生情况 |
-| physicians_per_1000 | 每千人口执业（助理）医师数 | 核心 | 人/千人 | 2000—2024 | 2024 (31/31) | 2025 | 801 | 6/7 | 年末常住人口 |
-| hospital_beds_per_1000 | 每千人口医疗卫生机构床位数 | 核心 | 张/千人 | 2002—2024 | 2024 (31/31) | 2024 | 519 | 6/6 | 每万人口医疗卫生机构床位数 |
-| death_rate | 人口死亡率（扩展） | 扩展 | ‰ | 2000—2024 | 2024 (31/31) | 2025 | 799 | 0/0 | 人口死亡率 |
-| natural_growth_rate | 人口自然增长率（扩展） | 扩展 | ‰ | 2000—2024 | 2024 (31/31) | 2025 | 799 | 0/0 | 人口自然增长率 |
+| population | 年末常住人口 | 核心 | 万人 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 824/8/0 | 134 (0) |
+| birth_rate | 人口出生率 | 核心 | ‰ | 2000—2024 | 2024 (31/31) | 2025 | 799 | 792/7/0 | 39 (0) |
+| urbanization_rate | 常住人口城镇化率 | 核心 | % | 2000—2024 | 2024 (31/31) | 2025 | 646 | 639/7/0 | 362 (0) |
+| population_65plus | 65岁及以上人口占比 | 核心 | % | 2000—2024 | 2024 (31/31) | 2025 | 708 | 699/9/0 | 80 (0) |
+| gdp | 地区生产总值（现价） | 核心 | 亿元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 508/4/320 | 759 (0) |
+| gdp_per_capita | 人均地区生产总值（现价） | 核心 | 元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 385/3/444 | 852 (0) |
+| disposable_income | 居民人均可支配收入 | 核心 | 元 | 2000—2025 | 2025 (31/31) | 2025 | 708 | 700/8/0 | 291 (1) |
+| retail_sales | 社会消费品零售总额 | 核心 | 亿元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 821/11/0 | 312 (0) |
+| higher_education_students | 普通高等教育本专科在校生数 | 核心 | 人 | 2000—2024 | 2024 (31/31) | 2025 | 801 | 794/7/0 | 978 (0) |
+| higher_education_institutions | 普通高等学校数量 | 核心 | 所 | 2000—2024 | 2024 (31/31) | 2024 | 800 | 794/6/0 | 1 (0) |
+| physicians_per_1000 | 每千人口执业（助理）医师数 | 核心 | 人/千人 | 2000—2024 | 2024 (31/31) | 2025 | 801 | 794/7/0 | 122 (0) |
+| hospital_beds_per_1000 | 每千人口医疗卫生机构床位数 | 核心 | 张/千人 | 2002—2024 | 2024 (31/31) | 2024 | 519 | 512/7/0 | 17 (0) |
+| death_rate | 人口死亡率（扩展） | 扩展 | ‰ | 2000—2024 | 2024 (31/31) | 2025 | 799 | 799/0/0 | 0 (0) |
+| natural_growth_rate | 人口自然增长率（扩展） | 扩展 | ‰ | 2000—2024 | 2024 (31/31) | 2025 | 799 | 799/0/0 | 5 (0) |
+| urban_population | 城镇人口 | 扩展 | 万人 | 2000—2024 | 2024 (31/31) | 2025 | 646 | 646/0/0 | 0 (0) |
+| rural_population | 乡村人口 | 扩展 | 万人 | 2000—2024 | 2024 (31/31) | 2025 | 646 | 646/0/0 | 0 (0) |
+| population_0_14 | 0—14岁人口占比 | 扩展 | % | 2000—2024 | 2024 (31/31) | 2025 | 677 | 677/0/0 | 0 (0) |
+| population_15_64 | 15—64岁人口占比 | 扩展 | % | 2000—2024 | 2024 (31/31) | 2025 | 677 | 677/0/0 | 0 (0) |
+| old_age_dependency | 老年人口抚养比 | 扩展 | % | 2000—2024 | 2024 (31/31) | 2025 | 677 | 677/0/0 | 0 (0) |
+| primary_industry_va | 第一产业增加值 | 扩展 | 亿元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 832/0/0 | 0 (0) |
+| secondary_industry_va | 第二产业增加值 | 扩展 | 亿元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 832/0/0 | 0 (0) |
+| tertiary_industry_va | 第三产业增加值 | 扩展 | 亿元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 832/0/0 | 0 (0) |
+| tertiary_share | 第三产业占GDP比重 | 扩展 | % | 2000—2025 | 2025 (31/31) | 2025 | 832 | 832/0/0 | 0 (0) |
+| consumption_expenditure_per_capita | 居民人均消费支出 | 扩展 | 元 | 2000—2025 | 2025 (31/31) | 2025 | 708 | 708/0/0 | 295 (0) |
+| urban_disposable_income | 城镇居民人均可支配收入 | 扩展 | 元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 832/0/0 | 0 (0) |
+| rural_disposable_income | 农村居民人均可支配收入 | 扩展 | 元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 832/0/0 | 0 (0) |
+| urban_rural_income_ratio | 城乡居民收入比 | 扩展 | 倍 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 832/0/0 | 0 (0) |
+| local_budget_revenue | 地方一般公共预算收入 | 扩展 | 亿元 | 2000—2025 | 2025 (31/31) | — | 806 | 806/0/0 | 0 (0) |
+| local_budget_expenditure | 地方一般公共预算支出 | 扩展 | 亿元 | 2000—2025 | 2025 (31/31) | 2025 | 832 | 832/0/0 | 0 (0) |
+| high_school_students | 普通高中在校生 | 扩展 | 人 | 2000—2024 | 2024 (31/31) | 2025 | 801 | 801/0/0 | 0 (0) |
+| junior_secondary_students | 初中在校生 | 扩展 | 人 | 2000—2024 | 2024 (31/31) | 2025 | 460 | 460/0/0 | 0 (0) |
+| primary_students | 小学在校生 | 扩展 | 人 | 2000—2024 | 2024 (31/31) | 2025 | 801 | 801/0/0 | 0 (0) |
+| graduate_students | 在学研究生（全国） | 扩展 | 人 | 2000—2025 | — (0/31) | 2025 | 26 | 26/0/0 | 0 (0) |
+| health_institutions | 医疗卫生机构数 | 扩展 | 个 | 2000—2024 | 2024 (31/31) | 2025 | 801 | 801/0/0 | 0 (0) |
+| physicians_count | 执业（助理）医师数 | 扩展 | 人 | 2000—2024 | 2024 (31/31) | 2025 | 801 | 801/0/0 | 0 (0) |
+| nurses_per_1000 | 每千人口注册护士数 | 扩展 | 人/千人 | 2000—2024 | 2024 (31/31) | 2025 | 801 | 801/0/0 | 0 (0) |
+| hospital_beds_total | 医疗卫生机构床位数 | 扩展 | 万张 | 2000—2024 | 2024 (31/31) | 2025 | 770 | 770/0/0 | 0 (0) |
+| hospital_bed_occupancy | 医院病床使用率 | 扩展 | % | 2000—2023 | 2023 (31/31) | 2024 | 458 | 458/0/0 | 0 (0) |
+| outpatient_visits | 医疗卫生机构诊疗人次 | 扩展 | 亿人次 | 2008—2024 | 2024 (31/31) | 2024 | 482 | 482/0/0 | 0 (0) |
+| water_use_per_capita | 人均用水量 | 扩展 | 立方米/人 | 2004—2024 | 2024 (31/31) | 2024 | 671 | 671/0/0 | 0 (0) |
+| forest_coverage | 森林覆盖率 | 扩展 | % | 2004—2024 | 2024 (31/31) | 2024 | 544 | 544/0/0 | 0 (0) |
+| highway_mileage | 公路里程 | 扩展 | 万公里 | 2000—2024 | 2024 (31/31) | 2025 | 801 | 801/0/0 | 0 (0) |
 
-Caliber notes: resident (常住) not registered population; disposable income ≠ consumption; GDP current prices (no real growth shown); students = 普通、职业本专科 (no postgraduates/adult/online); beds = all medical & health institutions. Provincial series start later than national for urbanization (2005), 65+ (2002, gaps 2010 & 2025), beds (2008). Details: [LIMITATIONS.md](LIMITATIONS.md), `reports/coverage_matrix.csv`.
+## D. R1 vs R2
+See `R1_VS_R2.md` (table covering core indicators, observations, verification, latest data, history, features, map, Explorer, mobile, tests, performance, updates).
 
-**Core indicators available: 12/12. Latest-year provincial coverage: 31/31 for all 12. Continuity since 2015: 100 % of years complete for all 12.** Extension indicators (death rate, natural growth rate) are flagged and not counted.
+## Tests
+pytest 34/34 · Playwright local 56/56 (+1 by-design skip) · Playwright live 56/56 (+1 skip) · update simulation 9/9 · acceptance A–T: 20 Pass on the live site (`reports/acceptance_test_results.csv`). Lighthouse (mobile, live, same conditions as R1): home 100/100/100/100 · indicator 94/100/96/100 · explorer 95/100/100/100 · province 100/100/100/100 · compare 96/98/100/100 (R1: 100/96/97 perf) — `reports/lighthouse/`.
 
-## 9. Data integrity & quality
-- 10,416 valid observations (8,818 core) · 0 missing values filled · 688 explicit empty rows kept as missing.
-- Quality gate (`reports/data_quality_report.json`): **0 errors**, 2 warning classes reviewed: year-on-year outliers (real: 2001–03 HE expansion, 2010 census, 2020 birth drop, Shanghai 2015 1 % survey) and the national–provincial population gap (active military; larger before 2011 because provincial data were not back-revised).
-- Independent verification: 89 reference points from 7 official publications → **78 exact/within-rounding matches**, 10 GDP/GDP-pc 2024 differences explained by NBS final verification (confirmed nationally by NBS notice 2025-12-26), 1 explained denominator-vintage difference, **0 unexplained**. 78 rows `verified`, 7,911 `partially_verified`.
-- Problems found by verification and fixed: physician ratio precision, urbanization rounding (switched to official ratios), pre-2013 income caliber, missing 2020 census 65+ data.
+## E. Links
+1. Drive R2 folder: https://drive.google.com/drive/folders/19yZxGJE3--18ychQ3_FbjKxq6imAgjiz
+2. GitHub (private): https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2
+3. Pull request: see EVALUATION.json `pull_request_url`
+4. Site: https://china-data-atlas-claude-opus-5-5-r2.vercel.app (preview deployments login-protected)
+5. ZIP: `China-Data-Atlas-Claude-Opus-5.5-R2*.zip` in the Drive folder (split to respect the 10 MB upload limit)
+6. Audit: `audit/` · 7. Candidate DB: `data/canonical_candidate/` · 8. Data dictionary: `data/metadata/data_dictionary.csv` · 9. Tests: `reports/` · 10. Screenshots: `screenshots/` (homepage/indicator/data-explorer at desktop/tablet/mobile; province-comparison, data-story, map-or-alternative, acceptance-*)
 
-## 10. Product features
-Home (value proposition, search, 4 categories, interactive feature chart, data-generated findings, latest-year table, trust/coverage stats, explorer entry); indicator pages `/indicators/[id]/` with A Summary (national value + year, provincial year, comparable YoY only, coverage, findings), B/D distribution & ranking (bar chart, competition ranking with ties, rank change, national baseline, region filter, asc/desc, 7-region matrix labelled “not a map”, explicit no-data state), C trends (multi-province, year range, gaps not interpolated, caliber-break markers, value/index mode labelled derived), E regional comparison (sum / population-weighted / none per indicator, multi-province bar), F data table (search, sort, filters, per-row provenance dialog, CSV = filtered rows), G methodology & citation; region pages (all indicators + rank for a province); data explorer (multi-indicator); methodology; about; sitemap/robots/canonical/OG.
-
-## 11. Browser tests (Playwright 1.60, Chromium)
-| Run | Passed | Failed | Skipped |
-|---|---|---|---|
-| Local static build | 36 | 0 | 1 (Task H is mobile-only) |
-| Deployed public URL | 36 | 0 | 1 (same) |
-Covers the 20 required checks (home, search, direct URL, year switch, province select, region filter, multi-province trend, ranking correctness vs CSV, chart table vs data, CSV download content, no-data state, negatives & ties, source links, console errors, 1440/768/390 layouts, horizontal overflow, keyboard, refresh, static assets, performance) + SEO HTML checks. Data/unit tests (pytest): 16 passed. Lighthouse 12 mobile (public URL) — performance/accessibility/best-practices/SEO: home 98/100/100/100; indicator 96/100/100/100; explorer 97/100/100/100.
-
-## 12. Acceptance tasks (deployed site; also pass locally) — `reports/acceptance_test_results.csv`
-| Task | Result | Clicks | Data year |
-|---|---|---|---|
-| A Guangdong population + source | Pass | 2 | 2025 |
-| B JS/ZJ/GD population since 2015 | Pass | 2 | 2015–2025 |
-| C 2020 65+ ranking, census caliber | Pass | 2 | 2020 (census) |
-| D latest provincial GDP per capita | Pass | 1 | 2025 (preliminary, current prices) |
-| E SD/HN/GD disposable income | Pass | 1 | 2025 |
-| F physicians per 1,000 ranking | Pass | 1 | 2024 |
-| G filtered CSV vs page | Pass | 5 | 2023–2025 |
-| H mobile search/year/source | Pass (Chromium 390 px emulation; no real phone / WeChat) | 4 | 2020 |
-| I year without data | Pass | 3 | 2005 |
-| J value → official table | Pass | 2 | 2025 |
-
-## 13. Screenshots
-`screenshots/homepage-{desktop,tablet,mobile}.png`, `indicator-*.png`, `data-explorer-*.png`, `acceptance-*.png` — all produced by the actual test runs.
-
-## 14. Map compliance
-No geographic map. No boundary dataset with a confirmed 审图号 and licence for interactive recolouring was found; unverified GeoJSON was not used. Replacement: ranked bars, ranking tables and a 7-region tile matrix labelled as non-geographic.
-
-## 15. Redistribution
-Authenticity: verified. Legal access: yes (public pages/endpoints, no login/captcha bypass, ≥1.2 s rate limit, cache; legacy API 403 and Henan bureau 403 not circumvented). Redistribution licence: **not confirmed → pending review**. Site shows statistics with attribution; yearbook images and page copies are not in git or on the site (private Drive evidence only). GitHub repo made public at the user's request (2026-11-24); it contains the derived dataset and raw NBS API responses, but no yearbook images or copied web pages.
-
-## 16. Architecture, dependencies, how to run
-See [ARCHITECTURE.md](ARCHITECTURE.md) and [README.md](README.md). Python stdlib pipeline (+duckdb, pytest), Next.js 16 static export, ECharts 5, Tailwind 4, Playwright 1.60.
-
-## 17. Problems met and how they were solved
-1. New NBS portal is an SPA; legacy API 403 → discovered the page's own public JSON endpoints via browser network inspection.
-2. Python urllib hung ~25 s per streaming request → switched to curl subprocess (380 requests in ~8 min).
-3. Yearbook tables only as images → read images for independent verification; one hand transcription (urbanization) with automated bound checks.
-4. Validation exposed precision/caliber problems (see §9) → fixed at source.
-5. Tailwind v4 `bg-[--var]` silently ignored → white-on-white toggle found by Lighthouse; fixed project-wide.
-6. Vercel: first deploy became production of the new project; preview protected; deploy “Blocked” inside git repo; alias pinning → documented in deployment/DEPLOYMENT_INFO.md.
-
-## 18. Not done
-English UI; scatter/cross-indicator analysis, PNG/SVG export, share links (V0.5); geographic map; provincial 2025 communiqué checks for all provinces; WeChat / mainland-network verification; GDP-per-capita still only 3 individually confirmed points.
-
-## 19. Next priorities
-1) Add provincial communiqué parsers for the latest year (second source for every province). 2) V0.5 cross-indicator explorer (scatter, CAGR) on the existing DuckDB. 3) English UI. 4) Obtain a compliant standard base map or keep the matrix. 5) Scheduled GitHub Action that re-fetches, diffs and opens a PR (never auto-overwrites manual/verified rows).
-
-## 20. Resources
-Wall-clock ≈ 4 h of active work across two sessions (a usage limit interrupted the first). ≈ 400 NBS API requests, 21 other official pages. Token/cost figures are not available to the model.
-
-## Strict status classification
+## Status classification
 | Status | Items |
 |---|---|
-| Implemented & Verified | Data pipeline, 12 core indicators, validation samples, quality gate, all site sections, CSV export, search, acceptance A–J, deployment, Lighthouse |
-| Implemented but Not Verified | Mainland-China access, WeChat browser, real-device mobile |
-| Partially Implemented | Independent verification depth for GDP per capita (3 points); bilingual (data bilingual, UI Chinese only) |
-| Not Implemented | V0.5 scatter/export/share links; English UI |
-| Blocked by Environment | Henan communiqué (403); NBS legacy API (403); Yearbook 2026 not yet published |
-| Out of Scope | V1.0 AI assistant; geographic map (compliance) |
+| Implemented & Verified | audit, reconciliation, canonical candidate, 42 indicators, detail engine, province pages, comparison, Explorer, stories, query engine, quality page, update pipeline (simulated), deployment |
+| Implemented but Not Verified | mainland access, WeChat, real devices |
+| Partially Implemented | exact-count ingestion (counts still from 万人 values); Data export of “current chart config” (share link carries the config) |
+| Not Implemented | geographic map; English UI; city-level data |
+| Blocked by Environment | Grok dataset (ZIP > 10 MB); Tianditu/MNR sites unreachable; Henan bureau 403 |
+| Out of scope | LLM assistant (no paid API) |
 
-## If only three outcomes could be kept
-1. **`data/normalized/observations.csv` + raw API cache + pipeline** — every number reproducible from saved official responses, with formula and original value per row.
-2. **`reports/data_validation_samples.csv`** — independent evidence that the numbers are right, including the documented revisions; this is what makes the dataset citable.
-3. **The indicator page template** — one config-driven page that shows year, caliber, source and missingness honestly for any new indicator.
-
-## Next round
-Keep: data model, provenance UI, validation approach, static architecture. Improve: verification breadth (provincial latest-year sources), cross-indicator analysis, English. Redesign: the update workflow (scheduled fetch → diff → PR review) and a compliant map strategy.
+## F. Round 3 recommendations (keep five)
+1. **Data acquisition**: NBS public-endpoint client with raw-response hashing (shared approach; keep one implementation).
+2. **Versioning & verification**: observation/source/vintage layers + E0–E4 + the conflict taxonomy and rules in `build_canonical.py` (no voting/averaging).
+3. **Product architecture**: config-driven static detail engine with per-indicator data shards.
+4. **User experience**: indicator page (quality card + versions/conflicts + distribution) with Gemini 4 Neon's region-matrix interaction and Codex's editorial typography.
+5. **Update mechanism**: `update_pipeline.py` check → review → approve-as-new-vintage → rollback, scheduled check that never publishes.
+Integrate by taking the union of *officially re-read* values only; import other models' exact-count yearbook tables as E2 after re-reading the source, not by copying their numbers.
