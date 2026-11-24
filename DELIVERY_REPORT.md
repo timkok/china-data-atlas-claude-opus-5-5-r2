@@ -91,7 +91,7 @@ pytest 34/34 · Playwright local 56/56 (+1 by-design skip) · Playwright live 56
 ## E. Links
 1. Drive R2 folder: https://drive.google.com/drive/folders/19yZxGJE3--18ychQ3_FbjKxq6imAgjiz
 2. GitHub (private): https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2
-3. Pull request: see EVALUATION.json `pull_request_url`
+3. Pull request: https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2/pull/1
 4. Site: https://china-data-atlas-claude-opus-5-5-r2.vercel.app (preview deployments login-protected)
 5. ZIP: `China-Data-Atlas-Claude-Opus-5.5-R2*.zip` in the Drive folder (split to respect the 10 MB upload limit)
 6. Audit: `audit/` · 7. Candidate DB: `data/canonical_candidate/` · 8. Data dictionary: `data/metadata/data_dictionary.csv` · 9. Tests: `reports/` · 10. Screenshots: `screenshots/` (homepage/indicator/data-explorer at desktop/tablet/mobile; province-comparison, data-story, map-or-alternative, acceptance-*)
