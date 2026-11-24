@@ -1,0 +1,30 @@
+field,type,description
+indicator_id,string,"Indicator key, see indicators.csv"
+indicator_name_zh,string,Chinese name
+indicator_name_en,string,English name
+geo_code,string,6-digit GB/T 2260 province code; 000000 = national total
+geo_name_zh,string,
+geo_name_en,string,
+geo_level,enum,national | province
+year,int,"Statistical (reference) year, not publication year"
+value,number|empty,Machine-readable value in `unit`; empty = missing in official source (never 0)
+unit,string,Standard unit
+source_id,string,See sources.csv prefix
+source_agency,string,
+source_url,url,Official page where the value can be looked up
+source_table,string,Official table path / name
+source_locator,string,"API cid / indicator ids / region code / year, or table row/column"
+publication_date,date|empty,ISO date when known; empty when the database does not state it
+retrieved_at,datetime,ISO 8601 UTC retrieval time
+data_status,enum,final | preliminary | revised | unknown
+methodology_version,string,config/indicators.json version
+transformation,string,Formula applied to original values (v = original value)
+verification_status,enum,verified_direct (E2) | verified_independent (E3) | verified_revision (E4) | unverified (E0/E1)
+evidence_level,enum,E0 no verifiable source | E1 R1-import with locator only | E2 read directly from official source by this pipeline | E3 E2 + matched independent official publication | E4 conflict resolved by explicit official revision notice
+extraction_method,enum,API | HTML | Manual | Derived | R1-import
+vintage,string,"dataset vintage, e.g. NBS-DB@2026-11-24 or R1:<model>"
+publish_default,bool,true only for E2+ rows; E0/E1 never shown in default views
+r1_models_same_value,string,"R1 models whose value equals (or ~ within rounding) the canonical value — provenance info only, NOT independent verification"
+notes,string,
+original_value,string,"Original value(s) before transformation, key=value"
+original_unit,string,Unit in the source

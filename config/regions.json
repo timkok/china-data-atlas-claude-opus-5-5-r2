@@ -1,0 +1,322 @@
+[
+ {
+  "geo_code": "000000",
+  "nbs_code": "000000000000",
+  "level": "national",
+  "name_zh": "全国",
+  "short_zh": "全国",
+  "name_en": "China (mainland, national total)",
+  "region7": null,
+  "zone4": null
+ },
+ {
+  "geo_code": "110000",
+  "nbs_code": "110000000000",
+  "level": "province",
+  "name_zh": "北京市",
+  "short_zh": "北京",
+  "name_en": "Beijing",
+  "region7": "华北",
+  "zone4": "东部"
+ },
+ {
+  "geo_code": "120000",
+  "nbs_code": "120000000000",
+  "level": "province",
+  "name_zh": "天津市",
+  "short_zh": "天津",
+  "name_en": "Tianjin",
+  "region7": "华北",
+  "zone4": "东部"
+ },
+ {
+  "geo_code": "130000",
+  "nbs_code": "130000000000",
+  "level": "province",
+  "name_zh": "河北省",
+  "short_zh": "河北",
+  "name_en": "Hebei",
+  "region7": "华北",
+  "zone4": "东部"
+ },
+ {
+  "geo_code": "140000",
+  "nbs_code": "140000000000",
+  "level": "province",
+  "name_zh": "山西省",
+  "short_zh": "山西",
+  "name_en": "Shanxi",
+  "region7": "华北",
+  "zone4": "中部"
+ },
+ {
+  "geo_code": "150000",
+  "nbs_code": "150000000000",
+  "level": "province",
+  "name_zh": "内蒙古自治区",
+  "short_zh": "内蒙古",
+  "name_en": "Inner Mongolia",
+  "region7": "华北",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "210000",
+  "nbs_code": "210000000000",
+  "level": "province",
+  "name_zh": "辽宁省",
+  "short_zh": "辽宁",
+  "name_en": "Liaoning",
+  "region7": "东北",
+  "zone4": "东北"
+ },
+ {
+  "geo_code": "220000",
+  "nbs_code": "220000000000",
+  "level": "province",
+  "name_zh": "吉林省",
+  "short_zh": "吉林",
+  "name_en": "Jilin",
+  "region7": "东北",
+  "zone4": "东北"
+ },
+ {
+  "geo_code": "230000",
+  "nbs_code": "230000000000",
+  "level": "province",
+  "name_zh": "黑龙江省",
+  "short_zh": "黑龙江",
+  "name_en": "Heilongjiang",
+  "region7": "东北",
+  "zone4": "东北"
+ },
+ {
+  "geo_code": "310000",
+  "nbs_code": "310000000000",
+  "level": "province",
+  "name_zh": "上海市",
+  "short_zh": "上海",
+  "name_en": "Shanghai",
+  "region7": "华东",
+  "zone4": "东部"
+ },
+ {
+  "geo_code": "320000",
+  "nbs_code": "320000000000",
+  "level": "province",
+  "name_zh": "江苏省",
+  "short_zh": "江苏",
+  "name_en": "Jiangsu",
+  "region7": "华东",
+  "zone4": "东部"
+ },
+ {
+  "geo_code": "330000",
+  "nbs_code": "330000000000",
+  "level": "province",
+  "name_zh": "浙江省",
+  "short_zh": "浙江",
+  "name_en": "Zhejiang",
+  "region7": "华东",
+  "zone4": "东部"
+ },
+ {
+  "geo_code": "340000",
+  "nbs_code": "340000000000",
+  "level": "province",
+  "name_zh": "安徽省",
+  "short_zh": "安徽",
+  "name_en": "Anhui",
+  "region7": "华东",
+  "zone4": "中部"
+ },
+ {
+  "geo_code": "350000",
+  "nbs_code": "350000000000",
+  "level": "province",
+  "name_zh": "福建省",
+  "short_zh": "福建",
+  "name_en": "Fujian",
+  "region7": "华东",
+  "zone4": "东部"
+ },
+ {
+  "geo_code": "360000",
+  "nbs_code": "360000000000",
+  "level": "province",
+  "name_zh": "江西省",
+  "short_zh": "江西",
+  "name_en": "Jiangxi",
+  "region7": "华东",
+  "zone4": "中部"
+ },
+ {
+  "geo_code": "370000",
+  "nbs_code": "370000000000",
+  "level": "province",
+  "name_zh": "山东省",
+  "short_zh": "山东",
+  "name_en": "Shandong",
+  "region7": "华东",
+  "zone4": "东部"
+ },
+ {
+  "geo_code": "410000",
+  "nbs_code": "410000000000",
+  "level": "province",
+  "name_zh": "河南省",
+  "short_zh": "河南",
+  "name_en": "Henan",
+  "region7": "华中",
+  "zone4": "中部"
+ },
+ {
+  "geo_code": "420000",
+  "nbs_code": "420000000000",
+  "level": "province",
+  "name_zh": "湖北省",
+  "short_zh": "湖北",
+  "name_en": "Hubei",
+  "region7": "华中",
+  "zone4": "中部"
+ },
+ {
+  "geo_code": "430000",
+  "nbs_code": "430000000000",
+  "level": "province",
+  "name_zh": "湖南省",
+  "short_zh": "湖南",
+  "name_en": "Hunan",
+  "region7": "华中",
+  "zone4": "中部"
+ },
+ {
+  "geo_code": "440000",
+  "nbs_code": "440000000000",
+  "level": "province",
+  "name_zh": "广东省",
+  "short_zh": "广东",
+  "name_en": "Guangdong",
+  "region7": "华南",
+  "zone4": "东部"
+ },
+ {
+  "geo_code": "450000",
+  "nbs_code": "450000000000",
+  "level": "province",
+  "name_zh": "广西壮族自治区",
+  "short_zh": "广西",
+  "name_en": "Guangxi",
+  "region7": "华南",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "460000",
+  "nbs_code": "460000000000",
+  "level": "province",
+  "name_zh": "海南省",
+  "short_zh": "海南",
+  "name_en": "Hainan",
+  "region7": "华南",
+  "zone4": "东部"
+ },
+ {
+  "geo_code": "500000",
+  "nbs_code": "500000000000",
+  "level": "province",
+  "name_zh": "重庆市",
+  "short_zh": "重庆",
+  "name_en": "Chongqing",
+  "region7": "西南",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "510000",
+  "nbs_code": "510000000000",
+  "level": "province",
+  "name_zh": "四川省",
+  "short_zh": "四川",
+  "name_en": "Sichuan",
+  "region7": "西南",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "520000",
+  "nbs_code": "520000000000",
+  "level": "province",
+  "name_zh": "贵州省",
+  "short_zh": "贵州",
+  "name_en": "Guizhou",
+  "region7": "西南",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "530000",
+  "nbs_code": "530000000000",
+  "level": "province",
+  "name_zh": "云南省",
+  "short_zh": "云南",
+  "name_en": "Yunnan",
+  "region7": "西南",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "540000",
+  "nbs_code": "540000000000",
+  "level": "province",
+  "name_zh": "西藏自治区",
+  "short_zh": "西藏",
+  "name_en": "Tibet (Xizang)",
+  "region7": "西南",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "610000",
+  "nbs_code": "610000000000",
+  "level": "province",
+  "name_zh": "陕西省",
+  "short_zh": "陕西",
+  "name_en": "Shaanxi",
+  "region7": "西北",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "620000",
+  "nbs_code": "620000000000",
+  "level": "province",
+  "name_zh": "甘肃省",
+  "short_zh": "甘肃",
+  "name_en": "Gansu",
+  "region7": "西北",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "630000",
+  "nbs_code": "630000000000",
+  "level": "province",
+  "name_zh": "青海省",
+  "short_zh": "青海",
+  "name_en": "Qinghai",
+  "region7": "西北",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "640000",
+  "nbs_code": "640000000000",
+  "level": "province",
+  "name_zh": "宁夏回族自治区",
+  "short_zh": "宁夏",
+  "name_en": "Ningxia",
+  "region7": "西北",
+  "zone4": "西部"
+ },
+ {
+  "geo_code": "650000",
+  "nbs_code": "650000000000",
+  "level": "province",
+  "name_zh": "新疆维吾尔自治区",
+  "short_zh": "新疆",
+  "name_en": "Xinjiang",
+  "region7": "西北",
+  "zone4": "西部"
+ }
+]

@@ -1,0 +1,48 @@
+
+> app@0.1.0 test:e2e
+> NODE_PATH=$PWD/node_modules playwright test
+
+
+Running 37 tests using 2 workers
+
+  ✓   1 [desktop-1440] › ../tests/e2e/site.spec.ts:7:5 › 01 homepage loads with real stats and findings (448ms)
+  ✓   3 [desktop-1440] › ../tests/e2e/site.spec.ts:17:5 › 02 indicator search finds indicators and provinces (360ms)
+  ✓   2 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:10:7 › Unified acceptance tasks › Task A: Guangdong latest resident population + official source (865ms)
+  ✓   4 [desktop-1440] › ../tests/e2e/site.spec.ts:28:5 › 03 direct URL access + 18 refresh keeps page (585ms)
+  ✓   6 [desktop-1440] › ../tests/e2e/site.spec.ts:38:5 › 04 year switch updates ranking + 08 ranking correctness (640ms)
+  ✓   5 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:24:7 › Unified acceptance tasks › Task B: Jiangsu, Zhejiang, Guangdong population since 2015 (1.7s)
+  ✓   7 [desktop-1440] › ../tests/e2e/site.spec.ts:50:5 › 05 province select in ranking shows detail card (594ms)
+  ✓   9 [desktop-1440] › ../tests/e2e/site.spec.ts:57:5 › 06 region filter restricts ranking (392ms)
+  ✓   8 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:38:7 › Unified acceptance tasks › Task C: 2020 65+ share ranking, census caliber (524ms)
+  ✓  10 [desktop-1440] › ../tests/e2e/site.spec.ts:63:5 › 07 multi-province trend comparison (385ms)
+  ✓  11 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:53:7 › Unified acceptance tasks › Task D: latest provincial GDP per capita, current prices (388ms)
+  ✓  12 [desktop-1440] › ../tests/e2e/site.spec.ts:73:5 › 09 chart table equals source data (518ms)
+  ✓  13 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:63:7 › Unified acceptance tasks › Task E: Shandong, Henan, Guangdong disposable income (1.3s)
+  ✓  15 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:80:7 › Unified acceptance tasks › Task F: physicians per 1000 ranking (407ms)
+  ✓  14 [desktop-1440] › ../tests/e2e/site.spec.ts:83:5 › 10 CSV download equals filtered table (3.5s)
+  ✓  17 [desktop-1440] › ../tests/e2e/site.spec.ts:102:5 › 11 no-data state for a year without provincial data (364ms)
+  ✓  18 [desktop-1440] › ../tests/e2e/site.spec.ts:109:5 › 12 negative values and tie ranks (690ms)
+  ✓  19 [desktop-1440] › ../tests/e2e/site.spec.ts:129:5 › 13 source links and source dialog (462ms)
+  ✓  16 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:90:7 › Unified acceptance tasks › Task G: download filtered CSV and compare with page (7.3s)
+  ✓  21 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:111:7 › Unified acceptance tasks › Task I: year without data shows no fabricated values (417ms)
+  ✓  22 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:124:7 › Unified acceptance tasks › Task J: trace a value to the official table (416ms)
+  -  23 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:136:5 › Task H: mobile search, year switch, source view @mobile
+  ✓  20 [desktop-1440] › ../tests/e2e/site.spec.ts:139:5 › 14 no console errors on key pages (4.9s)
+  ✓  24 [tablet-768] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout homepage (810ms)
+  ✓  25 [desktop-1440] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout homepage (896ms)
+  ✓  27 [desktop-1440] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout indicator (871ms)
+  ✓  26 [tablet-768] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout indicator (1.3s)
+  ✓  28 [desktop-1440] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout data-explorer (755ms)
+  ✓  30 [desktop-1440] › ../tests/e2e/site.spec.ts:159:5 › 17 keyboard: search via keyboard and skip link (330ms)
+  ✓  29 [tablet-768] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout data-explorer (838ms)
+  ✓  31 [desktop-1440] › ../tests/e2e/site.spec.ts:171:5 › 19 static assets reachable (457ms)
+PERF {"dcl":117.10000014305115,"load":172.70000004768372,"bytes":367861}
+  ✓  33 [desktop-1440] › ../tests/e2e/site.spec.ts:180:5 › 20 basic performance (239ms)
+  ✓  34 [desktop-1440] › ../tests/e2e/site.spec.ts:187:5 › SEO: indicator pages have title, description, canonical, h1 and server-rendered text (47ms)
+  ✓  32 [mobile-390] › ../tests/e2e/acceptance.spec.ts:136:5 › Task H: mobile search, year switch, source view @mobile (1.1s)
+  ✓  35 [mobile-390] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout homepage (1.0s)
+  ✓  36 [mobile-390] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout indicator (1.3s)
+  ✓  37 [mobile-390] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout data-explorer (1.0s)
+
+  1 skipped
+  36 passed (21.9s)

@@ -1,0 +1,1340 @@
+{
+ "methodology_version": "2.0.0",
+ "roots": {
+  "province": "c4d82af16c3d4f0cb4f09d4af7d5888e",
+  "national": "NATIONAL_ROOT"
+ },
+ "indicators": [
+  {
+   "id": "population",
+   "core": true,
+   "category": "population",
+   "name_zh": "年末常住人口",
+   "name_en": "Year-end resident population",
+   "unit": "万人",
+   "unit_en": "10k persons",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "每年12月31日24时的常住人口数（非户籍人口）。",
+   "official_name_zh": "年末常住人口",
+   "province": {
+    "cid": "755d5f6efbcf41a6a411ad819aa93c17",
+    "ids": {
+     "v": "4810ad6e9ddc41fc804a66134afe587f"
+    },
+    "formula": "v",
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 人口 > 总人口 > 年末常住人口"
+   },
+   "national": {
+    "cid": "6331ad868e8b4f55b8e9b6e765609ce1",
+    "ids": {
+     "v": "806083491dbe46a08995783945a30b9d"
+    },
+    "formula": "v",
+    "orig_unit": "万人",
+    "table": "年度数据 > 人口 > 总人口 > 年末总人口"
+   }
+  },
+  {
+   "id": "birth_rate",
+   "core": true,
+   "category": "population",
+   "name_zh": "人口出生率",
+   "name_en": "Crude birth rate",
+   "unit": "‰",
+   "unit_en": "per mille",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "一年内出生人数与同期平均人数之比，以千分率表示（粗出生率）。",
+   "official_name_zh": "人口出生率",
+   "province": {
+    "cid": "05d3864c379f469292a08f7061e59562",
+    "ids": {
+     "v": "9e94affdd1484380b721710ddd17e93e"
+    },
+    "formula": "v",
+    "orig_unit": "‰",
+    "table": "分省年度数据 > 人口 > 人口出生率、死亡率和自然增长率 > 人口出生率"
+   },
+   "national": {
+    "cid": "ffed4267bba24830beea5991d4c9bcfc",
+    "ids": {
+     "v": "3d4006d356d94bdd9d75700b9788e230"
+    },
+    "formula": "v",
+    "orig_unit": "‰",
+    "table": "年度数据 > 人口 > 人口出生率、死亡率和自然增长率 > 人口出生率"
+   }
+  },
+  {
+   "id": "urbanization_rate",
+   "core": true,
+   "category": "population",
+   "name_zh": "常住人口城镇化率",
+   "name_en": "Urbanization rate (resident population)",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "城镇常住人口占年末常住人口的比重（%）。2015—2024年采用《中国统计年鉴2025》表2-6公布的官方比重（人工转录，并用官方城镇人口/总人口逐值校验）；其他年份由国家数据库的城镇人口与年末常住人口计算（因两者以万人取整，小省份可能有±0.2个百分点舍入差异）。",
+   "official_name_zh": "城镇人口比重",
+   "province": {
+    "cid": "755d5f6efbcf41a6a411ad819aa93c17",
+    "ids": {
+     "u": "1cca167b5743463886f3c18e4a4ae934",
+     "t": "4810ad6e9ddc41fc804a66134afe587f"
+    },
+    "formula": "u/t*100",
+    "round": 2,
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 人口 > 总人口 > 城镇人口 / 年末常住人口"
+   },
+   "national": {
+    "cid": "6331ad868e8b4f55b8e9b6e765609ce1",
+    "ids": {
+     "u": "07e1e3444cd34c43b4fd749f060bba5f",
+     "t": "806083491dbe46a08995783945a30b9d"
+    },
+    "formula": "u/t*100",
+    "round": 2,
+    "orig_unit": "万人",
+    "table": "年度数据 > 人口 > 总人口 > 城镇人口 / 年末总人口"
+   }
+  },
+  {
+   "id": "population_65plus",
+   "core": true,
+   "category": "population",
+   "name_zh": "65岁及以上人口占比",
+   "name_en": "Share of population aged 65+",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "65岁及以上人口占总人口比重。省级数据由人口变动抽样调查样本数（普查年份为普查数据）计算；全国数据由年末人口年龄结构计算。",
+   "official_name_zh": "人口年龄构成（65岁及以上）",
+   "province": {
+    "cid": "5a4602c60d764cc6adc7d88d9b512efc",
+    "ids": {
+     "o": "7c25a7d860b7449ea612223ad2d749c0",
+     "t": "cf6fe2ed074745648a1a5114e1e5594c"
+    },
+    "formula": "o/t*100",
+    "round": 2,
+    "orig_unit": "人（抽样调查样本）",
+    "table": "分省年度数据 > 人口 > 人口抽样调查样本数据 > 人口年龄构成和抚养比"
+   },
+   "national": {
+    "cid": "c7743eefda9d44b5ad2ab0b4f29ba969",
+    "ids": {
+     "o": "c2627d8e6b5843bfa3372bacdf858804",
+     "t": "9f39d77c761d4824940fc3c23d8281b0"
+    },
+    "formula": "o/t*100",
+    "round": 2,
+    "orig_unit": "万人",
+    "table": "年度数据 > 人口 > 人口年龄结构和抚养比"
+   }
+  },
+  {
+   "id": "gdp",
+   "core": true,
+   "category": "economy",
+   "name_zh": "地区生产总值（现价）",
+   "name_en": "Gross regional product (current prices)",
+   "unit": "亿元",
+   "unit_en": "100M CNY",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "按当年价格（名义）计算的地区生产总值。全国为国内生产总值。各省加总不等于全国GDP（核算口径差异），本平台不做加总。",
+   "official_name_zh": "地区生产总值",
+   "province": {
+    "cid": "6f8fbd415cbc40ffa7ecb7fd917f2598",
+    "ids": {
+     "v": "aff57de5ee994283974705914fbed246"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 国民经济核算 > 地区生产总值"
+   },
+   "national": {
+    "cid": "f7fd25aaad184414875632cf2327da60",
+    "ids": {
+     "v": "7dc6a2ee6c614960b7059991e0cc4d96"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "年度数据 > 国民经济核算 > 国内生产总值"
+   }
+  },
+  {
+   "id": "gdp_per_capita",
+   "core": true,
+   "category": "economy",
+   "name_zh": "人均地区生产总值（现价）",
+   "name_en": "GRP per capita (current prices)",
+   "unit": "元",
+   "unit_en": "CNY",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "地区生产总值与年平均常住人口之比，按当年价格计算。",
+   "official_name_zh": "人均地区生产总值",
+   "province": {
+    "cid": "6f8fbd415cbc40ffa7ecb7fd917f2598",
+    "ids": {
+     "v": "779b419f7be14d8f823e5e61810a4909"
+    },
+    "formula": "v",
+    "orig_unit": "元/人",
+    "table": "分省年度数据 > 国民经济核算 > 地区生产总值 > 人均地区生产总值"
+   },
+   "national": {
+    "cid": "f7fd25aaad184414875632cf2327da60",
+    "ids": {
+     "v": "eb4d93f19d57495c89f98875e03e01be"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "年度数据 > 国民经济核算 > 国内生产总值 > 人均国内生产总值"
+   }
+  },
+  {
+   "id": "disposable_income",
+   "core": true,
+   "category": "economy",
+   "name_zh": "居民人均可支配收入",
+   "name_en": "Per capita disposable income (all residents)",
+   "unit": "元",
+   "unit_en": "CNY",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "全体居民人均可支配收入（住户收支与生活状况调查，城乡一体化口径，2013年起）。不是消费支出。",
+   "official_name_zh": "全体居民人均可支配收入",
+   "province": {
+    "cid": "5c072e1073514e448de4132760308fcf",
+    "ids": {
+     "v": "bda568266e4c445b867d25626e1f6b8a"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "分省年度数据 > 人民生活 > 居民人均可支配收入"
+   },
+   "national": {
+    "cid": "d153132154a549a78363017ef74ca784",
+    "ids": {
+     "v": "305bba1e881e413b91f32a06a4be65fd"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "年度数据 > 人民生活 > 全国居民人均收入情况"
+   }
+  },
+  {
+   "id": "retail_sales",
+   "core": true,
+   "category": "economy",
+   "name_zh": "社会消费品零售总额",
+   "name_en": "Total retail sales of consumer goods",
+   "unit": "亿元",
+   "unit_en": "100M CNY",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "企业（单位、个体户）直接售给个人、社会集团非生产非经营用的实物商品金额及餐饮收入。",
+   "official_name_zh": "社会消费品零售总额",
+   "province": {
+    "cid": "77cb81a53dd9438ab00f6b4f27196ad9",
+    "ids": {
+     "v": "3512aeee72d74be7b4008817a4dd2d03"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 社会消费品零售总额"
+   },
+   "national": {
+    "cid": "d5b51c4a56d646b3b3f00f2c9e31a217",
+    "ids": {
+     "v": "008350880eb14928acc53fe20b295415"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "年度数据 > 社会消费品零售总额"
+   }
+  },
+  {
+   "id": "higher_education_students",
+   "core": true,
+   "category": "education",
+   "name_zh": "普通高等教育本专科在校生数",
+   "name_en": "Undergraduate & junior-college enrolment (regular HEIs)",
+   "unit": "人",
+   "unit_en": "persons",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "普通（及职业）本科、专科在校学生数，不含研究生、成人本专科和网络本专科。原始单位万人，×10000 转换为人。2021年起官方口径为“普通、职业本专科”（含职业本科）。",
+   "official_name_zh": "普通、职业本专科在校学生数",
+   "province": {
+    "cid": "0d32f3c3fd114f1db7e30d0f3bc1e92d",
+    "ids": {
+     "v": "c5a2f7741d934a1cb5471ef52044f810"
+    },
+    "formula": "v*10000",
+    "round": 0,
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 教育 > 普通、职业高等学校和普通、职业本专科学生情况"
+   },
+   "national": {
+    "cid": "e5d7acf7eccb440b97fbe71f8c719dd9",
+    "ids": {
+     "v": "2bbc1a585ef34f6daaac95d08a7a9243"
+    },
+    "formula": "v*10000",
+    "round": 0,
+    "orig_unit": "万人",
+    "table": "年度数据 > 教育 > 高等学校普通本、专科学校和学生情况"
+   }
+  },
+  {
+   "id": "higher_education_institutions",
+   "core": true,
+   "category": "education",
+   "name_zh": "普通高等学校数量",
+   "name_en": "Number of regular higher education institutions",
+   "unit": "所",
+   "unit_en": "institutions",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "普通（及职业）本科院校与高职（专科）院校数量，不含成人高校和研究生培养科研机构。",
+   "official_name_zh": "普通、职业高等学校数",
+   "province": {
+    "cid": "0d32f3c3fd114f1db7e30d0f3bc1e92d",
+    "ids": {
+     "v": "620087c18a424d959f86e557be1472fe"
+    },
+    "formula": "v",
+    "orig_unit": "所",
+    "table": "分省年度数据 > 教育 > 普通、职业高等学校和普通、职业本专科学生情况"
+   },
+   "national": {
+    "cid": "e5d7acf7eccb440b97fbe71f8c719dd9",
+    "ids": {
+     "v": "75d10f79d11a4183bcc4f3e19ca5188a"
+    },
+    "formula": "v",
+    "orig_unit": "所",
+    "table": "年度数据 > 教育 > 高等学校普通本、专科学校和学生情况"
+   }
+  },
+  {
+   "id": "physicians_per_1000",
+   "core": true,
+   "category": "health",
+   "name_zh": "每千人口执业（助理）医师数",
+   "name_en": "Licensed (assistant) physicians per 1,000 population",
+   "unit": "人/千人",
+   "unit_en": "per 1,000",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "（执业医师+执业助理医师）÷ 年末常住人口 × 1000。由国家统计局发布的执业（助理）医师数（万人）与年末常住人口（万人）计算，口径与《中国统计年鉴》表“每千人口卫生技术人员”一致（分母为常住人口）。",
+   "official_name_zh": "每千人口执业(助理)医师",
+   "province": {
+    "cid": "c990bce9913e47a2b6fc1c6eb596b411",
+    "ids": {
+     "d": "320685cb8c8045b1bd60a261a1dabe12",
+     "t": "755d5f6efbcf41a6a411ad819aa93c17:4810ad6e9ddc41fc804a66134afe587f"
+    },
+    "formula": "d/t*1000",
+    "round": 2,
+    "orig_unit": "万人 / 万人",
+    "table": "分省年度数据 > 卫生 > 卫生人员 > 执业(助理)医师数 ÷ 人口 > 总人口 > 年末常住人口"
+   },
+   "national": {
+    "cid": "27fd1733fe6f4503aae77fb53d42b871",
+    "ids": {
+     "d": "4b21604ce7644da1b9bb38eb044ae1a1",
+     "t": "6331ad868e8b4f55b8e9b6e765609ce1:806083491dbe46a08995783945a30b9d"
+    },
+    "formula": "d/t*1000",
+    "round": 2,
+    "orig_unit": "万人 / 万人",
+    "table": "年度数据 > 卫生 > 卫生人员 > 执业(助理)医师数 ÷ 人口 > 总人口 > 年末总人口"
+   }
+  },
+  {
+   "id": "hospital_beds_per_1000",
+   "core": true,
+   "category": "health",
+   "name_zh": "每千人口医疗卫生机构床位数",
+   "name_en": "Beds in medical & health institutions per 1,000 population",
+   "unit": "张/千人",
+   "unit_en": "per 1,000",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "年末医疗卫生机构床位数/年末常住人口×1000（全部医疗卫生机构，不只是医院）。官方发布每万人口口径，本平台÷10换算。",
+   "official_name_zh": "每万人口医疗卫生机构床位数",
+   "province": {
+    "cid": "abc171a8126647abbc1d8b0c69512b12",
+    "ids": {
+     "v": "393831aacb9c4f428f2acb470d8c86af"
+    },
+    "formula": "v/10",
+    "round": 2,
+    "orig_unit": "张/万人",
+    "table": "分省年度数据 > 卫生 > 每万人口医疗卫生机构床位数"
+   },
+   "national": {
+    "cid": "f21d69e386a8494889d506d07614e5c7",
+    "ids": {
+     "v": "0d532653fd904bbcaafee9a6b00af195"
+    },
+    "formula": "v/10",
+    "round": 2,
+    "orig_unit": "张/万人",
+    "table": "年度数据 > 卫生 > 每万人口医疗卫生机构床位"
+   }
+  },
+  {
+   "id": "death_rate",
+   "core": false,
+   "category": "population",
+   "name_zh": "人口死亡率（扩展）",
+   "name_en": "Crude death rate (extension)",
+   "unit": "‰",
+   "unit_en": "per mille",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "扩展指标，不计入12个基准指标。一年内死亡人数与同期平均人数之比。",
+   "official_name_zh": "人口死亡率",
+   "province": {
+    "cid": "05d3864c379f469292a08f7061e59562",
+    "ids": {
+     "v": "1efd92374d9043a491b4d30bf9f3678f"
+    },
+    "formula": "v",
+    "orig_unit": "‰",
+    "table": "分省年度数据 > 人口 > 人口出生率、死亡率和自然增长率 > 人口死亡率"
+   },
+   "national": {
+    "cid": "ffed4267bba24830beea5991d4c9bcfc",
+    "ids": {
+     "v": "ee4b8be1ad68498e81d9ecddf4d4f2de"
+    },
+    "formula": "v",
+    "orig_unit": "‰",
+    "table": "年度数据 > 人口 > 人口出生率、死亡率和自然增长率 > 人口死亡率"
+   }
+  },
+  {
+   "id": "natural_growth_rate",
+   "core": false,
+   "category": "population",
+   "name_zh": "人口自然增长率（扩展）",
+   "name_en": "Natural population growth rate (extension)",
+   "unit": "‰",
+   "unit_en": "per mille",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "扩展指标，不计入12个基准指标。出生率减死亡率。可为负值。",
+   "official_name_zh": "人口自然增长率",
+   "province": {
+    "cid": "05d3864c379f469292a08f7061e59562",
+    "ids": {
+     "v": "85cd7d1210294d3d9350f7dc5d7f65b6"
+    },
+    "formula": "v",
+    "orig_unit": "‰",
+    "table": "分省年度数据 > 人口 > 人口出生率、死亡率和自然增长率 > 人口自然增长率"
+   },
+   "national": {
+    "cid": "ffed4267bba24830beea5991d4c9bcfc",
+    "ids": {
+     "v": "3969129b26a846968a7dddff5f326f55"
+    },
+    "formula": "v",
+    "orig_unit": "‰",
+    "table": "年度数据 > 人口 > 人口出生率、死亡率和自然增长率 > 人口自然增长率"
+   }
+  },
+  {
+   "id": "urban_population",
+   "core": false,
+   "category": "population",
+   "name_zh": "城镇人口",
+   "name_en": "Urban resident population",
+   "unit": "万人",
+   "unit_en": "万人",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "年末城镇常住人口。",
+   "official_name_zh": "城镇人口",
+   "province": {
+    "cid": "755d5f6efbcf41a6a411ad819aa93c17",
+    "ids": {
+     "v": "1cca167b5743463886f3c18e4a4ae934"
+    },
+    "formula": "v",
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 人口 > 总人口 > 城镇人口"
+   },
+   "national": {
+    "cid": "6331ad868e8b4f55b8e9b6e765609ce1",
+    "ids": {
+     "v": "07e1e3444cd34c43b4fd749f060bba5f"
+    },
+    "formula": "v",
+    "orig_unit": "万人",
+    "table": "年度数据 > 人口 > 总人口 > 城镇人口"
+   }
+  },
+  {
+   "id": "rural_population",
+   "core": false,
+   "category": "population",
+   "name_zh": "乡村人口",
+   "name_en": "Rural resident population",
+   "unit": "万人",
+   "unit_en": "万人",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "年末乡村常住人口。",
+   "official_name_zh": "乡村人口",
+   "province": {
+    "cid": "755d5f6efbcf41a6a411ad819aa93c17",
+    "ids": {
+     "v": "019c928598b44bb7a5fb52d8a9485175"
+    },
+    "formula": "v",
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 人口 > 总人口 > 乡村人口"
+   },
+   "national": {
+    "cid": "6331ad868e8b4f55b8e9b6e765609ce1",
+    "ids": {
+     "v": "2dd9894936d448fcb88605863d90d85c"
+    },
+    "formula": "v",
+    "orig_unit": "万人",
+    "table": "年度数据 > 人口 > 总人口 > 乡村人口"
+   }
+  },
+  {
+   "id": "population_0_14",
+   "core": false,
+   "category": "population",
+   "name_zh": "0—14岁人口占比",
+   "name_en": "Share of population aged 0–14",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "省级为人口变动抽样调查样本计算；全国为年末人口年龄结构。",
+   "official_name_zh": "0—14岁人口占比",
+   "province": {
+    "cid": "5a4602c60d764cc6adc7d88d9b512efc",
+    "ids": {
+     "o": "c5ef6db9cb894f8f8402e0d0bccee615",
+     "t": "cf6fe2ed074745648a1a5114e1e5594c"
+    },
+    "formula": "o/t*100",
+    "orig_unit": "人（样本）",
+    "table": "分省年度数据 > 人口抽样调查 > 人口年龄构成和抚养比",
+    "round": 2
+   },
+   "national": {
+    "cid": "c7743eefda9d44b5ad2ab0b4f29ba969",
+    "ids": {
+     "o": "067f5f3ec585402e9f31037e5f27eb17",
+     "t": "9f39d77c761d4824940fc3c23d8281b0"
+    },
+    "formula": "o/t*100",
+    "orig_unit": "万人",
+    "table": "年度数据 > 人口 > 人口年龄结构和抚养比",
+    "round": 2
+   }
+  },
+  {
+   "id": "population_15_64",
+   "core": false,
+   "category": "population",
+   "name_zh": "15—64岁人口占比",
+   "name_en": "Share of population aged 15–64",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "劳动年龄人口比重。省级为抽样调查样本计算。",
+   "official_name_zh": "15—64岁人口占比",
+   "province": {
+    "cid": "5a4602c60d764cc6adc7d88d9b512efc",
+    "ids": {
+     "o": "0ba22c830b97417eb524c44473738dce",
+     "t": "cf6fe2ed074745648a1a5114e1e5594c"
+    },
+    "formula": "o/t*100",
+    "orig_unit": "人（样本）",
+    "table": "分省年度数据 > 人口抽样调查 > 人口年龄构成和抚养比",
+    "round": 2
+   },
+   "national": {
+    "cid": "c7743eefda9d44b5ad2ab0b4f29ba969",
+    "ids": {
+     "o": "a6051fc22d394d81b2007dc7c7c761fa",
+     "t": "9f39d77c761d4824940fc3c23d8281b0"
+    },
+    "formula": "o/t*100",
+    "orig_unit": "万人",
+    "table": "年度数据 > 人口 > 人口年龄结构和抚养比",
+    "round": 2
+   }
+  },
+  {
+   "id": "old_age_dependency",
+   "core": false,
+   "category": "population",
+   "name_zh": "老年人口抚养比",
+   "name_en": "Old-age dependency ratio",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "65岁及以上人口与15—64岁人口之比（官方直接发布）。",
+   "official_name_zh": "老年人口抚养比",
+   "province": {
+    "cid": "5a4602c60d764cc6adc7d88d9b512efc",
+    "ids": {
+     "v": "d65bc0f04b2e4f3aac70a02c33ce7e56"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "分省年度数据 > 人口抽样调查 > 人口年龄构成和抚养比 > 老年人口抚养比"
+   },
+   "national": {
+    "cid": "c7743eefda9d44b5ad2ab0b4f29ba969",
+    "ids": {
+     "v": "9d77e24ce8c94679937b07188f4e7fbc"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "年度数据 > 人口 > 人口年龄结构和抚养比 > 老年抚养比"
+   }
+  },
+  {
+   "id": "primary_industry_va",
+   "core": false,
+   "category": "economy",
+   "name_zh": "第一产业增加值",
+   "name_en": "Primary industry value added",
+   "unit": "亿元",
+   "unit_en": "亿元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "现价。",
+   "official_name_zh": "第一产业增加值",
+   "province": {
+    "cid": "6f8fbd415cbc40ffa7ecb7fd917f2598",
+    "ids": {
+     "v": "615ce248396a4a5fa52bca05f0633e95"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 国民经济核算 > 地区生产总值 > 第一产业增加值"
+   },
+   "national": {
+    "cid": "f7fd25aaad184414875632cf2327da60",
+    "ids": {
+     "v": "fb00df5cde1c41509e681eff1c10f387"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "年度数据 > 国民经济核算 > 国内生产总值 > 第一产业增加值"
+   }
+  },
+  {
+   "id": "secondary_industry_va",
+   "core": false,
+   "category": "economy",
+   "name_zh": "第二产业增加值",
+   "name_en": "Secondary industry value added",
+   "unit": "亿元",
+   "unit_en": "亿元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "现价。",
+   "official_name_zh": "第二产业增加值",
+   "province": {
+    "cid": "6f8fbd415cbc40ffa7ecb7fd917f2598",
+    "ids": {
+     "v": "b8e109ec8d3f465fa39a0de909f730b3"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 国民经济核算 > 地区生产总值 > 第二产业增加值"
+   },
+   "national": {
+    "cid": "f7fd25aaad184414875632cf2327da60",
+    "ids": {
+     "v": "95f6ceb2e6d147da83c3c5ad6a2e8bde"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "年度数据 > 国民经济核算 > 国内生产总值 > 第二产业增加值"
+   }
+  },
+  {
+   "id": "tertiary_industry_va",
+   "core": false,
+   "category": "economy",
+   "name_zh": "第三产业增加值",
+   "name_en": "Tertiary industry value added",
+   "unit": "亿元",
+   "unit_en": "亿元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "现价。",
+   "official_name_zh": "第三产业增加值",
+   "province": {
+    "cid": "6f8fbd415cbc40ffa7ecb7fd917f2598",
+    "ids": {
+     "v": "b6ede904e72c41bba796c98d185e62c5"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 国民经济核算 > 地区生产总值 > 第三产业增加值"
+   },
+   "national": {
+    "cid": "f7fd25aaad184414875632cf2327da60",
+    "ids": {
+     "v": "30966f1491de4744b6e21b76867e983f"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "年度数据 > 国民经济核算 > 国内生产总值 > 第三产业增加值"
+   }
+  },
+  {
+   "id": "tertiary_share",
+   "core": false,
+   "category": "economy",
+   "name_zh": "第三产业占GDP比重",
+   "name_en": "Tertiary industry share of GDP",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "第三产业增加值 ÷ 地区生产总值 × 100（衍生，同一官方表内计算）。",
+   "official_name_zh": "第三产业占GDP比重",
+   "province": {
+    "cid": "6f8fbd415cbc40ffa7ecb7fd917f2598",
+    "ids": {
+     "t": "b6ede904e72c41bba796c98d185e62c5",
+     "g": "aff57de5ee994283974705914fbed246"
+    },
+    "formula": "t/g*100",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 国民经济核算 > 地区生产总值",
+    "round": 2
+   },
+   "national": {
+    "cid": "f7fd25aaad184414875632cf2327da60",
+    "ids": {
+     "t": "30966f1491de4744b6e21b76867e983f",
+     "g": "7dc6a2ee6c614960b7059991e0cc4d96"
+    },
+    "formula": "t/g*100",
+    "orig_unit": "亿元",
+    "table": "年度数据 > 国民经济核算 > 国内生产总值",
+    "round": 2
+   }
+  },
+  {
+   "id": "consumption_expenditure_per_capita",
+   "core": false,
+   "category": "economy",
+   "name_zh": "居民人均消费支出",
+   "name_en": "Per capita consumption expenditure",
+   "unit": "元",
+   "unit_en": "元",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "全体居民人均消费支出（住户调查，2013年起）。不是可支配收入。",
+   "official_name_zh": "居民人均消费支出",
+   "province": {
+    "cid": "7dbebcca62794c4da2b9ef9813d14564",
+    "ids": {
+     "v": "462f6c41041b4721b78e50397b358af8"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "分省年度数据 > 人民生活 > 居民人均消费支出"
+   },
+   "national": {
+    "cid": "47e188eb48a840e4b7ee00c1d30a4792",
+    "ids": {
+     "v": "aae3499756ee4863a472d1bbf191b471"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "年度数据 > 人民生活 > 全国居民人均支出情况"
+   }
+  },
+  {
+   "id": "urban_disposable_income",
+   "core": false,
+   "category": "economy",
+   "name_zh": "城镇居民人均可支配收入",
+   "name_en": "Urban per capita disposable income",
+   "unit": "元",
+   "unit_en": "元",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "住户调查。",
+   "official_name_zh": "城镇居民人均可支配收入",
+   "province": {
+    "cid": "5c072e1073514e448de4132760308fcf",
+    "ids": {
+     "v": "dd28563a8af84935bc8a010abf8b772c"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "分省年度数据 > 人民生活 > 居民人均可支配收入 > 城镇"
+   },
+   "national": {
+    "cid": "d310e3ead14b403d9d10d29391713783",
+    "ids": {
+     "v": "c0908d6012a840dca82d2b362f7e2d69"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "年度数据 > 人民生活 > 城镇居民人均收入情况"
+   }
+  },
+  {
+   "id": "rural_disposable_income",
+   "core": false,
+   "category": "economy",
+   "name_zh": "农村居民人均可支配收入",
+   "name_en": "Rural per capita disposable income",
+   "unit": "元",
+   "unit_en": "元",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "住户调查。",
+   "official_name_zh": "农村居民人均可支配收入",
+   "province": {
+    "cid": "5c072e1073514e448de4132760308fcf",
+    "ids": {
+     "v": "5b21e9a08bf74a5c8ba184eb9e9cc195"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "分省年度数据 > 人民生活 > 居民人均可支配收入 > 农村"
+   },
+   "national": {
+    "cid": "7bd16d8e47ee44109280d7e8ce4cafe9",
+    "ids": {
+     "v": "b5040ecf88fd469591909ee04df59147"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "年度数据 > 人民生活 > 农村居民人均收入情况"
+   }
+  },
+  {
+   "id": "urban_rural_income_ratio",
+   "core": false,
+   "category": "economy",
+   "name_zh": "城乡居民收入比",
+   "name_en": "Urban–rural income ratio",
+   "unit": "倍",
+   "unit_en": "倍",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "城镇居民人均可支配收入 ÷ 农村居民人均可支配收入（衍生）。",
+   "official_name_zh": "城乡居民收入比",
+   "province": {
+    "cid": "5c072e1073514e448de4132760308fcf",
+    "ids": {
+     "u": "dd28563a8af84935bc8a010abf8b772c",
+     "r": "5b21e9a08bf74a5c8ba184eb9e9cc195"
+    },
+    "formula": "u/r",
+    "orig_unit": "元",
+    "table": "分省年度数据 > 人民生活 > 居民人均可支配收入",
+    "round": 2
+   },
+   "national": {
+    "cid": "d310e3ead14b403d9d10d29391713783",
+    "ids": {
+     "u": "c0908d6012a840dca82d2b362f7e2d69",
+     "r": "7bd16d8e47ee44109280d7e8ce4cafe9:b5040ecf88fd469591909ee04df59147"
+    },
+    "formula": "u/r",
+    "orig_unit": "元",
+    "table": "年度数据 > 人民生活 > 城镇/农村居民人均收入情况",
+    "round": 2
+   }
+  },
+  {
+   "id": "local_budget_revenue",
+   "core": false,
+   "category": "economy",
+   "name_zh": "地方一般公共预算收入",
+   "name_en": "Local general public budget revenue",
+   "unit": "亿元",
+   "unit_en": "亿元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "地方财政一般公共预算收入（不含中央）。全国值不提供（全国口径含中央，不可与省级比较）。",
+   "official_name_zh": "地方一般公共预算收入",
+   "province": {
+    "cid": "bcd3d7159957431b8f3f5b7d10bdeceb",
+    "ids": {
+     "v": "c8dafa31105e4b93850f3820cdd4eae8"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 财政 > 地方财政收入"
+   },
+   "national": null
+  },
+  {
+   "id": "local_budget_expenditure",
+   "core": false,
+   "category": "economy",
+   "name_zh": "地方一般公共预算支出",
+   "name_en": "Local general public budget expenditure",
+   "unit": "亿元",
+   "unit_en": "亿元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "地方财政一般公共预算支出。全国值为地方合计（不含中央本级）。",
+   "official_name_zh": "地方一般公共预算支出",
+   "province": {
+    "cid": "f38245648b504602b851e27257f09d9b",
+    "ids": {
+     "v": "1bc776bc77b44671a8f332fa80587fe2"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 财政 > 地方财政支出"
+   },
+   "national": {
+    "cid": "59daf43d52774f2b81e3a06509d8b977",
+    "ids": {
+     "v": "42c519a0f77741d2a26fdbe4bc96f3ef"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "年度数据 > 财政 > 中央和地方一般公共预算支出 > 地方"
+   }
+  },
+  {
+   "id": "high_school_students",
+   "core": false,
+   "category": "education",
+   "name_zh": "普通高中在校生",
+   "name_en": "Regular senior secondary students",
+   "unit": "人",
+   "unit_en": "人",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "原始单位万人×10000。",
+   "official_name_zh": "普通高中在校生",
+   "province": {
+    "cid": "8344b89313de4af1b4611e192fe51883",
+    "ids": {
+     "v": "5bf3ed00a9e843ff94480abcf6a51b81"
+    },
+    "formula": "v*10000",
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 教育 > 普通高中基本情况",
+    "round": 0
+   },
+   "national": {
+    "cid": "66fa7dc25039460d94af99d177bbc512",
+    "ids": {
+     "v": "435724d8a2ec4d3981579cb4394fca71"
+    },
+    "formula": "v*10000",
+    "orig_unit": "万人",
+    "table": "年度数据 > 教育 > 各级各类学校在校学生数",
+    "round": 0
+   }
+  },
+  {
+   "id": "junior_secondary_students",
+   "core": false,
+   "category": "education",
+   "name_zh": "初中在校生",
+   "name_en": "Junior secondary students",
+   "unit": "人",
+   "unit_en": "人",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "原始单位万人×10000。",
+   "official_name_zh": "初中在校生",
+   "province": {
+    "cid": "607e4b78f87d4fcaae1ed5f8a1c4cc11",
+    "ids": {
+     "v": "0c4d1e6c34df4c998288382fbdfea9b7"
+    },
+    "formula": "v*10000",
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 教育 > 初中基本情况",
+    "round": 0
+   },
+   "national": {
+    "cid": "66fa7dc25039460d94af99d177bbc512",
+    "ids": {
+     "v": "866a14e6f0ac4a9fb2dabeb1deed4aac"
+    },
+    "formula": "v*10000",
+    "orig_unit": "万人",
+    "table": "年度数据 > 教育 > 各级各类学校在校学生数",
+    "round": 0
+   }
+  },
+  {
+   "id": "primary_students",
+   "core": false,
+   "category": "education",
+   "name_zh": "小学在校生",
+   "name_en": "Primary school students",
+   "unit": "人",
+   "unit_en": "人",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "原始单位万人×10000。",
+   "official_name_zh": "小学在校生",
+   "province": {
+    "cid": "8194ce2ed2944974893b1708d206f927",
+    "ids": {
+     "v": "1d27d01ecebc440897aaaf88099d4141"
+    },
+    "formula": "v*10000",
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 教育 > 普通小学基本情况",
+    "round": 0
+   },
+   "national": {
+    "cid": "66fa7dc25039460d94af99d177bbc512",
+    "ids": {
+     "v": "6efce354b6124370b15470a9c1fdb6f5"
+    },
+    "formula": "v*10000",
+    "orig_unit": "万人",
+    "table": "年度数据 > 教育 > 各级各类学校在校学生数",
+    "round": 0
+   }
+  },
+  {
+   "id": "graduate_students",
+   "core": false,
+   "category": "education",
+   "name_zh": "在学研究生（全国）",
+   "name_en": "Postgraduate students (national only)",
+   "unit": "人",
+   "unit_en": "人",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "研究生在学人数。与“普通、职业本专科在校生”统计范围不重叠，但分省数据库未发布，因此只有全国值，不生成广义合计。",
+   "official_name_zh": "在学研究生（全国）",
+   "province": null,
+   "national": {
+    "cid": "cef6d2b06ca846d3bc097bef83bbbf6e",
+    "ids": {
+     "v": "d7c3a09928354b1d8d8b5002de8ddc0c"
+    },
+    "formula": "v*10000",
+    "orig_unit": "万人",
+    "table": "年度数据 > 教育 > 研究生和留学生数",
+    "round": 0
+   }
+  },
+  {
+   "id": "health_institutions",
+   "core": false,
+   "category": "health",
+   "name_zh": "医疗卫生机构数",
+   "name_en": "Medical and health institutions",
+   "unit": "个",
+   "unit_en": "个",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "含医院、基层医疗卫生机构（含村卫生室）、专业公共卫生机构等。",
+   "official_name_zh": "医疗卫生机构数",
+   "province": {
+    "cid": "6daeacc4807842718422ab8171525946",
+    "ids": {
+     "v": "e2be9010acfe49549f1bf081458905a9"
+    },
+    "formula": "v",
+    "orig_unit": "个",
+    "table": "分省年度数据 > 卫生 > 医疗卫生机构"
+   },
+   "national": {
+    "cid": "e4a03f31f25c4d20823b6c2aec862df2",
+    "ids": {
+     "v": "ecc1c2212e8a4beaa36f503cd602ceea"
+    },
+    "formula": "v",
+    "orig_unit": "个",
+    "table": "年度数据 > 卫生 > 医疗卫生机构"
+   }
+  },
+  {
+   "id": "physicians_count",
+   "core": false,
+   "category": "health",
+   "name_zh": "执业（助理）医师数",
+   "name_en": "Licensed (assistant) physicians",
+   "unit": "人",
+   "unit_en": "人",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "原始单位万人×10000。",
+   "official_name_zh": "执业（助理）医师数",
+   "province": {
+    "cid": "c990bce9913e47a2b6fc1c6eb596b411",
+    "ids": {
+     "v": "320685cb8c8045b1bd60a261a1dabe12"
+    },
+    "formula": "v*10000",
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 卫生 > 卫生人员",
+    "round": 0
+   },
+   "national": {
+    "cid": "27fd1733fe6f4503aae77fb53d42b871",
+    "ids": {
+     "v": "4b21604ce7644da1b9bb38eb044ae1a1"
+    },
+    "formula": "v*10000",
+    "orig_unit": "万人",
+    "table": "年度数据 > 卫生 > 卫生人员",
+    "round": 0
+   }
+  },
+  {
+   "id": "nurses_per_1000",
+   "core": false,
+   "category": "health",
+   "name_zh": "每千人口注册护士数",
+   "name_en": "Registered nurses per 1,000 population",
+   "unit": "人/千人",
+   "unit_en": "人/千人",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "注册护士数 ÷ 年末常住人口 × 1000（衍生）。",
+   "official_name_zh": "每千人口注册护士数",
+   "province": {
+    "cid": "c990bce9913e47a2b6fc1c6eb596b411",
+    "ids": {
+     "d": "a06a5cf86355406088309d261fc33e03",
+     "t": "755d5f6efbcf41a6a411ad819aa93c17:4810ad6e9ddc41fc804a66134afe587f"
+    },
+    "formula": "d/t*1000",
+    "orig_unit": "万人 / 万人",
+    "table": "分省年度数据 > 卫生 > 卫生人员 > 注册护士数 ÷ 年末常住人口",
+    "round": 2
+   },
+   "national": {
+    "cid": "27fd1733fe6f4503aae77fb53d42b871",
+    "ids": {
+     "d": "a59eb49cd8204ce7b18cca711737a0fa",
+     "t": "6331ad868e8b4f55b8e9b6e765609ce1:806083491dbe46a08995783945a30b9d"
+    },
+    "formula": "d/t*1000",
+    "orig_unit": "万人 / 万人",
+    "table": "年度数据 > 卫生 > 卫生人员 > 注册护士数 ÷ 年末总人口",
+    "round": 2
+   }
+  },
+  {
+   "id": "hospital_beds_total",
+   "core": false,
+   "category": "health",
+   "name_zh": "医疗卫生机构床位数",
+   "name_en": "Beds in medical & health institutions",
+   "unit": "万张",
+   "unit_en": "万张",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "年末实有床位。",
+   "official_name_zh": "医疗卫生机构床位数",
+   "province": {
+    "cid": "5a83b0cc3d634774920fa41d656c478e",
+    "ids": {
+     "v": "3b50b8cc0fe64e2fb3b91e344d2388d6"
+    },
+    "formula": "v",
+    "orig_unit": "万张",
+    "table": "分省年度数据 > 卫生 > 医疗卫生机构床位"
+   },
+   "national": {
+    "cid": "5eeed2da1ee748a1a035d3a6608ece67",
+    "ids": {
+     "v": "bb0d2ff0b33441bbbf023b15803db641"
+    },
+    "formula": "v",
+    "orig_unit": "万张",
+    "table": "年度数据 > 卫生 > 医疗卫生机构床位"
+   }
+  },
+  {
+   "id": "hospital_bed_occupancy",
+   "core": false,
+   "category": "health",
+   "name_zh": "医院病床使用率",
+   "name_en": "Hospital bed occupancy rate",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "仅医院（不含基层机构）。",
+   "official_name_zh": "医院病床使用率",
+   "province": {
+    "cid": "f38b5b3f3c6c44d99ab1df89c6774645",
+    "ids": {
+     "v": "af63a3e8d78f45c6b8e587ec0529e778"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "分省年度数据 > 卫生 > 医院床位利用情况"
+   },
+   "national": {
+    "cid": "b7ff054466ac4c018b907ffde5d96eaf",
+    "ids": {
+     "v": "dd4d569d37e0481cb15fb4e1773e3516"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "年度数据 > 卫生 > 医院床位利用情况"
+   }
+  },
+  {
+   "id": "outpatient_visits",
+   "core": false,
+   "category": "health",
+   "name_zh": "医疗卫生机构诊疗人次",
+   "name_en": "Outpatient visits (all institutions)",
+   "unit": "亿人次",
+   "unit_en": "亿人次",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "",
+   "official_name_zh": "医疗卫生机构诊疗人次",
+   "province": {
+    "cid": "ef417d2730984082b516c5a5bec5e26e",
+    "ids": {
+     "v": "3cbeeef863eb4d42b3f473e40780ff44"
+    },
+    "formula": "v",
+    "orig_unit": "亿人次",
+    "table": "分省年度数据 > 卫生 > 医疗卫生机构门诊服务情况"
+   },
+   "national": {
+    "cid": "b791d289b19c4088acf02ae8a3e52155",
+    "ids": {
+     "v": "e90260e179fe4d37b93d5150b9601bd4"
+    },
+    "formula": "v",
+    "orig_unit": "亿人次",
+    "table": "年度数据 > 卫生 > 医疗卫生机构门诊服务情况"
+   }
+  },
+  {
+   "id": "water_use_per_capita",
+   "core": false,
+   "category": "environment",
+   "name_zh": "人均用水量",
+   "name_en": "Water use per capita",
+   "unit": "立方米/人",
+   "unit_en": "立方米/人",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "",
+   "official_name_zh": "人均用水量",
+   "province": {
+    "cid": "2db75166e3784b429f3e1911960854f0",
+    "ids": {
+     "v": "a945bb984a3f4394950d31cc04de0f87"
+    },
+    "formula": "v",
+    "orig_unit": "立方米/人",
+    "table": "分省年度数据 > 资源和环境 > 供水用水情况"
+   },
+   "national": {
+    "cid": "a425cb901c8d4979b87cabbd8a71af48",
+    "ids": {
+     "v": "ddf8414f63f240468c5e57442a750b09"
+    },
+    "formula": "v",
+    "orig_unit": "立方米/人",
+    "table": "年度数据 > 资源和环境 > 供水用水情况"
+   }
+  },
+  {
+   "id": "forest_coverage",
+   "core": false,
+   "category": "environment",
+   "name_zh": "森林覆盖率",
+   "name_en": "Forest coverage rate",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "来自全国森林资源清查，按清查期发布，非逐年观测；数据库中重复年份沿用同一清查结果。",
+   "official_name_zh": "森林覆盖率",
+   "province": {
+    "cid": "1f8851c9c718459d8040e7cae3b70f14",
+    "ids": {
+     "v": "37572106fcdb49909789b122f9c08d94"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "分省年度数据 > 资源和环境 > 森林资源"
+   },
+   "national": {
+    "cid": "b4405904ff764bf0a4f49abef03a968c",
+    "ids": {
+     "v": "1d520d4e58254f61917e152923cd53ce"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "年度数据 > 资源和环境 > 森林资源"
+   }
+  },
+  {
+   "id": "highway_mileage",
+   "core": false,
+   "category": "environment",
+   "name_zh": "公路里程",
+   "name_en": "Highway mileage",
+   "unit": "万公里",
+   "unit_en": "万公里",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "",
+   "official_name_zh": "公路里程",
+   "province": {
+    "cid": "d180695e985243c994eef6a7c3e58090",
+    "ids": {
+     "v": "e56b0012f8c94a00bc16b040310561b0"
+    },
+    "formula": "v",
+    "orig_unit": "万公里",
+    "table": "分省年度数据 > 运输和邮电 > 运输线路长度"
+   },
+   "national": {
+    "cid": "69120b43489c4447854edaef32de4894",
+    "ids": {
+     "v": "67f763444a9848e5a892c68570a6a45d"
+    },
+    "formula": "v",
+    "orig_unit": "万公里",
+    "table": "年度数据 > 运输和邮电 > 运输线路长度"
+   }
+  }
+ ]
+}
