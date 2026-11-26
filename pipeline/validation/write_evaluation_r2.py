@@ -46,7 +46,7 @@ ev = {
  "mainland_access_status": "not verified (no mainland network available)", "wechat_browser_status": "not verified (no WeChat client available; Chromium mobile emulation only)",
  "redistribution_status": "official statistics published with attribution — pending formal review; yearbook images, page copies and other models' files not redistributed",
  "deployment_status": "deployed: new independent Vercel project china-data-atlas-claude-opus-5-5-r2 (first CLI deploy = that project's production; preview deployments login-protected); R1 untouched",
- "github_url": "https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2 (private)", "pull_request_url": "https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2/pull/1",
+ "github_url": "https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2 (public)", "pull_request_url": "https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2/pull/1",
  "preview_url": "https://china-data-atlas-claude-opus-5-5-r2.vercel.app", "drive_folder_url": "https://drive.google.com/drive/folders/19yZxGJE3--18ychQ3_FbjKxq6imAgjiz",
  "known_limitations": ["Grok R1 dataset not importable (21.4 MB ZIP > 10 MB connector limit)", "No geographic map (compliance unverified; Tianditu/MNR sites unreachable from environment)",
    "Latest complete provincial year 2024 for most indicators (2025 for population, GDP, GDP pc, income, retail, consumption)", "Graduate students national-only (no provincial series in NBS database)",

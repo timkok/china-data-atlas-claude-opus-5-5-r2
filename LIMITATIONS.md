@@ -20,4 +20,4 @@
 
 ## Process / delivery
 - First Vercel CLI deploy of the new project became that project's production (no existing deployment touched). Preview deployments are login-protected.
-- R2 GitHub repo is private (data-rights review pending). Other models' R1 files are not redistributed (hashes + Drive IDs only).
+- R2 GitHub repo was made public at the user's request (2026-11-26); data-rights status of the NBS statistics remains pending formal review. Other models' R1 files are not redistributed (hashes + Drive IDs only).

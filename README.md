@@ -3,7 +3,7 @@
 Cross-model audit of 8 Round 1 datasets, an independent **canonical candidate** database (30,418 official observations, 42 indicators, E0–E4 evidence levels, data vintages), and an upgraded research product.
 
 - Site: https://china-data-atlas-claude-opus-5-5-r2.vercel.app
-- Repo (private): https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2
+- Repo (public): https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2
 - Reports: [DELIVERY_REPORT.md](DELIVERY_REPORT.md) · [R1_VS_R2.md](R1_VS_R2.md) · [audit/cross_model_audit.md](audit/cross_model_audit.md) · [LIMITATIONS.md](LIMITATIONS.md)
 
 ## Key files
