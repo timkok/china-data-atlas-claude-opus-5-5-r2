@@ -1,0 +1,10 @@
+model,strengths,main_issues,reusable_data_engineering,reusable_product_feature,statistical_risk
+Grok Bot,"large NBS-database extraction, 15 indicators, honest verified/partially split (self-report)",dataset not importable here (ZIP size); no deployment,verification labelling discipline,n/a (not inspected),medium (unverified here)
+Gemini 4 Neon,"same NBS database, full 12/12 coverage, public deployment with 7-region matrix & provenance cards; documented pre-2013 income",all rows labelled 'verified' (only 60 independent checks),public-endpoint ingestion; region-matrix homepage,homepage interactive matrix with provenance,"low for values (matches NBS), high for verification claims"
+Claude Opus 5.5 (first run),"yearbook OCR with cross-edition checks and source_cell locators, raw-file hashing",edition-vintage values (e.g. GDP pc 2011–12) not reconciled with later revisions,source_cell-level locators; double-OCR,-,low–medium
+Claude Opus 5.5 (run 3),"NBS API + independent yearbook/communiqué verification (83 points), revision handling, tests 36/36 live",precision loss in 万人-based counts; over-excluded pre-2013 income,validation-sample design; caliber notes,indicator pages with provenance dialog,low
+GPT-6 Astra Pro,evidence ledger with evidence_file per row; high agreement with yearbooks (99.5% with claude_r1a),"small coverage (1,416)",evidence_file per observation,-,low
+Codex GPT-6,"multi-source (90 sources) incl. provincial yearbooks, exact counts","vintage mixing (first-release GDP/retail), NHC birth rates spliced into NBS series",exact-count yearbook tables,editorial homepage design,medium–high for time series
+Muse Spark 1.3,"small, carefully annotated dataset, test-fix log",superseded vintages; broader HE-student definition under shared ID,-,-,medium
+Gemini (MVU),MOE sources for education,Wikipedia / aggregator as sole source for GDP & population,-,-,high
+GPT-6.2,transcribed facts with locators,184 observations only,transcribed_facts.csv format,-,low (small)

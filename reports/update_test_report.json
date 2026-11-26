@@ -1,0 +1,28 @@
+{
+ "run_id": "upd-20261124T151817Z",
+ "isolated_root": "/var/folders/nf/23b_g5d17bdfn73s319r1cyc0000gn/T/cda-update-sim-neo_0o1_",
+ "fixture_rows": 6,
+ "fixture_marked": "SIMULATED",
+ "check_summary": {
+  "run_id": "upd-20261124T151817Z",
+  "status": "pending_review",
+  "candidates": 6,
+  "unchanged": 1,
+  "new_observations": 3,
+  "revisions": 1,
+  "blocked": 1
+ },
+ "checks": {
+  "new_year_detected": true,
+  "revision_detected": true,
+  "missing_field_blocked": true,
+  "unchanged_ignored": true,
+  "nothing_published_before_approval": true,
+  "revision_kept_old_vintage": true,
+  "approved_value_current": true,
+  "rollback_restores_snapshot": true,
+  "real_data_untouched": true
+ },
+ "passed": true,
+ "note": "Simulation ran on a temporary copy; SIMULATED rows never touched data/canonical_candidate in the repository."
+}

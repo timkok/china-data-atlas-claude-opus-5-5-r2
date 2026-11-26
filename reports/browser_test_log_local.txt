@@ -1,0 +1,840 @@
+
+> app@0.1.0 test:e2e
+> NODE_PATH=$PWD/node_modules playwright test
+
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:03] "GET / HTTP/1.1" 200 -
+
+Running 57 tests using 2 workers
+
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/1ej6mwlz-eyr-.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/1ej6mwlz-eyr-.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+  ✓   1 [desktop-1440] › ../tests/e2e/site.spec.ts:7:5 › 01 homepage loads with real stats and findings (166ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/1ej6mwlz-eyr-.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+  ✓   3 [desktop-1440] › ../tests/e2e/site.spec.ts:17:5 › 02 indicator search finds indicators and provinces (149ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /indicators/gdp_per_capita/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /indicators/gdp_per_capita/ HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /data/conflicts/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] ----------------------------------------
+[WebServer] Exception occurred during processing of request from ('127.0.0.1', 62120)
+[WebServer] Traceback (most recent call last):
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 697, in process_request_thread
+[WebServer]     self.finish_request(request, client_address)
+[WebServer]     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 1422, in finish_request
+[WebServer]     self.RequestHandlerClass(request, client_address, self,
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]                              directory=args.directory)
+[WebServer]                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 732, in __init__
+[WebServer]     super().__init__(*args, **kwargs)
+[WebServer]     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 766, in __init__
+[WebServer]     self.handle()
+[WebServer]     ~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 496, in handle
+[WebServer]     self.handle_one_request()
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 484, in handle_one_request
+[WebServer]     method()
+[WebServer]     ~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 739, in do_GET
+[WebServer]     self.copyfile(f, self.wfile)
+[WebServer]     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 942, in copyfile
+[WebServer]     shutil.copyfileobj(source, outputfile)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/shutil.py", line 257, in copyfileobj
+[WebServer]     fdst_write(buf)
+[WebServer]     ~~~~~~~~~~^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 845, in write
+[WebServer]     self._sock.sendall(b)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^
+[WebServer] BrokenPipeError: [Errno 32] Broken pipe
+[WebServer] ----------------------------------------
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /data/conflicts/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /provinces/440000/ HTTP/1.1" 200 -
+  ✓   4 [desktop-1440] › ../tests/e2e/site.spec.ts:28:5 › 03 direct URL access + 18 refresh keeps page (256ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /indicators/population/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /provinces/440000/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:04] "GET /data/conflicts/population.json HTTP/1.1" 200 -
+  ✓   5 [desktop-1440] › ../tests/e2e/site.spec.ts:38:5 › 04 year switch updates ranking + 08 ranking correctness (736ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /indicators/gdp/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+  ✓   2 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:14:7 › Unified acceptance tasks A–S (desktop) › A Guangdong latest population + official source (1.4s)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /indicators/population/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /data/conflicts/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /data/conflicts/population.json HTTP/1.1" 200 -
+  ✓   6 [desktop-1440] › ../tests/e2e/site.spec.ts:50:5 › 05 province select in ranking shows detail card (306ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /indicators/urbanization_rate/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /data/conflicts/urbanization_rate.json HTTP/1.1" 200 -
+  ✓   8 [desktop-1440] › ../tests/e2e/site.spec.ts:57:5 › 06 region filter restricts ranking (181ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /indicators/population/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:05] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /data/conflicts/population.json HTTP/1.1" 200 -
+  ✓   9 [desktop-1440] › ../tests/e2e/site.spec.ts:63:5 › 07 multi-province trend comparison (250ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /indicators/disposable_income/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+  ✓   7 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:25:7 › Unified acceptance tasks A–S (desktop) › B JS/ZJ/GD population since 2015 (788ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /indicators/population_65plus/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /data/conflicts/disposable_income.json HTTP/1.1" 200 -
+  ✓  10 [desktop-1440] › ../tests/e2e/site.spec.ts:73:5 › 09 chart table equals source data (218ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /indicators/retail_sales/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /data/conflicts/population_65plus.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /data/conflicts/retail_sales.json HTTP/1.1" 200 -
+  ✓  12 [desktop-1440] › ../tests/e2e/site.spec.ts:83:5 › 10 CSV download equals filtered table (267ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /indicators/birth_rate/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /data/conflicts/birth_rate.json HTTP/1.1" 200 -
+  ✓  13 [desktop-1440] › ../tests/e2e/site.spec.ts:102:5 › 11 no-data state for a year without provincial data (201ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /indicators/natural_growth_rate/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:06] "GET /indicators/higher_education_institutions/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/conflicts/natural_growth_rate.json HTTP/1.1" 200 -
+[WebServer] ----------------------------------------
+[WebServer] Exception occurred during processing of request from ('127.0.0.1', 62234)
+[WebServer] Traceback (most recent call last):
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 697, in process_request_thread
+[WebServer]     self.finish_request(request, client_address)
+[WebServer]     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 1422, in finish_request
+[WebServer]     self.RequestHandlerClass(request, client_address, self,
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]                              directory=args.directory)
+[WebServer]                              ^^^^^^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 732, in __init__
+[WebServer]     super().__init__(*args, **kwargs)
+[WebServer]     ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 766, in __init__
+[WebServer]     self.handle()
+[WebServer]     ~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 496, in handle
+[WebServer]     self.handle_one_request()
+[WebServer]     ~~~~~~~~~~~~~~~~~~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 484, in handle_one_request
+[WebServer]     method()
+[WebServer]     ~~~~~~^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 739, in do_GET
+[WebServer]     self.copyfile(f, self.wfile)
+[WebServer]     ~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/http/server.py", line 942, in copyfile
+[WebServer]     shutil.copyfileobj(source, outputfile)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/shutil.py", line 257, in copyfileobj
+[WebServer]     fdst_write(buf)
+[WebServer]     ~~~~~~~~~~^^^^^
+[WebServer]   File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socketserver.py", line 845, in write
+[WebServer]     self._sock.sendall(b)
+[WebServer]     ~~~~~~~~~~~~~~~~~~^^^
+[WebServer] BrokenPipeError: [Errno 32] Broken pipe
+[WebServer] ----------------------------------------
+  ✓  11 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:37:7 › Unified acceptance tasks A–S (desktop) › C 2020 65+ ranking, census caliber (791ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/conflicts/higher_education_institutions.json HTTP/1.1" 200 -
+  ✓  14 [desktop-1440] › ../tests/e2e/site.spec.ts:109:5 › 12 negative values and tie ranks (224ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /indicators/gdp_per_capita/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /indicators/hospital_beds_per_1000/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/conflicts/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/conflicts/hospital_beds_per_1000.json HTTP/1.1" 200 -
+  ✓  16 [desktop-1440] › ../tests/e2e/site.spec.ts:129:5 › 13 source links and source dialog (248ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/1ej6mwlz-eyr-.js HTTP/1.1" 200 -
+  ✓  15 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:47:7 › Unified acceptance tasks A–S (desktop) › D latest provincial GDP per capita (current prices) (766ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /compare/?p=370000,410000,440000 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/3pv-h--a81zwf.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /indicators/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/birth_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/population_65plus.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/urbanization_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/disposable_income.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/tertiary_share.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/consumption_expenditure_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/physicians_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/higher_education_institutions.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/higher_education_students.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/nurses_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:07] "GET /data/ind/hospital_beds_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /indicators/gdp/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /data/conflicts/gdp.json HTTP/1.1" 200 -
+  ✓  18 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:55:7 › Unified acceptance tasks A–S (desktop) › E Shandong / Henan / Guangdong disposable income (662ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /indicators/physicians_per_1000/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:08] "GET /data/conflicts/physicians_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /provinces/ HTTP/1.1" 200 -
+  ✓  19 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:64:7 › Unified acceptance tasks A–S (desktop) › F physicians per 1000 ranking (746ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /indicators/retail_sales/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /data/conflicts/retail_sales.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:09] "GET /provinces/110000/ HTTP/1.1" 200 -
+  ✓  20 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:72:7 › Unified acceptance tasks A–S (desktop) › G filtered CSV equals page (770ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /compare/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/3pv-h--a81zwf.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/population_65plus.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/birth_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/urbanization_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/consumption_expenditure_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/disposable_income.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/tertiary_share.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/higher_education_institutions.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/higher_education_students.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/physicians_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/hospital_beds_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/ind/nurses_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /indicators/hospital_beds_per_1000/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/conflicts/hospital_beds_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /explorer/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/207g2jn0920_q.js HTTP/1.1" 200 -
+  ✓  21 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:82:7 › Unified acceptance tasks A–S (desktop) › I year without data -> no fabricated values (748ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /indicators/gdp/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:10] "GET /data/conflicts/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /stories/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /stories/aging-and-doctors/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /_next/static/chunks/3mama8cm01t6g.js HTTP/1.1" 200 -
+  ✓  22 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:90:7 › Unified acceptance tasks A–S (desktop) › J + K value -> official table + evidence level (875ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /indicators/gdp/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:11] "GET /data/conflicts/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /ask/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /_next/static/chunks/0_rutf4hh-v-l.js HTTP/1.1" 200 -
+  ✓  23 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:102:7 › Unified acceptance tasks A–S (desktop) › L value with multiple historical vintages (909ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /indicators/gdp/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /quality/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:12] "GET /data/conflicts/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /map/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /_next/static/chunks/3eu6uohd5wa99.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /quality/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /methodology/ HTTP/1.1" 200 -
+  ✓  24 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:110:7 › Unified acceptance tasks A–S (desktop) › M conflict record and ruling evidence (1.3s)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /compare/?p=440000,320000,330000 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /_next/static/chunks/3pv-h--a81zwf.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:13] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/urbanization_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/population_65plus.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/birth_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/disposable_income.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/consumption_expenditure_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/tertiary_share.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/higher_education_students.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/physicians_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/higher_education_institutions.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/hospital_beds_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/nurses_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /about/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 304 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 304 -
+  ✓  25 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:121:7 › Unified acceptance tasks A–S (desktop) › N GD/JS/ZJ population and GDP per capita since 2015 (745ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /explorer/?i=population_65plus,physicians_per_1000&c=scatter&y=2024 HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/207g2jn0920_q.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+  ✓  17 [desktop-1440] › ../tests/e2e/site.spec.ts:139:5 › 14 no console errors on key pages (7.4s)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/population_65plus.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /data/ind/physicians_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/1ej6mwlz-eyr-.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:14] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+  ✓  26 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:131:7 › Unified acceptance tasks A–S (desktop) › O scatter: aging vs physicians correlation (712ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /explorer/?i=population,disposable_income&g=440000,320000,330000&from=2020&to=2025&c=line HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/207g2jn0920_q.js HTTP/1.1" 200 -
+  ✓  27 [desktop-1440] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout homepage (679ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /indicators/population/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /data/ind/disposable_income.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:15] "GET /data/conflicts/population.json HTTP/1.1" 200 -
+  ✓  28 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:144:7 › Unified acceptance tasks A–S (desktop) › P explorer: 3 provinces × 2 indicators CSV (735ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /provinces/330000/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+  ✓  29 [desktop-1440] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout indicator (957ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /explorer/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/207g2jn0920_q.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+  ✓  30 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:156:7 › Unified acceptance tasks A–S (desktop) › Q province page vs national (598ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /stories/zhejiang-vs-jiangsu/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/3mama8cm01t6g.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:16] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+  ✓  31 [desktop-1440] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout data-explorer (679ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /compare/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/3pv-h--a81zwf.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/population_65plus.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/birth_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/urbanization_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/disposable_income.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/consumption_expenditure_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/tertiary_share.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/higher_education_institutions.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/higher_education_students.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/physicians_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/nurses_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/hospital_beds_per_1000.json HTTP/1.1" 200 -
+  ✓  32 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:165:7 › Unified acceptance tasks A–S (desktop) › R data story reproducible (670ms)
+  ✓  33 [desktop-1440] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout province-comparison (711ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /stories/zhejiang-vs-jiangsu/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/3mama8cm01t6g.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:17] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+  ✓  35 [desktop-1440] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout data-story (681ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:18] "GET /map/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:18] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:18] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:18] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:18] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:18] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:18] "GET /_next/static/chunks/3eu6uohd5wa99.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:18] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:18] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:18] "GET /data/ind/population_65plus.json HTTP/1.1" 200 -
+  ✓  34 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:174:7 › Unified acceptance tasks A–S (desktop) › S simulated official update -> review report (1.2s)
+  -  37 [desktop-1440] › ../tests/e2e/acceptance.spec.ts:182:5 › T mobile end-to-end research task @mobile
+  ✓  36 [desktop-1440] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout map-or-alternative (624ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /provinces/440000/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/1ej6mwlz-eyr-.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+  ✓  38 [desktop-1440] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout province (675ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/1ej6mwlz-eyr-.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+  ✓  39 [tablet-768] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout homepage (658ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /indicators/population/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /indicators/gdp_per_capita/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:19] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /data/conflicts/population.json HTTP/1.1" 200 -
+  ✓  40 [desktop-1440] › ../tests/e2e/site.spec.ts:159:5 › 17 keyboard: search via keyboard and skip link (265ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /data/prov/440000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /data/conflicts/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /downloads/conflicts.csv HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /downloads/vintages.csv HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /downloads/observations.csv HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /downloads/coverage_matrix.csv HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /downloads/data_validation_samples.csv HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /sitemap.xml HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /robots.txt HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /downloads/observations.csv HTTP/1.1" 200 -
+  ✓  42 [desktop-1440] › ../tests/e2e/site.spec.ts:171:5 › 19 static assets reachable (90ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /indicators/population/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+PERF {"dcl":8,"load":52.799999952316284,"bytes":1318263}
+  ✓  43 [desktop-1440] › ../tests/e2e/site.spec.ts:180:5 › 20 basic performance (117ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /indicators/population/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /sitemap.xml HTTP/1.1" 200 -
+  ✓  44 [desktop-1440] › ../tests/e2e/site.spec.ts:187:5 › SEO: indicator pages have title, description, canonical, h1 and server-rendered text (4ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/1ej6mwlz-eyr-.js HTTP/1.1" 200 -
+  ✓  41 [tablet-768] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout indicator (913ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /explorer/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /_next/static/chunks/207g2jn0920_q.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:20] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /indicators/population_65plus/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/conflicts/population_65plus.json HTTP/1.1" 200 -
+  ✓  46 [tablet-768] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout data-explorer (736ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /compare/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /_next/static/chunks/3pv-h--a81zwf.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/population_65plus.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/birth_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/urbanization_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/disposable_income.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/tertiary_share.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/consumption_expenditure_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/higher_education_institutions.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/physicians_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/higher_education_students.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/hospital_beds_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:21] "GET /data/ind/nurses_per_1000.json HTTP/1.1" 200 -
+  ✓  45 [mobile-390] › ../tests/e2e/acceptance.spec.ts:182:5 › T mobile end-to-end research task @mobile (1.5s)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET / HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/1ej6mwlz-eyr-.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+  ✓  47 [tablet-768] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout province-comparison (714ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /stories/zhejiang-vs-jiangsu/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/3mama8cm01t6g.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+  ✓  49 [tablet-768] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout data-story (662ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /map/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/3eu6uohd5wa99.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:22] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /data/ind/population_65plus.json HTTP/1.1" 200 -
+  ✓  48 [mobile-390] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout homepage (825ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /indicators/population/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/1vpcgk9_5tc9s.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /data/conflicts/population.json HTTP/1.1" 200 -
+  ✓  50 [tablet-768] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout map-or-alternative (655ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /provinces/440000/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:23] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+  ✓  52 [tablet-768] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout province (636ms)
+  ✓  51 [mobile-390] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout indicator (1.3s)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /explorer/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /_next/static/chunks/207g2jn0920_q.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:24] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+  ✓  53 [mobile-390] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout data-explorer (1.0s)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /compare/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /_next/static/chunks/3pv-h--a81zwf.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/birth_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/gdp.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/population.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/population_65plus.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/urbanization_rate.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/consumption_expenditure_per_capita.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/tertiary_share.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/disposable_income.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/higher_education_institutions.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/higher_education_students.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/physicians_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/nurses_per_1000.json HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:25] "GET /data/ind/hospital_beds_per_1000.json HTTP/1.1" 200 -
+  ✓  54 [mobile-390] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout province-comparison (815ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /stories/zhejiang-vs-jiangsu/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/3mama8cm01t6g.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/07ootfbkrunna.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /data/ind/gdp_per_capita.json HTTP/1.1" 200 -
+  ✓  55 [mobile-390] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout data-story (750ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /map/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:26] "GET /_next/static/chunks/3eu6uohd5wa99.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:27] "GET /data/ind/population_65plus.json HTTP/1.1" 200 -
+  ✓  56 [mobile-390] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout map-or-alternative (734ms)
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:27] "GET /provinces/440000/ HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:27] "GET /_next/static/chunks/3egi-sm2sw367.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:27] "GET /_next/static/chunks/15lgvbk9a4vku.css HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:27] "GET /_next/static/chunks/turbopack-2u1d16houkiyo.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:27] "GET /_next/static/chunks/39_j1bdzreq0m.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:27] "GET /_next/static/chunks/0j1we3cwg31qe.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:27] "GET /_next/static/chunks/16d9m7jc71162.js HTTP/1.1" 200 -
+[WebServer] 127.0.0.1 - - [24/Nov/2026 10:18:27] "GET /_next/static/chunks/106stop7lin7c.js HTTP/1.1" 200 -
+  ✓  57 [mobile-390] › ../tests/e2e/site.spec.ts:149:7 › 15/16 layout + no horizontal overflow @layout province (905ms)
+
+  1 skipped
+  56 passed (25.0s)

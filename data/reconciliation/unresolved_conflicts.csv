@@ -1,0 +1,2 @@
+conflict_id,indicator_id,geo_code,year,canonical_value,canonical_unit,canonical_source,r1_model,r1_value,r1_unit,r1_source,r1_verification_claim,difference,rel_difference,category,resolution,evidence_url,explanation
+C02310,disposable_income,310000,2016,54305.0,元,分省年度数据 > 人民生活 > 居民人均可支配收入,codex_gpt6,54032.0,元人民币,江苏统计年鉴2017 · 附录1-4居民人均收入与支出（2016年）,partially_verified,-273.0,-0.005027,Conflicting Value,unresolved,,no documented revision or definition difference explains the gap

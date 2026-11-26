@@ -1,0 +1,22 @@
+source_model,source_indicator_id,source_unit,canonical_indicator_id,unit_factor,methodology_note
+claude_r1run3,*,*,=,1,identical ids
+gemini4neon,*,*,=,1,identical ids; units 元人民币/亿元人民币 == 元/亿元
+astra,*,*,=,1,identical ids
+gemini,*,*,=,1,identical ids
+muse,*,*,=,1,identical ids except below
+muse,higher_education_students,人,he_students_incl_postgrad,1,DEFINITION DIFFERENCE: Muse defines 普通高等教育在校生 = 普通本专科 + 在学研究生 (its notes); not comparable with canonical higher_education_students (本专科 only); kept separate
+codex_gpt6,*,*,=,1,identical ids
+gpt62,*,*,=,1,identical ids except below
+gpt62,regular_vocational_undergrad_students,人,higher_education_students,1,普通、职业本专科在校生 = same scope as canonical higher_education_students
+claude_r1a,population,万人,population,1,
+claude_r1a,birth-rate,‰,birth_rate,1,
+claude_r1a,urbanization,%,urbanization_rate,1,
+claude_r1a,aged-65-share,%,population_65plus,1,
+claude_r1a,gdp,亿元,gdp,1,
+claude_r1a,gdp-per-capita,元,gdp_per_capita,1,
+claude_r1a,disposable-income,元,disposable_income,1,
+claude_r1a,college-enrolment,人,higher_education_students,1,check scope (普通本专科 vs 含职业本科)
+claude_r1a,colleges,所,higher_education_institutions,1,
+claude_r1a,natural-growth-rate,‰,natural_growth_rate,1,extension
+claude_r1a,consumption-expenditure,元,consumption_expenditure_per_capita,1,extension (not a core indicator; NOT disposable income)
+claude_r1a,bed-occupancy,%,hospital_bed_occupancy_rate,1,extension: 医院病床使用率 — NOT beds per 1000

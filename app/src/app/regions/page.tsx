@@ -1,0 +1,1 @@
+export default function Regions() { return <div className="wrap pt-8"><p>页面已迁移至 <a className="underline" href="/provinces/">/provinces/</a>。</p><meta httpEquiv="refresh" content="0; url=/provinces/" /></div>; }
