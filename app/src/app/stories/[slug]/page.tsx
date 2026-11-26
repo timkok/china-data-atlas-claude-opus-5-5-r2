@@ -10,7 +10,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 export default async function Story({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params; const s = SITE.stories.find((x) => x.slug === slug); if (!s) notFound();
   return (<article className="wrap pt-8 max-w-3xl" data-testid="story">
-    <nav className="text-xs text-[var(--muted)]"><a href="/stories/">数据故事</a></nav>
+    <nav className="text-xs text-[var(--muted)]"><a className="inline-block py-1.5 pr-2 hover:underline" href="/stories/">← 数据故事</a></nav>
     <h1 className="text-3xl font-bold mt-2">{s.title}</h1>
     <p className="mt-2 text-lg">研究问题：{s.question}</p>
     <div className="mt-4"><StoryChart story={s} /></div>

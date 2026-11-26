@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { CATEGORIES, GEO, INDICATORS, SITE, citation, fmt, getIndicator, isRate } from "@/lib/data";
 import { readSeries } from "@/lib/server";
+import { getIndicatorFull } from "@/lib/detail";
 import { CALIBER_BREAKS, AGG_NOTE } from "@/lib/caliber";
 import RankingSection from "@/components/RankingSection";
 import TrendSection from "@/components/TrendSection";
@@ -16,14 +17,14 @@ import ProvenancePanel from "@/components/ProvenancePanel";
 export function generateStaticParams() { return INDICATORS.map((i) => ({ id: i.id })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
-  const { id } = await params; const ind = getIndicator(id); if (!ind) return {};
+  const { id } = await params; const ind = getIndicatorFull(id); if (!ind) return {};
   const title = `${ind.name_zh}：${ind.has_province ? "31省排名、" : ""}历史趋势与数据下载（${ind.first_year}—${ind.latest_province_year_any ?? ind.latest_national_year}）`;
   const description = `${ind.name_zh}（${ind.unit}）。全国最新 ${ind.latest_national_year ?? "—"} 年 ${fmt(ind.national_latest, ind.unit)} ${ind.unit}${ind.latest_province_year ? `；最新完整省级年份 ${ind.latest_province_year}` : ""}。${ind.findings[0]?.zh ?? ""} 来源：国家统计局；证据等级与修订版本可查。`;
   return { title, description, alternates: { canonical: `/indicators/${id}/` }, openGraph: { title, description, url: `/indicators/${id}/` } };
 }
 
 export default async function IndicatorPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params; const ind = getIndicator(id); if (!ind) notFound();
+  const { id } = await params; const ind = getIndicatorFull(id); if (!ind) notFound();
   const series = readSeries(id); const pop = readSeries("population");
   const cat = CATEGORIES.find((c) => c.id === ind.category)!;
   const breaks = CALIBER_BREAKS[id] || [];

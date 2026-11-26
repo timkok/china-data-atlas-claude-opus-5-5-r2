@@ -11,6 +11,14 @@
 8. One conflict remains unresolved (Codex, Shanghai 2016 disposable income 54,032 vs NBS 54,305).
 9. Grok's R1 dataset could not be imported (ZIP 21.4 MB > 10 MB connector limit); the prompt's “125 physician records” difference was therefore not reproduced.
 
+### R2.1 additions
+10. Of the 40 indicators added in R2.1, 10 have independent yearbook checks (43 points, all matching); the other 30 are E2 only.
+11. Registered urban unemployment ends in 2021 (official series discontinued); it is not the surveyed unemployment rate.
+12. Provincial trade is by location of the trading enterprise and need not sum to the national customs total; USD values were not cross-checked (Yearbook table 11-8 is in RMB).
+13. SO₂ (2011/2016 scope changes), medical-insurance enrolment (2016–2019 urban–rural merger) and life expectancy (census years only) carry the caliber breaks shown on their charts.
+14. Minimum-living-allowance standards were evaluated and dropped (only 2009–2010 available in the database).
+15. Lighthouse for R2.1 was measured on a local gzip server, because the Vercel Preview requires login; numbers may differ on Vercel's CDN.
+
 ## Product
 - No geographic map (see research/MAP_COMPLIANCE_RESEARCH.md). No full English UI (data fields bilingual).
 - Research Query Engine is rule-based (5 question templates), not an AI assistant.

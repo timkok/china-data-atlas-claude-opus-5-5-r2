@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 import fs from "node:fs";
-import { OBS, obsValue, collectErrors, readCsv, SHOT } from "./helpers";
+import path from "node:path";
+import { OBS, obsValue, collectErrors, readCsv, SHOT, ROOT } from "./helpers";
 
 const fmtNum = (v: string, d: number) => Number(v).toLocaleString("zh-CN", { minimumFractionDigits: d, maximumFractionDigits: d });
 
@@ -8,7 +9,8 @@ test("01 homepage loads with real stats and findings", async ({ page }) => {
   const errs = collectErrors(page);
   await page.goto("/");
   await expect(page.locator("h1")).toContainText("统计数据");
-  await expect(page.getByTestId("home-stats")).toContainText("30,418");
+  const site = JSON.parse(fs.readFileSync(path.join(ROOT, "app/src/data/site.json"), "utf-8"));
+  await expect(page.getByTestId("home-stats")).toContainText(site.stats.published_observations.toLocaleString("en-US"));
   await expect(page.getByTestId("home-stories").locator("li")).not.toHaveCount(0);
   await expect(page.getByTestId("echart").first()).toBeVisible();
   expect(errs).toEqual([]);

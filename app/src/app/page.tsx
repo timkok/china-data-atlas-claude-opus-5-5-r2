@@ -1,6 +1,7 @@
 import Search from "@/components/Search";
 import HomeFeature from "@/components/HomeFeature";
-import { CATEGORIES, EVIDENCE, INDICATORS, PROVINCES, REGION7, SITE, num } from "@/lib/data";
+import { getDetail } from "@/lib/detail";
+import { CATEGORIES, EVIDENCE, HOME_FEATURE_TABS, INDICATORS, PROVINCES, REGION7, SITE, num } from "@/lib/data";
 
 const QUESTIONS = ["哪些省份过去20年人口增长最快？", "比较广东和江苏过去十年GDP变化", "浙江人均收入排名如何变化？", "2020年哪些省份老龄化最严重？", "医疗资源与老龄化之间是否存在相关性？"];
 export default function Home() {
@@ -33,7 +34,7 @@ export default function Home() {
             <div className="font-semibold">{c.zh}</div><div className="text-xs text-[var(--muted)] mt-1">{c.blurb}</div><div className="text-xs mt-2">{INDICATORS.filter((i) => i.category === c.id).length} 个指标</div></a>))}</div>
       </section>
 
-      <section className="wrap mt-10" aria-labelledby="feat-h"><h2 id="feat-h" className="text-xl font-bold mb-3">精选指标：各省最新数据</h2><HomeFeature /></section>
+      <section className="wrap mt-10" aria-labelledby="feat-h"><h2 id="feat-h" className="text-xl font-bold mb-3">精选指标：各省最新数据</h2><HomeFeature rankings={Object.fromEntries(HOME_FEATURE_TABS.map((t) => [t, getDetail(t).ranking]))} /></section>
 
       <section className="wrap mt-12 grid lg:grid-cols-[3fr_2fr] gap-8">
         <div>

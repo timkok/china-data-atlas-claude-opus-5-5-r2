@@ -41,3 +41,43 @@ outpatient_visits,False,health,医疗卫生机构诊疗人次,Outpatient visits 
 water_use_per_capita,False,environment,人均用水量,Water use per capita,立方米/人,人均用水量,,none,分省年度数据 > 资源和环境 > 供水用水情况,v,立方米/人,年度数据 > 资源和环境 > 供水用水情况,v,立方米/人
 forest_coverage,False,environment,森林覆盖率,Forest coverage rate,%,森林覆盖率,来自全国森林资源清查，按清查期发布，非逐年观测；数据库中重复年份沿用同一清查结果。,none,分省年度数据 > 资源和环境 > 森林资源,v,%,年度数据 > 资源和环境 > 森林资源,v,%
 highway_mileage,False,environment,公路里程,Highway mileage,万公里,公路里程,,sum,分省年度数据 > 运输和邮电 > 运输线路长度,v,万公里,年度数据 > 运输和邮电 > 运输线路长度,v,万公里
+real_gdp_growth,False,economy,地区生产总值实际增长率,Real GDP growth,%,地区生产总值指数(上年=100),按可比价格计算的地区生产总值比上年增长（官方指数“上年=100”减100）。,none,分省年度数据 > 国民经济核算 > 地区生产总值指数,v-100,上年=100,年度数据 > 国民经济核算 > 国内生产总值指数 (上年=100),v-100,上年=100
+cpi_inflation,False,labor,居民消费价格涨幅,CPI inflation,%,居民消费价格指数(上年=100),居民消费价格指数（上年=100）减100。,none,分省年度数据 > 价格指数 > 居民消费价格指数和商品零售价格指数,v-100,上年=100,年度数据 > 价格指数 > 各种价格指数,v-100,上年=100
+average_wage,False,labor,城镇非私营单位就业人员平均工资,"Average wage, urban non-private units",元,城镇单位就业人员平均工资,城镇非私营单位（分省表称“城镇单位”）就业人员平均货币工资，不含私营单位。,none,分省年度数据 > 就业人员和工资 > 城镇单位就业人员平均工资和指数,v,元,年度数据 > 就业人员和工资 > 城镇非私营单位就业人员平均工资和指数,v,元
+real_wage_growth,False,labor,平均实际工资增长率,Real average wage growth,%,城镇单位就业人员平均实际工资指数(上年=100),城镇非私营单位就业人员平均实际工资指数（上年=100）减100。,none,分省年度数据 > 就业人员和工资 > 城镇单位就业人员平均工资和指数,v-100,上年=100,年度数据 > 就业人员和工资 > 城镇非私营单位就业人员平均工资和指数,v-100,上年=100
+registered_unemployment_rate,False,labor,城镇登记失业率,Registered urban unemployment rate,%,城镇登记失业率,城镇登记失业人数占城镇从业人员与登记失业人数之和的比重（登记口径，不同于调查失业率）。,none,分省年度数据 > 就业人员和工资 > 城镇登记失业人员及失业率,v,%,年度数据 > 就业人员和工资 > 城镇登记失业人员及失业率,v,%
+fai_growth,False,economy,固定资产投资（不含农户）增速,Fixed-asset investment growth (excl. rural households),%,固定资产投资(不含农户)比上年增长,固定资产投资（不含农户）比上年增长，按可比口径计算（官方增速，不能由相邻年份绝对额直接相除得到）。,none,分省年度数据 > 固定资产投资和房地产 > 固定资产投资 (不含农户) 增速,v,%,年度数据 > 固定资产投资和房地产 > 全社会固定资产投资,v,%
+housing_price,False,economy,新建商品房平均销售价格,Average price of new commercial housing,元/平方米,新建商品房平均销售价格,新建商品房销售额 ÷ 销售面积（官方计算），含住宅、办公楼、商业营业用房等。,none,分省年度数据 > 固定资产投资和房地产 > 按用途分新建商品房平均销售价格,v,元/平方米,年度数据 > 固定资产投资和房地产 > 按用途分新建商品房平均销售价格,v,元/平方米
+housing_sales_area,False,economy,新建商品房销售面积,New commercial housing floor space sold,万平方米,新建商品房销售面积,报告期内出售新建商品房屋的合同面积。,sum,分省年度数据 > 固定资产投资和房地产 > 按用途分新建商品房销售面积,v,万平方米,年度数据 > 固定资产投资和房地产 > 按用途分新建商品房销售面积,v,万平方米
+trade_total,False,economy,货物进出口总额（美元）,"Goods trade (imports + exports), USD",亿美元,经营单位所在地进出口总额,分省为按经营单位所在地统计的货物进出口总额（海关数据），全国为海关货物进出口总额。,sum,分省年度数据 > 对外经济贸易 > 按经营单位所在地分货物进出口总额,v/100000,千美元,年度数据 > 对外经济贸易 > 货物进出口总额,v/100,百万美元
+exports,False,economy,货物出口总额（美元）,"Goods exports, USD",亿美元,经营单位所在地出口总额,分省按经营单位所在地统计；全国为海关出口总额。,sum,分省年度数据 > 对外经济贸易 > 按经营单位所在地分货物进出口总额,v/100000,千美元,年度数据 > 对外经济贸易 > 货物进出口总额,v/100,百万美元
+agri_output_value,False,economy,农林牧渔业总产值,"Gross output of agriculture, forestry, animal husbandry and fishery",亿元,农林牧渔业总产值,现价农林牧渔业总产值（含农林牧渔专业及辅助性活动）。,sum,分省年度数据 > 农业 > 农、林、牧、渔业总产值及指数,v,亿元,年度数据 > 农业 > 农、林、牧、渔业总产值及指数,v,亿元
+grain_output,False,economy,粮食产量,Grain output,万吨,粮食产量,谷物、豆类和薯类产量合计（薯类按5:1折粮）。,sum,分省年度数据 > 农业 > 主要农作物产品产量,v,万吨,年度数据 > 农业 > 主要农作物产品产量,v,万吨
+intl_tourism_revenue,False,economy,国际旅游外汇收入,International tourism receipts,百万美元,国际旅游外汇收入,入境游客在境内的旅游消费（外汇）。,sum,分省年度数据 > 旅游业 > 国际旅游 (外汇) 收入,v,百万美元,年度数据 > 旅游业 > 旅游业发展情况,v,百万美元
+insurance_premiums,False,economy,原保险保费收入,Primary insurance premium income,亿元,原保险保费收入,保险公司原保险业务保费收入。,sum,分省年度数据 > 金融业 > 原保险保费收入和赔付支出情况,v,亿元,年度数据 > 金融业 > 原保险保费收入和赔付支出情况,v,亿元
+life_expectancy,False,population,平均预期寿命,Life expectancy at birth,岁,平均预期寿命,普查年份的出生时平均预期寿命（仅普查年份有分省数据）。,none,分省年度数据 > 人口 > 人口平均预期寿命,v,岁,年度数据 > 人口 > 人口平均预期寿命,v,岁
+patents_granted,False,tech,国内专利授权量,Domestic patents granted,项,国内专利申请授权量,国内发明、实用新型、外观设计三种专利申请授权量合计。,sum,分省年度数据 > 科技 > 国内三种专利申请受理数和授权数,v,项,年度数据 > 科技 > 国内三种专利申请受理数和授权数,v,项
+invention_patents_granted,False,tech,国内发明专利授权量,Domestic invention patents granted,项,国内发明专利申请授权量,国内发明专利申请授权量。,sum,分省年度数据 > 科技 > 国内三种专利申请受理数和授权数,v,项,年度数据 > 科技 > 国内三种专利申请受理数和授权数,v,项
+invention_patents_per_10k,False,tech,每万人口发明专利授权量,"Invention patents granted per 10,000 residents",件/万人,国内发明专利申请授权量 ÷ 年末常住人口,国内发明专利授权量 ÷ 年末常住人口（万人）。衍生指标。,weighted:population,分省年度数据 > 科技 > 国内三种专利申请受理数和授权数 ÷ 人口 > 总人口 > 年末常住人口,v/t,项 / 万人,年度数据 > 科技 > 国内三种专利申请受理数和授权数 ÷ 人口 > 年末总人口,v/t,项 / 万人
+tech_market_turnover,False,tech,技术市场成交额,Technology market turnover,亿元,技术市场成交额,技术合同成交金额（按卖方所在地）。,sum,分省年度数据 > 科技 > 技术市场成交额,v,亿元,年度数据 > 科技 > 技术市场成交额,v,亿元
+broadband_users,False,tech,互联网宽带接入用户,Fixed broadband subscribers,万户,互联网宽带接入用户,年末互联网宽带接入用户数。,sum,分省年度数据 > 运输和邮电 > 互联网主要指标发展情况,v,万户,年度数据 > 运输和邮电 > 互联网主要指标发展情况,v,万户
+express_volume,False,tech,快递业务量,Express delivery parcels,亿件,快递量,快递服务企业业务量（万件折算为亿件）。,sum,分省年度数据 > 运输和邮电 > 快递业务量,v/10000,万件,年度数据 > 运输和邮电 > 快递业务量,v/10000,万件
+health_technicians_per_10k,False,health,每万人口卫生技术人员数,"Health technicians per 10,000 population",人/万人,每万人拥有卫生技术人员数,官方发布的每万人拥有卫生技术人员数。,weighted:population,分省年度数据 > 卫生 > 每万人口卫生技术人员数,v,人,年度数据 > 卫生 > 每万人口卫生技术人员数,v,人
+primary_pupil_teacher_ratio,False,education,小学生师比,Primary school pupil–teacher ratio,人/教师,小学阶段生师比,小学在校生数 ÷ 专任教师数（教师=1）。,none,分省年度数据 > 教育 > 各级普通学校生师比,v,教师人数=1,年度数据 > 教育 > 各级普通学校生师比,v,教师人数=1
+higher_ed_per_100k,False,education,每十万人口高等教育在校生数,"Higher-education enrolment per 100,000 population",人/十万人,每十万人口高等教育平均在校生数,每十万人口高等教育平均在校生数（官方计算）。,weighted:population,分省年度数据 > 教育 > 每十万人口各级教育平均在校生数,v,人,年度数据 > 教育 > 每十万人口各级教育平均在校生数,v,人
+fiscal_education_funding,False,education,国家财政性教育经费,Government education expenditure,亿元,国家财政性教育经费,国家财政性教育经费（万元折算为亿元）。,sum,分省年度数据 > 教育 > 教育经费情况,v/10000,万元,年度数据 > 教育 > 国家财政性教育经费,v/10000,万元
+medical_insurance_participants,False,society,基本医疗保险参保人数,Basic medical insurance enrolment,万人,基本医疗保险年末参保人数,年末职工基本医疗保险与城乡居民基本医疗保险参保人数合计。,sum,分省年度数据 > 公共管理、社会保障及其他 > 基本医疗保险,v,万人,年度数据 > 公共管理、社会保障及其他 > 基本医疗保险,v,万人
+pension_participants,False,society,城镇职工基本养老保险参保人数,Urban employee pension enrolment,万人,参加城镇职工基本养老保险人数,年末参加城镇职工基本养老保险人数（含在职与离退休）。,sum,分省年度数据 > 公共管理、社会保障及其他 > 城镇职工基本养老保险,v,万人,年度数据 > 公共管理、社会保障及其他 > 参加城镇职工基本养老保险人数,v,万人
+museums,False,society,博物馆数,Museums,个,博物馆机构数,文物系统及其他行业博物馆机构数（以官方统计范围为准）。,sum,分省年度数据 > 文化 > 博物馆,v,个,年度数据 > 文化 > 博物馆,v,个
+museum_visits,False,society,博物馆参观人次,Museum visits,万人次,博物馆参观人次,博物馆全年参观人次。,sum,分省年度数据 > 文化 > 博物馆,v,万人次,年度数据 > 文化 > 博物馆,v,万人次
+library_books_per_capita,False,society,人均公共图书馆藏量,Public library holdings per capita,册/人,人均拥有公共图书馆藏量,公共图书馆总藏量 ÷ 常住人口（官方计算）。,weighted:population,分省年度数据 > 文化 > 公共图书馆,v,册/人,年度数据 > 文化 > 公共图书馆,v,册/人
+electricity_consumption,False,environment,全社会用电量,Electricity consumption,亿千瓦时,电力消费量,电力消费总量（地区能源平衡口径）。,sum,分省年度数据 > 能源 > 主要能源产品消费量,v,亿千瓦时,年度数据 > 能源 > 电力平衡表,v,亿千瓦时
+water_resources_per_capita,False,environment,人均水资源量,Water resources per capita,立方米/人,人均水资源量,水资源总量 ÷ 常住人口（官方计算，受当年降水影响大）。,none,分省年度数据 > 资源和环境 > 水资源,v,立方米/人,年度数据 > 资源和环境 > 水资源,v,立方米/人
+so2_emissions,False,environment,二氧化硫排放量,Sulphur dioxide emissions,万吨,二氧化硫排放量,废气中二氧化硫排放量。统计调查范围在2011、2016年前后有调整，跨期比较需谨慎。,sum,分省年度数据 > 资源和环境 > 废气中主要污染物排放,v,万吨,年度数据 > 资源和环境 > 废气中主要污染物排放,v,万吨
+garbage_treatment_rate,False,environment,生活垃圾无害化处理率,Municipal solid waste safe-treatment rate,%,生活垃圾无害化处理率,城市生活垃圾无害化处理量 ÷ 清运量 × 100（官方计算）。,none,分省年度数据 > 资源和环境 > 城市生活垃圾清运和处理情况,v,%,年度数据 > 资源和环境 > 城市生活垃圾清运和处理情况,v,%
+green_coverage_built_area,False,environment,城市建成区绿化覆盖率,Green coverage of urban built-up area,%,建成区绿化覆盖率,城市建成区绿化覆盖面积 ÷ 建成区面积 × 100。,none,分省年度数据 > 城市概况 > 城市绿地和园林,v,%,年度数据 > 城市概况 > 城市绿地和园林,v,%
+daily_water_use_per_capita,False,environment,城市人均日生活用水量,Urban domestic water use per capita per day,升,人均日生活用水量,城市用水人口人均每日生活用水量。,none,分省年度数据 > 城市概况 > 城市供水,v,升,年度数据 > 城市概况 > 城市供水,v,升
+civil_vehicles,False,environment,民用汽车拥有量,Civilian motor vehicles,万辆,民用汽车拥有量,年末在公安交通管理部门登记的民用汽车数量。,sum,分省年度数据 > 运输和邮电 > 民用汽车拥有量,v,万辆,年度数据 > 运输和邮电 > 民用汽车拥有量,v,万辆
+private_cars,False,environment,私人汽车拥有量,Private cars,万辆,私人汽车拥有量,年末登记的私人汽车数量。,sum,分省年度数据 > 运输和邮电 > 私人汽车拥有量,v,万辆,年度数据 > 运输和邮电 > 私人汽车拥有量,v,万辆
+private_cars_per_1000,False,environment,每千人私人汽车拥有量,"Private cars per 1,000 residents",辆/千人,私人汽车拥有量 ÷ 年末常住人口,私人汽车拥有量（万辆）÷ 年末常住人口（万人）× 1000。衍生指标。,weighted:population,分省年度数据 > 运输和邮电 > 私人汽车拥有量 ÷ 人口 > 总人口 > 年末常住人口,v/t*1000,万辆 / 万人,年度数据 > 运输和邮电 > 私人汽车拥有量 ÷ 人口 > 年末总人口,v/t*1000,万辆 / 万人
+freight_volume,False,environment,货物运输量,Freight volume,万吨,货运量,铁路、公路、水运、民航（全国另含管道）货运量合计。,sum,分省年度数据 > 运输和邮电 > 货运量,v,万吨,年度数据 > 运输和邮电 > 货运量,v,万吨
