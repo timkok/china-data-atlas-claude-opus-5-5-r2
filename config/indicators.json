@@ -1,5 +1,5 @@
 {
- "methodology_version": "2.0.0",
+ "methodology_version": "2.1.0",
  "roots": {
   "province": "c4d82af16c3d4f0cb4f09d4af7d5888e",
   "national": "NATIONAL_ROOT"
@@ -1334,6 +1334,1308 @@
     "formula": "v",
     "orig_unit": "万公里",
     "table": "年度数据 > 运输和邮电 > 运输线路长度"
+   }
+  },
+  {
+   "id": "real_gdp_growth",
+   "core": false,
+   "category": "economy",
+   "name_zh": "地区生产总值实际增长率",
+   "name_en": "Real GDP growth",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "按可比价格计算的地区生产总值比上年增长（官方指数“上年=100”减100）。",
+   "official_name_zh": "地区生产总值指数(上年=100)",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "05cf8a895d3e41658f4dbc56fdfabf9b",
+    "ids": {
+     "v": "8fc8b9f0d07944688b199884db43cb68"
+    },
+    "formula": "v-100",
+    "orig_unit": "上年=100",
+    "table": "分省年度数据 > 国民经济核算 > 地区生产总值指数",
+    "round": 1
+   },
+   "national": {
+    "cid": "489888799f8d470786bc01a4057efc38",
+    "ids": {
+     "v": "93dd15c8a3a3400ea89f8dceec7ab2b3"
+    },
+    "formula": "v-100",
+    "orig_unit": "上年=100",
+    "table": "年度数据 > 国民经济核算 > 国内生产总值指数 (上年=100)",
+    "round": 1
+   }
+  },
+  {
+   "id": "cpi_inflation",
+   "core": false,
+   "category": "labor",
+   "name_zh": "居民消费价格涨幅",
+   "name_en": "CPI inflation",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "居民消费价格指数（上年=100）减100。",
+   "official_name_zh": "居民消费价格指数(上年=100)",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "d1345232d611428bb56474a4f9ce848d",
+    "ids": {
+     "v": "dc68d688633d4806b3034821f0a3482d"
+    },
+    "formula": "v-100",
+    "orig_unit": "上年=100",
+    "table": "分省年度数据 > 价格指数 > 居民消费价格指数和商品零售价格指数",
+    "round": 1
+   },
+   "national": {
+    "cid": "e5f37eced5de4d4c815f7ac5f59fc6c2",
+    "ids": {
+     "v": "5e3053f110074dcdbcfa3c8428dd1367"
+    },
+    "formula": "v-100",
+    "orig_unit": "上年=100",
+    "table": "年度数据 > 价格指数 > 各种价格指数",
+    "round": 1
+   }
+  },
+  {
+   "id": "average_wage",
+   "core": false,
+   "category": "labor",
+   "name_zh": "城镇非私营单位就业人员平均工资",
+   "name_en": "Average wage, urban non-private units",
+   "unit": "元",
+   "unit_en": "元",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "城镇非私营单位（分省表称“城镇单位”）就业人员平均货币工资，不含私营单位。",
+   "official_name_zh": "城镇单位就业人员平均工资",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "1e46e1057756495e856bd8fcd64598e2",
+    "ids": {
+     "v": "2892a327f289418ca0719fec09c712ea"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "分省年度数据 > 就业人员和工资 > 城镇单位就业人员平均工资和指数"
+   },
+   "national": {
+    "cid": "0aed53df47b14e7393a98718a320e238",
+    "ids": {
+     "v": "759f53b2b5204c3d9dce7683db504576"
+    },
+    "formula": "v",
+    "orig_unit": "元",
+    "table": "年度数据 > 就业人员和工资 > 城镇非私营单位就业人员平均工资和指数"
+   }
+  },
+  {
+   "id": "real_wage_growth",
+   "core": false,
+   "category": "labor",
+   "name_zh": "平均实际工资增长率",
+   "name_en": "Real average wage growth",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "城镇非私营单位就业人员平均实际工资指数（上年=100）减100。",
+   "official_name_zh": "城镇单位就业人员平均实际工资指数(上年=100)",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "1e46e1057756495e856bd8fcd64598e2",
+    "ids": {
+     "v": "d55482a099904c2fac7391e84039ab49"
+    },
+    "formula": "v-100",
+    "orig_unit": "上年=100",
+    "table": "分省年度数据 > 就业人员和工资 > 城镇单位就业人员平均工资和指数",
+    "round": 1
+   },
+   "national": {
+    "cid": "0aed53df47b14e7393a98718a320e238",
+    "ids": {
+     "v": "ed2e40171c06419088d2484199d2020d"
+    },
+    "formula": "v-100",
+    "orig_unit": "上年=100",
+    "table": "年度数据 > 就业人员和工资 > 城镇非私营单位就业人员平均工资和指数",
+    "round": 1
+   }
+  },
+  {
+   "id": "registered_unemployment_rate",
+   "core": false,
+   "category": "labor",
+   "name_zh": "城镇登记失业率",
+   "name_en": "Registered urban unemployment rate",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "城镇登记失业人数占城镇从业人员与登记失业人数之和的比重（登记口径，不同于调查失业率）。",
+   "official_name_zh": "城镇登记失业率",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "83d8ba3dc53c4543a1716803e3170fb6",
+    "ids": {
+     "v": "11fcb0050abd4937b970e9fed5113a30"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "分省年度数据 > 就业人员和工资 > 城镇登记失业人员及失业率"
+   },
+   "national": {
+    "cid": "19839dbd8e82481b9524f031c6d816c5",
+    "ids": {
+     "v": "456ef2f3d75f472b930384237bc6100f"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "年度数据 > 就业人员和工资 > 城镇登记失业人员及失业率"
+   }
+  },
+  {
+   "id": "fai_growth",
+   "core": false,
+   "category": "economy",
+   "name_zh": "固定资产投资（不含农户）增速",
+   "name_en": "Fixed-asset investment growth (excl. rural households)",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "固定资产投资（不含农户）比上年增长，按可比口径计算（官方增速，不能由相邻年份绝对额直接相除得到）。",
+   "official_name_zh": "固定资产投资(不含农户)比上年增长",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "fa42ee3b82724a1c972490d7b628811e",
+    "ids": {
+     "v": "a8b24c8058d14e069b7ef22600d7a9b5"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "分省年度数据 > 固定资产投资和房地产 > 固定资产投资 (不含农户) 增速"
+   },
+   "national": {
+    "cid": "607a7cd4b50e4553894472475d1f4273",
+    "ids": {
+     "v": "d4936bf5c0bd4ff396cf813fc429dfe8"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "年度数据 > 固定资产投资和房地产 > 全社会固定资产投资"
+   }
+  },
+  {
+   "id": "housing_price",
+   "core": false,
+   "category": "economy",
+   "name_zh": "新建商品房平均销售价格",
+   "name_en": "Average price of new commercial housing",
+   "unit": "元/平方米",
+   "unit_en": "元/平方米",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "新建商品房销售额 ÷ 销售面积（官方计算），含住宅、办公楼、商业营业用房等。",
+   "official_name_zh": "新建商品房平均销售价格",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "d4241972005a48a48ac225746d615845",
+    "ids": {
+     "v": "83bc0fc6c86743ba8bc07834eedaeaac"
+    },
+    "formula": "v",
+    "orig_unit": "元/平方米",
+    "table": "分省年度数据 > 固定资产投资和房地产 > 按用途分新建商品房平均销售价格"
+   },
+   "national": {
+    "cid": "302cec9f9b354cb3a82670d8747bea2f",
+    "ids": {
+     "v": "67851f1515504d5992b1a9d0c023f0bb"
+    },
+    "formula": "v",
+    "orig_unit": "元/平方米",
+    "table": "年度数据 > 固定资产投资和房地产 > 按用途分新建商品房平均销售价格"
+   }
+  },
+  {
+   "id": "housing_sales_area",
+   "core": false,
+   "category": "economy",
+   "name_zh": "新建商品房销售面积",
+   "name_en": "New commercial housing floor space sold",
+   "unit": "万平方米",
+   "unit_en": "万平方米",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "报告期内出售新建商品房屋的合同面积。",
+   "official_name_zh": "新建商品房销售面积",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "23f9580d1fd34edc809b0d1c16349ac7",
+    "ids": {
+     "v": "243271fcbca94e24b9fcae138bdf316c"
+    },
+    "formula": "v",
+    "orig_unit": "万平方米",
+    "table": "分省年度数据 > 固定资产投资和房地产 > 按用途分新建商品房销售面积"
+   },
+   "national": {
+    "cid": "5e8a1ec6366a4fb4a3a1614aac306c0a",
+    "ids": {
+     "v": "6bb57c9d2b564dc2ac0313e2aaf7cd0c"
+    },
+    "formula": "v",
+    "orig_unit": "万平方米",
+    "table": "年度数据 > 固定资产投资和房地产 > 按用途分新建商品房销售面积"
+   }
+  },
+  {
+   "id": "trade_total",
+   "core": false,
+   "category": "economy",
+   "name_zh": "货物进出口总额（美元）",
+   "name_en": "Goods trade (imports + exports), USD",
+   "unit": "亿美元",
+   "unit_en": "亿美元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "分省为按经营单位所在地统计的货物进出口总额（海关数据），全国为海关货物进出口总额。",
+   "official_name_zh": "经营单位所在地进出口总额",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "9c61eb74ddd346d88749f9881837dbc7",
+    "ids": {
+     "v": "6219327f109140a691f71ea9d58c4ae5"
+    },
+    "formula": "v/100000",
+    "orig_unit": "千美元",
+    "table": "分省年度数据 > 对外经济贸易 > 按经营单位所在地分货物进出口总额",
+    "round": 2
+   },
+   "national": {
+    "cid": "333332810f574043bc40553902c2f385",
+    "ids": {
+     "v": "76b093af4247461e93bac4612ae7c969"
+    },
+    "formula": "v/100",
+    "orig_unit": "百万美元",
+    "table": "年度数据 > 对外经济贸易 > 货物进出口总额",
+    "round": 2
+   }
+  },
+  {
+   "id": "exports",
+   "core": false,
+   "category": "economy",
+   "name_zh": "货物出口总额（美元）",
+   "name_en": "Goods exports, USD",
+   "unit": "亿美元",
+   "unit_en": "亿美元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "分省按经营单位所在地统计；全国为海关出口总额。",
+   "official_name_zh": "经营单位所在地出口总额",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "9c61eb74ddd346d88749f9881837dbc7",
+    "ids": {
+     "v": "6a455b4128994239ab90e5cac2e7aa25"
+    },
+    "formula": "v/100000",
+    "orig_unit": "千美元",
+    "table": "分省年度数据 > 对外经济贸易 > 按经营单位所在地分货物进出口总额",
+    "round": 2
+   },
+   "national": {
+    "cid": "333332810f574043bc40553902c2f385",
+    "ids": {
+     "v": "60a655d174bb4868bdcc12e8789e7307"
+    },
+    "formula": "v/100",
+    "orig_unit": "百万美元",
+    "table": "年度数据 > 对外经济贸易 > 货物进出口总额",
+    "round": 2
+   }
+  },
+  {
+   "id": "agri_output_value",
+   "core": false,
+   "category": "economy",
+   "name_zh": "农林牧渔业总产值",
+   "name_en": "Gross output of agriculture, forestry, animal husbandry and fishery",
+   "unit": "亿元",
+   "unit_en": "亿元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "现价农林牧渔业总产值（含农林牧渔专业及辅助性活动）。",
+   "official_name_zh": "农林牧渔业总产值",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "61daa3937e1546bf911c3a9dff70cb3f",
+    "ids": {
+     "v": "40cb96b1d2484bd4bba693c41c5c34b5"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 农业 > 农、林、牧、渔业总产值及指数"
+   },
+   "national": {
+    "cid": "1944c65638974024b30b6b8060ebc83d",
+    "ids": {
+     "v": "666ce3d2d24b4e4a8bdf02d1ebca0d55"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "年度数据 > 农业 > 农、林、牧、渔业总产值及指数"
+   }
+  },
+  {
+   "id": "grain_output",
+   "core": false,
+   "category": "economy",
+   "name_zh": "粮食产量",
+   "name_en": "Grain output",
+   "unit": "万吨",
+   "unit_en": "万吨",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "谷物、豆类和薯类产量合计（薯类按5:1折粮）。",
+   "official_name_zh": "粮食产量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "2ecdbcf038f349f1bd6840e731efbfa2",
+    "ids": {
+     "v": "d7d8730d61ff44998281d585e79b94af"
+    },
+    "formula": "v",
+    "orig_unit": "万吨",
+    "table": "分省年度数据 > 农业 > 主要农作物产品产量"
+   },
+   "national": {
+    "cid": "70551119a5104e13a5a2bbb3f36410f9",
+    "ids": {
+     "v": "cea4d9e54f72420883463207c5e7f564"
+    },
+    "formula": "v",
+    "orig_unit": "万吨",
+    "table": "年度数据 > 农业 > 主要农作物产品产量"
+   }
+  },
+  {
+   "id": "intl_tourism_revenue",
+   "core": false,
+   "category": "economy",
+   "name_zh": "国际旅游外汇收入",
+   "name_en": "International tourism receipts",
+   "unit": "百万美元",
+   "unit_en": "百万美元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "入境游客在境内的旅游消费（外汇）。",
+   "official_name_zh": "国际旅游外汇收入",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "ba54f4c606314c24a05ed4ff68d7d097",
+    "ids": {
+     "v": "1a86e9a3ef7b4730a6ec8bf217e50d6d"
+    },
+    "formula": "v",
+    "orig_unit": "百万美元",
+    "table": "分省年度数据 > 旅游业 > 国际旅游 (外汇) 收入"
+   },
+   "national": {
+    "cid": "38d7ff3396594bc69e8dc4beaa586470",
+    "ids": {
+     "v": "01b0535285a14a7e850e05a58e01094f"
+    },
+    "formula": "v",
+    "orig_unit": "百万美元",
+    "table": "年度数据 > 旅游业 > 旅游业发展情况"
+   }
+  },
+  {
+   "id": "insurance_premiums",
+   "core": false,
+   "category": "economy",
+   "name_zh": "原保险保费收入",
+   "name_en": "Primary insurance premium income",
+   "unit": "亿元",
+   "unit_en": "亿元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "保险公司原保险业务保费收入。",
+   "official_name_zh": "原保险保费收入",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "f574f833db894db1815a0317c21d495a",
+    "ids": {
+     "v": "98a71d4127744fd3a89080c097db0783"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 金融业 > 原保险保费收入和赔付支出情况"
+   },
+   "national": {
+    "cid": "deef9322d1fd411cb6e06a44c71b7bc5",
+    "ids": {
+     "v": "5470b89799a94632ad7c2e4258b1f25d"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "年度数据 > 金融业 > 原保险保费收入和赔付支出情况"
+   }
+  },
+  {
+   "id": "life_expectancy",
+   "core": false,
+   "category": "population",
+   "name_zh": "平均预期寿命",
+   "name_en": "Life expectancy at birth",
+   "unit": "岁",
+   "unit_en": "岁",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "普查年份的出生时平均预期寿命（仅普查年份有分省数据）。",
+   "official_name_zh": "平均预期寿命",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "96c74b9bdfcf480192ff566bffc50bb0",
+    "ids": {
+     "v": "292f0860a4c944bfab80e61eae661059"
+    },
+    "formula": "v",
+    "orig_unit": "岁",
+    "table": "分省年度数据 > 人口 > 人口平均预期寿命"
+   },
+   "national": {
+    "cid": "0f6150cfa670407ab4a81669b9ed9dbc",
+    "ids": {
+     "v": "d5ebe43c9aa3402299bfc780c40c7cc8"
+    },
+    "formula": "v",
+    "orig_unit": "岁",
+    "table": "年度数据 > 人口 > 人口平均预期寿命"
+   }
+  },
+  {
+   "id": "patents_granted",
+   "core": false,
+   "category": "tech",
+   "name_zh": "国内专利授权量",
+   "name_en": "Domestic patents granted",
+   "unit": "项",
+   "unit_en": "项",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "国内发明、实用新型、外观设计三种专利申请授权量合计。",
+   "official_name_zh": "国内专利申请授权量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "3ac6344551e04aefbcb26f7966d280a0",
+    "ids": {
+     "v": "053bd4bf7d4b46e6bc769e4b8525823c"
+    },
+    "formula": "v",
+    "orig_unit": "项",
+    "table": "分省年度数据 > 科技 > 国内三种专利申请受理数和授权数"
+   },
+   "national": {
+    "cid": "60db3c31480d47e1b885f7c424b3913b",
+    "ids": {
+     "v": "e9657218d8ba4770b0460d66a7b402b4"
+    },
+    "formula": "v",
+    "orig_unit": "项",
+    "table": "年度数据 > 科技 > 国内三种专利申请受理数和授权数"
+   }
+  },
+  {
+   "id": "invention_patents_granted",
+   "core": false,
+   "category": "tech",
+   "name_zh": "国内发明专利授权量",
+   "name_en": "Domestic invention patents granted",
+   "unit": "项",
+   "unit_en": "项",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "国内发明专利申请授权量。",
+   "official_name_zh": "国内发明专利申请授权量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "3ac6344551e04aefbcb26f7966d280a0",
+    "ids": {
+     "v": "cddc825b23034395826461f34e3cc63e"
+    },
+    "formula": "v",
+    "orig_unit": "项",
+    "table": "分省年度数据 > 科技 > 国内三种专利申请受理数和授权数"
+   },
+   "national": {
+    "cid": "60db3c31480d47e1b885f7c424b3913b",
+    "ids": {
+     "v": "89abddc57d824662934bda8689a7bef5"
+    },
+    "formula": "v",
+    "orig_unit": "项",
+    "table": "年度数据 > 科技 > 国内三种专利申请受理数和授权数"
+   }
+  },
+  {
+   "id": "invention_patents_per_10k",
+   "core": false,
+   "category": "tech",
+   "name_zh": "每万人口发明专利授权量",
+   "name_en": "Invention patents granted per 10,000 residents",
+   "unit": "件/万人",
+   "unit_en": "件/万人",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "国内发明专利授权量 ÷ 年末常住人口（万人）。衍生指标。",
+   "official_name_zh": "国内发明专利申请授权量 ÷ 年末常住人口",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "3ac6344551e04aefbcb26f7966d280a0",
+    "ids": {
+     "v": "cddc825b23034395826461f34e3cc63e",
+     "t": "755d5f6efbcf41a6a411ad819aa93c17:4810ad6e9ddc41fc804a66134afe587f"
+    },
+    "formula": "v/t",
+    "orig_unit": "项 / 万人",
+    "table": "分省年度数据 > 科技 > 国内三种专利申请受理数和授权数 ÷ 人口 > 总人口 > 年末常住人口",
+    "round": 2
+   },
+   "national": {
+    "cid": "60db3c31480d47e1b885f7c424b3913b",
+    "ids": {
+     "v": "89abddc57d824662934bda8689a7bef5",
+     "t": "6331ad868e8b4f55b8e9b6e765609ce1:806083491dbe46a08995783945a30b9d"
+    },
+    "formula": "v/t",
+    "orig_unit": "项 / 万人",
+    "table": "年度数据 > 科技 > 国内三种专利申请受理数和授权数 ÷ 人口 > 年末总人口",
+    "round": 2
+   }
+  },
+  {
+   "id": "tech_market_turnover",
+   "core": false,
+   "category": "tech",
+   "name_zh": "技术市场成交额",
+   "name_en": "Technology market turnover",
+   "unit": "亿元",
+   "unit_en": "亿元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "技术合同成交金额（按卖方所在地）。",
+   "official_name_zh": "技术市场成交额",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "f8aaf64b70254b34bdb6f1b397aedb02",
+    "ids": {
+     "v": "320ea8f5aa904d5285c64054b25615c9"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "分省年度数据 > 科技 > 技术市场成交额"
+   },
+   "national": {
+    "cid": "dda0b1f765d9447082260406322afa8f",
+    "ids": {
+     "v": "fe4358b6030c41bc8414b60354f947d5"
+    },
+    "formula": "v",
+    "orig_unit": "亿元",
+    "table": "年度数据 > 科技 > 技术市场成交额"
+   }
+  },
+  {
+   "id": "broadband_users",
+   "core": false,
+   "category": "tech",
+   "name_zh": "互联网宽带接入用户",
+   "name_en": "Fixed broadband subscribers",
+   "unit": "万户",
+   "unit_en": "万户",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "年末互联网宽带接入用户数。",
+   "official_name_zh": "互联网宽带接入用户",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "53f522fb4b1a40ce90977a0b1cd94da1",
+    "ids": {
+     "v": "261d36f83f7d4cbb88cdc57270f2a9ae"
+    },
+    "formula": "v",
+    "orig_unit": "万户",
+    "table": "分省年度数据 > 运输和邮电 > 互联网主要指标发展情况"
+   },
+   "national": {
+    "cid": "52b81ec946b74166bfb09b2a70105f78",
+    "ids": {
+     "v": "4635f9f75639448190338f83e2663371"
+    },
+    "formula": "v",
+    "orig_unit": "万户",
+    "table": "年度数据 > 运输和邮电 > 互联网主要指标发展情况"
+   }
+  },
+  {
+   "id": "express_volume",
+   "core": false,
+   "category": "tech",
+   "name_zh": "快递业务量",
+   "name_en": "Express delivery parcels",
+   "unit": "亿件",
+   "unit_en": "亿件",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "快递服务企业业务量（万件折算为亿件）。",
+   "official_name_zh": "快递量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "dd7b4eb603d74f7e8a030fb1f0701829",
+    "ids": {
+     "v": "aa8cfbd7e171469b91ba219803dde1e0"
+    },
+    "formula": "v/10000",
+    "orig_unit": "万件",
+    "table": "分省年度数据 > 运输和邮电 > 快递业务量",
+    "round": 2
+   },
+   "national": {
+    "cid": "a98d2811e2a94e388119c772d19980c8",
+    "ids": {
+     "v": "614c9517ff954e909beeaff7fb324dbd"
+    },
+    "formula": "v/10000",
+    "orig_unit": "万件",
+    "table": "年度数据 > 运输和邮电 > 快递业务量",
+    "round": 2
+   }
+  },
+  {
+   "id": "health_technicians_per_10k",
+   "core": false,
+   "category": "health",
+   "name_zh": "每万人口卫生技术人员数",
+   "name_en": "Health technicians per 10,000 population",
+   "unit": "人/万人",
+   "unit_en": "人/万人",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "官方发布的每万人拥有卫生技术人员数。",
+   "official_name_zh": "每万人拥有卫生技术人员数",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "e469513e184d43109318f06a51cb436e",
+    "ids": {
+     "v": "2316b80b3b3746ce821e49b2c50d9521"
+    },
+    "formula": "v",
+    "orig_unit": "人",
+    "table": "分省年度数据 > 卫生 > 每万人口卫生技术人员数"
+   },
+   "national": {
+    "cid": "84b47ee0c42d4a568746fdfd3cc19744",
+    "ids": {
+     "v": "46ab21c7c09c436dbdbdd0071c6289ba"
+    },
+    "formula": "v",
+    "orig_unit": "人",
+    "table": "年度数据 > 卫生 > 每万人口卫生技术人员数"
+   }
+  },
+  {
+   "id": "primary_pupil_teacher_ratio",
+   "core": false,
+   "category": "education",
+   "name_zh": "小学生师比",
+   "name_en": "Primary school pupil–teacher ratio",
+   "unit": "人/教师",
+   "unit_en": "人/教师",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "小学在校生数 ÷ 专任教师数（教师=1）。",
+   "official_name_zh": "小学阶段生师比",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "1709f28f235340e19bc1c067443ec6ba",
+    "ids": {
+     "v": "f73b76e4b12149afb7d8473e873a77db"
+    },
+    "formula": "v",
+    "orig_unit": "教师人数=1",
+    "table": "分省年度数据 > 教育 > 各级普通学校生师比"
+   },
+   "national": {
+    "cid": "6584c1d21557433192c06248f52356af",
+    "ids": {
+     "v": "1ea8457b824044469af3e1daad7104ad"
+    },
+    "formula": "v",
+    "orig_unit": "教师人数=1",
+    "table": "年度数据 > 教育 > 各级普通学校生师比"
+   }
+  },
+  {
+   "id": "higher_ed_per_100k",
+   "core": false,
+   "category": "education",
+   "name_zh": "每十万人口高等教育在校生数",
+   "name_en": "Higher-education enrolment per 100,000 population",
+   "unit": "人/十万人",
+   "unit_en": "人/十万人",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "每十万人口高等教育平均在校生数（官方计算）。",
+   "official_name_zh": "每十万人口高等教育平均在校生数",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "5e773f40c4f24c40bf28ba7a256c8e08",
+    "ids": {
+     "v": "1ea5ea122bf4497284856490f8fa43f2"
+    },
+    "formula": "v",
+    "orig_unit": "人",
+    "table": "分省年度数据 > 教育 > 每十万人口各级教育平均在校生数"
+   },
+   "national": {
+    "cid": "3423f7783be747c4a4eef951bc905c16",
+    "ids": {
+     "v": "5d780ca6c81842379b42d816c4ba0194"
+    },
+    "formula": "v",
+    "orig_unit": "人",
+    "table": "年度数据 > 教育 > 每十万人口各级教育平均在校生数"
+   }
+  },
+  {
+   "id": "fiscal_education_funding",
+   "core": false,
+   "category": "education",
+   "name_zh": "国家财政性教育经费",
+   "name_en": "Government education expenditure",
+   "unit": "亿元",
+   "unit_en": "亿元",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "国家财政性教育经费（万元折算为亿元）。",
+   "official_name_zh": "国家财政性教育经费",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "5cbbd13d0c6a4eeeb7879115ebddbd82",
+    "ids": {
+     "v": "bc6aab12fe1743ddb59ea10cf61ca905"
+    },
+    "formula": "v/10000",
+    "orig_unit": "万元",
+    "table": "分省年度数据 > 教育 > 教育经费情况",
+    "round": 2
+   },
+   "national": {
+    "cid": "e801a7c8016b4a91a756577d0363909d",
+    "ids": {
+     "v": "2a9d112a87e641048f4ed2e02ad99a80"
+    },
+    "formula": "v/10000",
+    "orig_unit": "万元",
+    "table": "年度数据 > 教育 > 国家财政性教育经费",
+    "round": 2
+   }
+  },
+  {
+   "id": "medical_insurance_participants",
+   "core": false,
+   "category": "society",
+   "name_zh": "基本医疗保险参保人数",
+   "name_en": "Basic medical insurance enrolment",
+   "unit": "万人",
+   "unit_en": "万人",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "年末职工基本医疗保险与城乡居民基本医疗保险参保人数合计。",
+   "official_name_zh": "基本医疗保险年末参保人数",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "b3a0bfe711694f9483c50480bd1628ef",
+    "ids": {
+     "v": "29dfee714e2c4f97be652440aec199a2"
+    },
+    "formula": "v",
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 公共管理、社会保障及其他 > 基本医疗保险"
+   },
+   "national": {
+    "cid": "082ea4e047cb4878a9909f29d46fae75",
+    "ids": {
+     "v": "0820ef93ad734be49bddc88486203080"
+    },
+    "formula": "v",
+    "orig_unit": "万人",
+    "table": "年度数据 > 公共管理、社会保障及其他 > 基本医疗保险"
+   }
+  },
+  {
+   "id": "pension_participants",
+   "core": false,
+   "category": "society",
+   "name_zh": "城镇职工基本养老保险参保人数",
+   "name_en": "Urban employee pension enrolment",
+   "unit": "万人",
+   "unit_en": "万人",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "年末参加城镇职工基本养老保险人数（含在职与离退休）。",
+   "official_name_zh": "参加城镇职工基本养老保险人数",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "87884cea9d4d40b6925a976e47674a36",
+    "ids": {
+     "v": "c3fffd74e6164251b379b8d6c199eb24"
+    },
+    "formula": "v",
+    "orig_unit": "万人",
+    "table": "分省年度数据 > 公共管理、社会保障及其他 > 城镇职工基本养老保险"
+   },
+   "national": {
+    "cid": "d61901b51dc74f97ac0f7475b1b767cc",
+    "ids": {
+     "v": "96f614b4c9134b808d0d3167a4bb495c"
+    },
+    "formula": "v",
+    "orig_unit": "万人",
+    "table": "年度数据 > 公共管理、社会保障及其他 > 参加城镇职工基本养老保险人数"
+   }
+  },
+  {
+   "id": "museums",
+   "core": false,
+   "category": "society",
+   "name_zh": "博物馆数",
+   "name_en": "Museums",
+   "unit": "个",
+   "unit_en": "个",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "文物系统及其他行业博物馆机构数（以官方统计范围为准）。",
+   "official_name_zh": "博物馆机构数",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "49ac8683b36d4d31b0bbafa6e370da9f",
+    "ids": {
+     "v": "00af549872a34515af8658496c4bdccf"
+    },
+    "formula": "v",
+    "orig_unit": "个",
+    "table": "分省年度数据 > 文化 > 博物馆"
+   },
+   "national": {
+    "cid": "821ea5195a394bbb89de50cc25a3297a",
+    "ids": {
+     "v": "7a4a6799d72b4a338779575d350d6a8d"
+    },
+    "formula": "v",
+    "orig_unit": "个",
+    "table": "年度数据 > 文化 > 博物馆"
+   }
+  },
+  {
+   "id": "museum_visits",
+   "core": false,
+   "category": "society",
+   "name_zh": "博物馆参观人次",
+   "name_en": "Museum visits",
+   "unit": "万人次",
+   "unit_en": "万人次",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "博物馆全年参观人次。",
+   "official_name_zh": "博物馆参观人次",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "49ac8683b36d4d31b0bbafa6e370da9f",
+    "ids": {
+     "v": "f66678428db34adc97920492c667dbe2"
+    },
+    "formula": "v",
+    "orig_unit": "万人次",
+    "table": "分省年度数据 > 文化 > 博物馆"
+   },
+   "national": {
+    "cid": "821ea5195a394bbb89de50cc25a3297a",
+    "ids": {
+     "v": "3616f67329b54c4da1a69ce0ae57fcd1"
+    },
+    "formula": "v",
+    "orig_unit": "万人次",
+    "table": "年度数据 > 文化 > 博物馆"
+   }
+  },
+  {
+   "id": "library_books_per_capita",
+   "core": false,
+   "category": "society",
+   "name_zh": "人均公共图书馆藏量",
+   "name_en": "Public library holdings per capita",
+   "unit": "册/人",
+   "unit_en": "册/人",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "公共图书馆总藏量 ÷ 常住人口（官方计算）。",
+   "official_name_zh": "人均拥有公共图书馆藏量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "0b397cc7a52748ffbb30bbf2450a5964",
+    "ids": {
+     "v": "d8a86413d4d04a158d2192b3af64b520"
+    },
+    "formula": "v",
+    "orig_unit": "册/人",
+    "table": "分省年度数据 > 文化 > 公共图书馆"
+   },
+   "national": {
+    "cid": "fae7f03348144731943a606167d317fc",
+    "ids": {
+     "v": "d7e39ea827cb415082cd0143f555cd51"
+    },
+    "formula": "v",
+    "orig_unit": "册/人",
+    "table": "年度数据 > 文化 > 公共图书馆"
+   }
+  },
+  {
+   "id": "electricity_consumption",
+   "core": false,
+   "category": "environment",
+   "name_zh": "全社会用电量",
+   "name_en": "Electricity consumption",
+   "unit": "亿千瓦时",
+   "unit_en": "亿千瓦时",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "电力消费总量（地区能源平衡口径）。",
+   "official_name_zh": "电力消费量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "ccc1ef64e4a0485f840cd5f6fa192097",
+    "ids": {
+     "v": "808cac47e5824d1f91af38c0962a336b"
+    },
+    "formula": "v",
+    "orig_unit": "亿千瓦时",
+    "table": "分省年度数据 > 能源 > 主要能源产品消费量"
+   },
+   "national": {
+    "cid": "b349329a0b7d454aada5fb3ecc33e4b2",
+    "ids": {
+     "v": "80b072c16b8446edbc98a4abac28b5fb"
+    },
+    "formula": "v",
+    "orig_unit": "亿千瓦时",
+    "table": "年度数据 > 能源 > 电力平衡表"
+   }
+  },
+  {
+   "id": "water_resources_per_capita",
+   "core": false,
+   "category": "environment",
+   "name_zh": "人均水资源量",
+   "name_en": "Water resources per capita",
+   "unit": "立方米/人",
+   "unit_en": "立方米/人",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "水资源总量 ÷ 常住人口（官方计算，受当年降水影响大）。",
+   "official_name_zh": "人均水资源量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "23a72a19bd3a4206a2cdd63aeefd77b4",
+    "ids": {
+     "v": "56462963ef944c6297f411257dae8b8e"
+    },
+    "formula": "v",
+    "orig_unit": "立方米/人",
+    "table": "分省年度数据 > 资源和环境 > 水资源"
+   },
+   "national": {
+    "cid": "6634d2726b30408aada183324c19e077",
+    "ids": {
+     "v": "9a3f32f8fbcd4401be2ce0b400d82a59"
+    },
+    "formula": "v",
+    "orig_unit": "立方米/人",
+    "table": "年度数据 > 资源和环境 > 水资源"
+   }
+  },
+  {
+   "id": "so2_emissions",
+   "core": false,
+   "category": "environment",
+   "name_zh": "二氧化硫排放量",
+   "name_en": "Sulphur dioxide emissions",
+   "unit": "万吨",
+   "unit_en": "万吨",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "废气中二氧化硫排放量。统计调查范围在2011、2016年前后有调整，跨期比较需谨慎。",
+   "official_name_zh": "二氧化硫排放量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "d3fbabfb5307455b9e807e33da7b9496",
+    "ids": {
+     "v": "c51e0e7561a14e34ab1f233301a1cd4f"
+    },
+    "formula": "v",
+    "orig_unit": "万吨",
+    "table": "分省年度数据 > 资源和环境 > 废气中主要污染物排放"
+   },
+   "national": {
+    "cid": "42e1949dd84f457e8ad1d29c65096858",
+    "ids": {
+     "v": "3df1d29f5df04f23b9ab676dda83c901"
+    },
+    "formula": "v",
+    "orig_unit": "万吨",
+    "table": "年度数据 > 资源和环境 > 废气中主要污染物排放"
+   }
+  },
+  {
+   "id": "garbage_treatment_rate",
+   "core": false,
+   "category": "environment",
+   "name_zh": "生活垃圾无害化处理率",
+   "name_en": "Municipal solid waste safe-treatment rate",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "城市生活垃圾无害化处理量 ÷ 清运量 × 100（官方计算）。",
+   "official_name_zh": "生活垃圾无害化处理率",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "ae800bf8ba184308a05274d32af1953d",
+    "ids": {
+     "v": "180e13b13bad4119aa714f373bcc40bf"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "分省年度数据 > 资源和环境 > 城市生活垃圾清运和处理情况"
+   },
+   "national": {
+    "cid": "ed0b58d0d91f48e388f71550773e746d",
+    "ids": {
+     "v": "708b2b06668348baae3aed637e2f2747"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "年度数据 > 资源和环境 > 城市生活垃圾清运和处理情况"
+   }
+  },
+  {
+   "id": "green_coverage_built_area",
+   "core": false,
+   "category": "environment",
+   "name_zh": "城市建成区绿化覆盖率",
+   "name_en": "Green coverage of urban built-up area",
+   "unit": "%",
+   "unit_en": "%",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "城市建成区绿化覆盖面积 ÷ 建成区面积 × 100。",
+   "official_name_zh": "建成区绿化覆盖率",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "425718c96f084a4ab57e95936eeaad68",
+    "ids": {
+     "v": "5681ae21bd504d37b502a096775431c3"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "分省年度数据 > 城市概况 > 城市绿地和园林"
+   },
+   "national": {
+    "cid": "7dd5dcf3341b4962bec75037d89fbec7",
+    "ids": {
+     "v": "aa67a1e755ef44558cbda3c191a4baca"
+    },
+    "formula": "v",
+    "orig_unit": "%",
+    "table": "年度数据 > 城市概况 > 城市绿地和园林"
+   }
+  },
+  {
+   "id": "daily_water_use_per_capita",
+   "core": false,
+   "category": "environment",
+   "name_zh": "城市人均日生活用水量",
+   "name_en": "Urban domestic water use per capita per day",
+   "unit": "升",
+   "unit_en": "升",
+   "agg": "none",
+   "higher_is": "neutral",
+   "definition_zh": "城市用水人口人均每日生活用水量。",
+   "official_name_zh": "人均日生活用水量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "3688b8562ead415c9e645b5898fa46cf",
+    "ids": {
+     "v": "54393a46ec354b99a5d1e10a7daec852"
+    },
+    "formula": "v",
+    "orig_unit": "升",
+    "table": "分省年度数据 > 城市概况 > 城市供水"
+   },
+   "national": {
+    "cid": "e1b5a0836ac34803bd71e580678896ee",
+    "ids": {
+     "v": "757a0353a1eb4acbb43522206e84c782"
+    },
+    "formula": "v",
+    "orig_unit": "升",
+    "table": "年度数据 > 城市概况 > 城市供水"
+   }
+  },
+  {
+   "id": "civil_vehicles",
+   "core": false,
+   "category": "environment",
+   "name_zh": "民用汽车拥有量",
+   "name_en": "Civilian motor vehicles",
+   "unit": "万辆",
+   "unit_en": "万辆",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "年末在公安交通管理部门登记的民用汽车数量。",
+   "official_name_zh": "民用汽车拥有量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "669ec642539943eca3a8d26f351e247d",
+    "ids": {
+     "v": "8ddbd400f07247ceba54c6458a349f94"
+    },
+    "formula": "v",
+    "orig_unit": "万辆",
+    "table": "分省年度数据 > 运输和邮电 > 民用汽车拥有量"
+   },
+   "national": {
+    "cid": "ff878de9840c4a2994808c2c63c6a900",
+    "ids": {
+     "v": "80e6e697983349f59bce04373ade4a5e"
+    },
+    "formula": "v",
+    "orig_unit": "万辆",
+    "table": "年度数据 > 运输和邮电 > 民用汽车拥有量"
+   }
+  },
+  {
+   "id": "private_cars",
+   "core": false,
+   "category": "environment",
+   "name_zh": "私人汽车拥有量",
+   "name_en": "Private cars",
+   "unit": "万辆",
+   "unit_en": "万辆",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "年末登记的私人汽车数量。",
+   "official_name_zh": "私人汽车拥有量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "eea9014e5ac3458a9b98a9d11a74bb41",
+    "ids": {
+     "v": "5a3ca38329444466b94d708d5048105d"
+    },
+    "formula": "v",
+    "orig_unit": "万辆",
+    "table": "分省年度数据 > 运输和邮电 > 私人汽车拥有量"
+   },
+   "national": {
+    "cid": "e51edc97572d4bfb973cd4ef1621645f",
+    "ids": {
+     "v": "72996389ae51432a892cb91f9392d9df"
+    },
+    "formula": "v",
+    "orig_unit": "万辆",
+    "table": "年度数据 > 运输和邮电 > 私人汽车拥有量"
+   }
+  },
+  {
+   "id": "private_cars_per_1000",
+   "core": false,
+   "category": "environment",
+   "name_zh": "每千人私人汽车拥有量",
+   "name_en": "Private cars per 1,000 residents",
+   "unit": "辆/千人",
+   "unit_en": "辆/千人",
+   "agg": "weighted:population",
+   "higher_is": "neutral",
+   "definition_zh": "私人汽车拥有量（万辆）÷ 年末常住人口（万人）× 1000。衍生指标。",
+   "official_name_zh": "私人汽车拥有量 ÷ 年末常住人口",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "eea9014e5ac3458a9b98a9d11a74bb41",
+    "ids": {
+     "v": "5a3ca38329444466b94d708d5048105d",
+     "t": "755d5f6efbcf41a6a411ad819aa93c17:4810ad6e9ddc41fc804a66134afe587f"
+    },
+    "formula": "v/t*1000",
+    "orig_unit": "万辆 / 万人",
+    "table": "分省年度数据 > 运输和邮电 > 私人汽车拥有量 ÷ 人口 > 总人口 > 年末常住人口",
+    "round": 1
+   },
+   "national": {
+    "cid": "e51edc97572d4bfb973cd4ef1621645f",
+    "ids": {
+     "v": "72996389ae51432a892cb91f9392d9df",
+     "t": "6331ad868e8b4f55b8e9b6e765609ce1:806083491dbe46a08995783945a30b9d"
+    },
+    "formula": "v/t*1000",
+    "orig_unit": "万辆 / 万人",
+    "table": "年度数据 > 运输和邮电 > 私人汽车拥有量 ÷ 人口 > 年末总人口",
+    "round": 1
+   }
+  },
+  {
+   "id": "freight_volume",
+   "core": false,
+   "category": "environment",
+   "name_zh": "货物运输量",
+   "name_en": "Freight volume",
+   "unit": "万吨",
+   "unit_en": "万吨",
+   "agg": "sum",
+   "higher_is": "neutral",
+   "definition_zh": "铁路、公路、水运、民航（全国另含管道）货运量合计。",
+   "official_name_zh": "货运量",
+   "added_in": "2.1.0",
+   "province": {
+    "cid": "c8a2f82b254f41adaa0d2fb48c8d2c4b",
+    "ids": {
+     "v": "1c01d75b65524d0d9f43ba35bf5744d0"
+    },
+    "formula": "v",
+    "orig_unit": "万吨",
+    "table": "分省年度数据 > 运输和邮电 > 货运量"
+   },
+   "national": {
+    "cid": "1afa59232de34e008c2a6e769cd253ed",
+    "ids": {
+     "v": "a4c3461ed6094d91819b35a297f60405"
+    },
+    "formula": "v",
+    "orig_unit": "万吨",
+    "table": "年度数据 > 运输和邮电 > 货运量"
    }
   }
  ]

@@ -1,0 +1,218 @@
+{
+ "real_gdp_growth": {
+  "cid": "489888799f8d470786bc01a4057efc38",
+  "iid": "93dd15c8a3a3400ea89f8dceec7ab2b3",
+  "table": "国 > 国民经济核算 > 国内生产总值指数 > 国内生产总值指数 (上年=100) ",
+  "name": "国内生产总值指数 (上年=100)"
+ },
+ "life_expectancy": {
+  "cid": "0f6150cfa670407ab4a81669b9ed9dbc",
+  "iid": "d5ebe43c9aa3402299bfc780c40c7cc8",
+  "table": "国 > 人口 > 人口平均预期寿命",
+  "name": "平均预期寿命 (岁)"
+ },
+ "average_wage": {
+  "cid": "0aed53df47b14e7393a98718a320e238",
+  "iid": "759f53b2b5204c3d9dce7683db504576",
+  "table": "国 > 就业人员和工资 > 城镇非私营单位就业人员平均工资和指数",
+  "name": "城镇非私营单位就业人员平均工资 (元)"
+ },
+ "real_wage_growth": {
+  "cid": "0aed53df47b14e7393a98718a320e238",
+  "iid": "ed2e40171c06419088d2484199d2020d",
+  "table": "国 > 就业人员和工资 > 城镇非私营单位就业人员平均工资和指数",
+  "name": "城镇非私营单位就业人员平均实际工资指数 (上年=100)"
+ },
+ "registered_unemployment_rate": {
+  "cid": "19839dbd8e82481b9524f031c6d816c5",
+  "iid": "456ef2f3d75f472b930384237bc6100f",
+  "table": "国 > 就业人员和工资 > 城镇登记失业人员及失业率",
+  "name": "城镇登记失业率 (%)"
+ },
+ "fai_growth": {
+  "cid": "d3a73a7e6c3c4db185b05aaac3c899e1",
+  "iid": "81ad509e49c442e28ba08ffaa4bbc7d1",
+  "table": "国 > 固定资产投资和房地产 > 按领域分固定资产投资 (不含农户) 增速（2018-）",
+  "name": "基础设施固定资产投资 (不含农户) 比上年增长 (%)"
+ },
+ "housing_price": {
+  "cid": "302cec9f9b354cb3a82670d8747bea2f",
+  "iid": "67851f1515504d5992b1a9d0c023f0bb",
+  "table": "国 > 固定资产投资和房地产 > 按用途分新建商品房平均销售价格",
+  "name": "新建商品房平均销售价格 (元/平方米)"
+ },
+ "housing_sales_area": {
+  "cid": "5e8a1ec6366a4fb4a3a1614aac306c0a",
+  "iid": "6bb57c9d2b564dc2ac0313e2aaf7cd0c",
+  "table": "国 > 固定资产投资和房地产 > 按用途分新建商品房销售面积",
+  "name": "新建商品房销售面积 (万平方米)"
+ },
+ "trade_total": {
+  "cid": "333332810f574043bc40553902c2f385",
+  "iid": "e9f9299386b34a9f91ef13aa9aebd2be",
+  "table": "国 > 对外经济贸易 > 货物进出口总额",
+  "name": "进出口总额 (人民币) (亿元)"
+ },
+ "exports": {
+  "cid": "333332810f574043bc40553902c2f385",
+  "iid": "e9f9299386b34a9f91ef13aa9aebd2be",
+  "table": "国 > 对外经济贸易 > 货物进出口总额",
+  "name": "进出口总额 (人民币) (亿元)"
+ },
+ "electricity_consumption": {
+  "cid": "77eb0008122a4a6ea2e8f575436a8e8a",
+  "iid": "16dfcd49f31649d380d5fa21b751ebc7",
+  "table": "国 > 能源 > 平均每天能源消费量",
+  "name": "平均每天电力消费量 (亿千瓦小时)"
+ },
+ "cpi_inflation": {
+  "cid": "9a4fcdbee9de485eb791c8505139d616",
+  "iid": "ca423c517e8749b187f92e03f2cd0aa3",
+  "table": "国 > 价格指数 > 居民消费价格分类指数 (上年=100) (2021-)  > 食品烟酒类居民消费价格指数 (上年=100) ",
+  "name": "食品烟酒类居民消费价格指数 (上年=100)"
+ },
+ "grain_output": {
+  "cid": "70551119a5104e13a5a2bbb3f36410f9",
+  "iid": "cea4d9e54f72420883463207c5e7f564",
+  "table": "国 > 农业 > 主要农作物产品产量",
+  "name": "粮食产量 (万吨)"
+ },
+ "water_resources_per_capita": {
+  "cid": "6634d2726b30408aada183324c19e077",
+  "iid": "9a3f32f8fbcd4401be2ce0b400d82a59",
+  "table": "国 > 资源和环境 > 水资源",
+  "name": "人均水资源量 (立方米/人)"
+ },
+ "so2_emissions": {
+  "cid": "42e1949dd84f457e8ad1d29c65096858",
+  "iid": "3df1d29f5df04f23b9ab676dda83c901",
+  "table": "国 > 资源和环境 > 废气中主要污染物排放",
+  "name": "二氧化硫排放量 (万吨)"
+ },
+ "garbage_treatment_rate": {
+  "cid": "ed0b58d0d91f48e388f71550773e746d",
+  "iid": "708b2b06668348baae3aed637e2f2747",
+  "table": "国 > 资源和环境 > 城市生活垃圾清运和处理情况",
+  "name": "生活垃圾无害化处理率 (%)"
+ },
+ "green_coverage_built_area": {
+  "cid": "7dd5dcf3341b4962bec75037d89fbec7",
+  "iid": "aa67a1e755ef44558cbda3c191a4baca",
+  "table": "国 > 城市概况 > 城市绿地和园林",
+  "name": "建成区绿化覆盖率 (%)"
+ },
+ "civil_vehicles": {
+  "cid": "ff878de9840c4a2994808c2c63c6a900",
+  "iid": "80e6e697983349f59bce04373ade4a5e",
+  "table": "国 > 运输和邮电 > 民用汽车拥有量",
+  "name": "民用汽车拥有量 (万辆)"
+ },
+ "private_cars": {
+  "cid": "e51edc97572d4bfb973cd4ef1621645f",
+  "iid": "72996389ae51432a892cb91f9392d9df",
+  "table": "国 > 运输和邮电 > 私人汽车拥有量",
+  "name": "私人汽车拥有量 (万辆)"
+ },
+ "express_volume": {
+  "cid": "a98d2811e2a94e388119c772d19980c8",
+  "iid": "614c9517ff954e909beeaff7fb324dbd",
+  "table": "国 > 运输和邮电 > 快递业务量",
+  "name": "快递量 (万件)"
+ },
+ "broadband_users": {
+  "cid": "52b81ec946b74166bfb09b2a70105f78",
+  "iid": "4635f9f75639448190338f83e2663371",
+  "table": "国 > 运输和邮电 > 互联网主要指标发展情况",
+  "name": "互联网宽带接入用户 (万户)"
+ },
+ "tech_market_turnover": {
+  "cid": "dda0b1f765d9447082260406322afa8f",
+  "iid": "fe4358b6030c41bc8414b60354f947d5",
+  "table": "国 > 科技 > 技术市场成交额",
+  "name": "技术市场成交额 (亿元)"
+ },
+ "health_technicians_per_10k": {
+  "cid": "84b47ee0c42d4a568746fdfd3cc19744",
+  "iid": "46ab21c7c09c436dbdbdd0071c6289ba",
+  "table": "国 > 卫生 > 每万人口卫生技术人员数",
+  "name": "每万人拥有卫生技术人员数 (人)"
+ },
+ "primary_pupil_teacher_ratio": {
+  "cid": "6584c1d21557433192c06248f52356af",
+  "iid": "1ea8457b824044469af3e1daad7104ad",
+  "table": "国 > 教育 > 各级普通学校生师比",
+  "name": "小学阶段生师比 (教师人数=1)"
+ },
+ "higher_ed_per_100k": {
+  "cid": "3423f7783be747c4a4eef951bc905c16",
+  "iid": "5d780ca6c81842379b42d816c4ba0194",
+  "table": "国 > 教育 > 每十万人口各级教育平均在校生数",
+  "name": "每十万人口高等教育平均在校生数 (人)"
+ },
+ "fiscal_education_funding": {
+  "cid": "e801a7c8016b4a91a756577d0363909d",
+  "iid": "2a9d112a87e641048f4ed2e02ad99a80",
+  "table": "国 > 教育 > 教育经费 > 国家财政性教育经费",
+  "name": "国家财政性教育经费 (万元)"
+ },
+ "medical_insurance_participants": {
+  "cid": "082ea4e047cb4878a9909f29d46fae75",
+  "iid": "0820ef93ad734be49bddc88486203080",
+  "table": "国 > 公共管理、社会保障及其他 > 基本医疗保险",
+  "name": "基本医疗保险年末参保人数 (万人)"
+ },
+ "pension_participants": {
+  "cid": "d61901b51dc74f97ac0f7475b1b767cc",
+  "iid": "96f614b4c9134b808d0d3167a4bb495c",
+  "table": "国 > 公共管理、社会保障及其他 > 参加城镇职工基本养老保险人数",
+  "name": "参加城镇职工基本养老保险人数 (万人)"
+ },
+ "museums": {
+  "cid": "821ea5195a394bbb89de50cc25a3297a",
+  "iid": "7a4a6799d72b4a338779575d350d6a8d",
+  "table": "国 > 文化 > 博物馆",
+  "name": "博物馆机构数 (个)"
+ },
+ "museum_visits": {
+  "cid": "821ea5195a394bbb89de50cc25a3297a",
+  "iid": "3616f67329b54c4da1a69ce0ae57fcd1",
+  "table": "国 > 文化 > 博物馆",
+  "name": "博物馆参观人次 (万人次)"
+ },
+ "library_books_per_capita": {
+  "cid": "fae7f03348144731943a606167d317fc",
+  "iid": "d7e39ea827cb415082cd0143f555cd51",
+  "table": "国 > 文化 > 公共图书馆基本情况 > 公共图书馆",
+  "name": "人均拥有公共图书馆藏量 (册/人)"
+ },
+ "intl_tourism_revenue": {
+  "cid": "38d7ff3396594bc69e8dc4beaa586470",
+  "iid": "01b0535285a14a7e850e05a58e01094f",
+  "table": "国 > 旅游业 > 旅游业发展情况",
+  "name": "国际旅游外汇收入 (百万美元)"
+ },
+ "insurance_premiums": {
+  "cid": "deef9322d1fd411cb6e06a44c71b7bc5",
+  "iid": "5470b89799a94632ad7c2e4258b1f25d",
+  "table": "国 > 金融业 > 原保险保费收入和赔付支出情况",
+  "name": "原保险保费收入 (亿元)"
+ },
+ "freight_volume": {
+  "cid": "1afa59232de34e008c2a6e769cd253ed",
+  "iid": "e84d82bfef84431ebca6d34cb8b06abe",
+  "table": "国 > 运输和邮电 > 货运量",
+  "name": "铁路货运量 (万吨)"
+ },
+ "daily_water_use_per_capita": {
+  "cid": "e1b5a0836ac34803bd71e580678896ee",
+  "iid": "757a0353a1eb4acbb43522206e84c782",
+  "table": "国 > 城市概况 > 城市供水",
+  "name": "人均日生活用水量 (升)"
+ },
+ "private_cars_per_1000": {
+  "cid": "e51edc97572d4bfb973cd4ef1621645f",
+  "iid": "72996389ae51432a892cb91f9392d9df",
+  "table": "国 > 运输和邮电 > 私人汽车拥有量",
+  "name": "私人汽车拥有量 (万辆)"
+ }
+}

@@ -1,5 +1,5 @@
-import { GEO, fmt, isRate, type Indicator } from "@/lib/data";
-export default function MovesSection({ ind }: { ind: Indicator }) {
+import { GEO, fmt, isRate, type IndicatorFull } from "@/lib/data";
+export default function MovesSection({ ind }: { ind: IndicatorFull }) {
   if (!ind.moves.length) return <p className="text-sm text-[var(--muted)]">2015年或最新年份缺少省级数据，无法计算变化。</p>;
   const rate = isRate(ind.unit);
   const sorted = [...ind.moves];

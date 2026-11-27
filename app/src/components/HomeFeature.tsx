@@ -1,15 +1,14 @@
 "use client";
 import { useMemo, useState } from "react";
 import EChart from "./EChart";
-import { GEO, fmt, getIndicator } from "@/lib/data";
+import { GEO, fmt, getIndicator, HOME_FEATURE_TABS as TABS } from "@/lib/data";
 import { INK, axisCommon, seqColor } from "./theme";
 
-const TABS = ["population", "gdp_per_capita", "disposable_income", "population_65plus", "urbanization_rate", "physicians_per_1000"];
 
-export default function HomeFeature() {
+export default function HomeFeature({ rankings }: { rankings: Record<string, { geo: string; rank: number | null; value: number | null }[]> }) {
   const [id, setId] = useState(TABS[0]);
   const ind = getIndicator(id)!;
-  const rows = ind.ranking.filter((r) => r.value !== null) as { geo: string; rank: number; value: number }[];
+  const rows = rankings[id].filter((r) => r.value !== null) as { geo: string; rank: number; value: number }[];
   const vals = rows.map((r) => r.value);
   const option = useMemo(() => ({
     animation: false,

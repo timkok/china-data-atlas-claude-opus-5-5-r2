@@ -53,7 +53,7 @@ def test_known_official_values():
 def test_negative_only_where_possible():
     for r in ROWS:
         if r["value"] != "" and float(r["value"]) < 0:
-            assert r["indicator_id"] == "natural_growth_rate"
+            assert r["indicator_id"] in {"natural_growth_rate", "real_gdp_growth", "cpi_inflation", "real_wage_growth", "fai_growth"}
 
 def test_units_converted_correctly():
     r = [x for x in ROWS if x["indicator_id"] == "higher_education_students" and x["geo_code"] == "440000" and x["year"] == "2024"][0]

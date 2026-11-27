@@ -1,10 +1,10 @@
 "use client";
 import { useMemo } from "react";
 import EChart from "./EChart";
-import { GEO, fmt, type Indicator } from "@/lib/data";
+import { GEO, fmt, type IndicatorFull } from "@/lib/data";
 import { INK, axisCommon } from "./theme";
 
-export default function DistributionSection({ ind }: { ind: Indicator }) {
+export default function DistributionSection({ ind }: { ind: IndicatorFull }) {
   const d = ind.distribution;
   const pts = ind.ranking.filter((r) => r.value !== null) as { geo: string; value: number; rank: number }[];
   const option = useMemo(() => d ? ({

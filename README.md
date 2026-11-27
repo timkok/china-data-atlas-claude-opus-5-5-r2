@@ -2,6 +2,8 @@
 
 Cross-model audit of 8 Round 1 datasets, an independent **canonical candidate** database (30,418 official observations, 42 indicators, E0–E4 evidence levels, data vintages), and an upgraded research product.
 
+> **R2.1 update (2026-11-26):** +40 official indicators (82 total, 58,063 published observations, 3 new topics), 43 new independent yearbook checks — see [R2_1_DATA_EXPANSION.md](R2_1_DATA_EXPANSION.md). Promoted to production at the user's request; the site URL below now serves R2.1. Branch `r2.1/data-expansion`, PR #2. The previous R2 production deployment (`china-data-atlas-claude-opus-5-5-r2-ea0xxv128-timkok621-1320.vercel.app`) is retained for rollback.
+
 - Site: https://china-data-atlas-claude-opus-5-5-r2.vercel.app
 - Repo (public): https://github.com/timkok/china-data-atlas-claude-opus-5-5-r2
 - Reports: [DELIVERY_REPORT.md](DELIVERY_REPORT.md) · [R1_VS_R2.md](R1_VS_R2.md) · [audit/cross_model_audit.md](audit/cross_model_audit.md) · [LIMITATIONS.md](LIMITATIONS.md)

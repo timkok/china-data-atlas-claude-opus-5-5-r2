@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { CATEGORIES, INDICATORS, fmt } from "@/lib/data";
-export const metadata: Metadata = { title: "全部指标", description: "人口、经济、教育、医疗、资源五大类共42个指标（12项核心 + 30项扩展）的分省数据。", alternates: { canonical: "/indicators/" } };
+export const metadata: Metadata = { title: "全部指标", description: `${CATEGORIES.map((c) => c.zh).join("、")}共${INDICATORS.length}个指标（12项核心 + ${INDICATORS.length - 12}项扩展）的分省数据。`, alternates: { canonical: "/indicators/" } };
 export default function Indicators() {
   return (
     <div className="wrap pt-8">

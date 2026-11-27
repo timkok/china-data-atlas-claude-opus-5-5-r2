@@ -40,10 +40,11 @@ check("status_enums", "ERROR", not bad_status, "data_status / verification_statu
 iso = [r for r in rows if not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", r["retrieved_at"])]
 check("iso_dates", "ERROR", not iso, "retrieved_at ISO 8601", len(iso))
 # plausibility
-NONNEG = [i for i in IND if i != "natural_growth_rate"]
+SIGNED = {"natural_growth_rate", "real_gdp_growth", "cpi_inflation", "real_wage_growth", "fai_growth"}  # growth rates may be negative
+NONNEG = [i for i in IND if i not in SIGNED]
 neg = [r for r in rows if r["value"] != "" and r["indicator_id"] in NONNEG and float(r["value"]) < 0]
-check("no_negative_where_impossible", "ERROR", not neg, "only natural_growth_rate may be negative", len(neg))
-pct = [r for r in rows if r["value"] != "" and r["unit"] == "%" and not (0 <= float(r["value"]) <= 100)]
+check("no_negative_where_impossible", "ERROR", not neg, "only natural growth and growth-rate indicators may be negative", len(neg))
+pct = [r for r in rows if r["value"] != "" and r["unit"] == "%" and r["indicator_id"] not in SIGNED and not (0 <= float(r["value"]) <= 100)]
 check("percent_range", "ERROR", not pct, "percent values within 0-100", len(pct))
 # year-on-year jumps
 series = defaultdict(dict)

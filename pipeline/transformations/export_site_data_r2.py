@@ -193,6 +193,48 @@ if nr:
       "chart": {"type": "line", "geos": ["000000"], "indicator": "urban_rural_income_ratio", "from": ys[0], "to": ys[-1]},
       "limits": ["2013年前后住户调查制度变化，长期比较需谨慎。"]})
 
+# ---------- R2.1 stories (new indicators) ----------
+def common_latest(ids, geos):
+    ys = [yy for yy in range(2025, 1999, -1) if all(s(i, g).get(yy) is not None for i in ids for g in geos)]
+    return ys[0] if ys else None
+# 7 housing affordability: square metres of new housing one year's average wage buys
+yA = common_latest(["average_wage", "housing_price"], PROV)
+if yA:
+    aff = sorted([(g, s("average_wage", g)[yA] / s("housing_price", g)[yA]) for g in PROV], key=lambda x: x[1])
+    nat_aff = (s("average_wage", "000000").get(yA) or 0) / (s("housing_price", "000000").get(yA) or 1) if s("housing_price", "000000").get(yA) else None
+    stories.append({"slug": "wage-vs-housing-price", "title": "一年工资能买几平方米新房？", "question": f"{yA}年各省城镇非私营单位平均工资与新建商品房平均销售价格之比",
+      "indicators": ["average_wage", "housing_price"], "years": [yA, yA],
+      "method": "可购面积 = 城镇非私营单位就业人员年平均工资 ÷ 新建商品房平均销售价格（元/平方米）。两项均为国家统计局官方发布值；比值为本平台衍生计算。",
+      "facts": [f"最少：{'、'.join(f'{GEO[g]['short_zh']} {v:.1f} 平方米' for g, v in aff[:3])}。", f"最多：{'、'.join(f'{GEO[g]['short_zh']} {v:.1f} 平方米' for g, v in aff[::-1][:3])}。"]
+               + ([f"全国：{nat_aff:.1f} 平方米。"] if nat_aff else []),
+      "chart": {"type": "bar", "data": [{"geo": g, "value": round(v, 2)} for g, v in aff[::-1]], "unit": "平方米/年工资"},
+      "limits": ["平均工资不含私营单位，偏高于全体就业人员；房价为全部新建商品房（含办公、商业）均价，且受当年销售结构影响。", "不含税费、贷款利息与二手房市场，不等于真实购房负担。"]})
+# 8 where invention patents are concentrated
+yP = common_latest(["invention_patents_granted"], PROV)
+if yP and s("invention_patents_granted", "000000").get(yP):
+    tot = sum(s("invention_patents_granted", g)[yP] for g in PROV)
+    top = sorted(PROV, key=lambda g: -s("invention_patents_granted", g)[yP])
+    share5 = sum(s("invention_patents_granted", g)[yP] for g in top[:5]) / tot * 100
+    per = sorted([(g, s("invention_patents_per_10k", g).get(yP)) for g in PROV if s("invention_patents_per_10k", g).get(yP) is not None], key=lambda x: -x[1])
+    stories.append({"slug": "invention-patents-geography", "title": "发明专利集中在哪里？", "question": f"{yP}年国内发明专利授权量的地区分布有多集中？",
+      "indicators": ["invention_patents_granted", "invention_patents_per_10k"], "years": [yP, yP],
+      "method": "前五省份占比 = 前五省份授权量之和 ÷ 31省合计；每万人授权量 = 授权量 ÷ 年末常住人口（万人），本平台衍生计算。",
+      "facts": [f"前五省份（{'、'.join(GEO[g]['short_zh'] for g in top[:5])}）占31省合计的 {share5:.1f}%。", f"按人口计最高：{'、'.join(f'{GEO[g]['short_zh']} {v:.1f} 件/万人' for g, v in per[:3])}；最低：{'、'.join(f'{GEO[g]['short_zh']} {v:.2f}' for g, v in per[-3:])}。"],
+      "chart": {"type": "bar", "data": [{"geo": g, "value": round(v, 2)} for g, v in per], "unit": "件/万人"},
+      "limits": ["授权量按申请人所在地统计，跨省企业的研发地与申请地可能不同。", "专利数量不等于专利质量或经济价值。"]})
+# 9 private cars per 1,000 residents: growth since 2010
+yC = common_latest(["private_cars_per_1000"], PROV)
+if yC and all(s("private_cars_per_1000", g).get(2010) for g in PROV):
+    cg = sorted([(g, s("private_cars_per_1000", g)[2010], s("private_cars_per_1000", g)[yC]) for g in PROV], key=lambda x: -x[2])
+    nat = s("private_cars_per_1000", "000000")
+    stories.append({"slug": "private-cars-per-1000", "title": "私人汽车普及：从2010年到现在", "question": f"2010—{yC}年每千人私人汽车拥有量如何变化？",
+      "indicators": ["private_cars_per_1000", "private_cars"], "years": [2010, yC],
+      "method": "每千人私人汽车 = 私人汽车拥有量（万辆）÷ 年末常住人口（万人）× 1000，本平台衍生计算；车辆按登记地统计。",
+      "facts": ([f"全国：2010年 {nat[2010]:.0f} 辆 → {yC}年 {nat[yC]:.0f} 辆（每千人）。"] if nat.get(2010) and nat.get(yC) else []) +
+               [f"{yC}年最高：{'、'.join(f'{GEO[g]['short_zh']} {b:.0f}' for g, a, b in cg[:3])}；最低：{'、'.join(f'{GEO[g]['short_zh']} {b:.0f}' for g, a, b in cg[-3:])}。"],
+      "chart": {"type": "bar", "data": [{"geo": g, "value": round(b, 1)} for g, a, b in cg], "unit": f"辆/千人（{yC}年）"},
+      "limits": ["车辆按登记地统计；限牌城市（如北京、上海）存在外地登记车辆。", "人口分母为年末常住人口。"]})
+
 # ---------- site.json ----------
 latest_updates = sorted([{"id": i["id"], "name_zh": i["name_zh"], "national": i["latest_national_year"], "province": i["latest_province_year"]} for i in ind_out], key=lambda x: (-(x["province"] or 0), -(x["national"] or 0)))
 ev_counts = Counter(r["evidence_level"] for r in canon)
@@ -205,7 +247,13 @@ site = {
               "conflicts_unresolved": sum(1 for c in conf if not c["resolution"].startswith("resolved")), "r1_datasets": 8, "qa_errors": quality["errors"], "qa_warnings": quality["warnings"]},
     "conflict_categories": dict(Counter(c["category"] for c in conf)),
 }
+# R2.1: keep the client bundle small. Per-indicator detail (ranking, moves, findings, distribution) is only
+# needed by build-time pages, so it goes to site-detail.json (read server-side) instead of site.json (bundled).
+DETAIL = ("ranking", "moves", "findings", "distribution")
+detail = {i["id"]: {k: i[k] for k in DETAIL} for i in site["indicators"]}
+site["indicators"] = [{k: v for k, v in i.items() if k not in DETAIL} for i in site["indicators"]]
 json.dump(site, open(os.path.join(APP, "src/data/site.json"), "w"), ensure_ascii=False, separators=(",", ":"))
+json.dump(detail, open(os.path.join(APP, "src/data/site-detail.json"), "w"), ensure_ascii=False, separators=(",", ":"))
 # downloads
 with open(os.path.join(APP, "public/downloads/observations.csv"), "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=list(canon[0].keys())); w.writeheader(); w.writerows(pub)
