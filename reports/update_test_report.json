@@ -1,10 +1,10 @@
 {
- "run_id": "upd-20261126T170146Z",
- "isolated_root": "/var/folders/nf/23b_g5d17bdfn73s319r1cyc0000gn/T/cda-update-sim-nmcgx9be",
+ "run_id": "upd-20261127T011727Z",
+ "isolated_root": "/var/folders/nf/23b_g5d17bdfn73s319r1cyc0000gn/T/cda-update-sim-2_2p3xwf",
  "fixture_rows": 6,
  "fixture_marked": "SIMULATED",
  "check_summary": {
-  "run_id": "upd-20261126T170146Z",
+  "run_id": "upd-20261127T011727Z",
   "status": "pending_review",
   "candidates": 6,
   "unchanged": 1,

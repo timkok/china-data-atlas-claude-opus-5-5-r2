@@ -29,4 +29,5 @@
 - Performance: per-indicator detail (ranking, moves, findings, distribution) moved from the client bundle to build-time `site-detail.json`; `site.json` 186 KB → 148 KB despite 2× indicators. Lighthouse mobile (local, gzip): home 94/100/100/100, new indicator page 93/100/100/100, new story 95/100/100/100 (story back-link tap target fixed).
 - Tests: pytest 43/43 (9 new), Playwright 62 passed + 1 intentional skip (5 new).
 - Deployment: new Vercel **Preview** only; R2 production untouched.
+- Promoted to production at the user's request (previous R2 deployment retained for rollback). Live verification: Playwright 62 passed + 1 intentional skip; Lighthouse mobile live 96 / 94 / 98 performance, 100 accessibility, best-practices and SEO. Live run found an empty-CSV race in the explorer; fixed (button disabled until data loads).
 

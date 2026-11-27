@@ -154,7 +154,7 @@ export default function CrossExplorer() {
               <thead><tr><th>地区</th>{inds.map((i) => <th key={i} className="text-right">{getIndicator(i)!.name_zh}</th>)}</tr></thead>
               <tbody>{geos.map((g) => <tr key={g}><td>{GEO[g].short_zh}</td>{inds.map((i) => { const c = cagr(i, g); return <td key={i} className="text-right tabular-nums">{c ? `${c.v.toFixed(2)}% (${c.y0}–${c.y1})` : "—"}</td>; })}</tr>)}</tbody></table></div>)}
           <div className="flex flex-wrap gap-2 mt-4">
-            <button className="btn btn-primary" onClick={download} data-testid="x-csv">下载筛选结果 CSV（{rows.length} 行）</button>
+            <button className="btn btn-primary disabled:opacity-50" onClick={download} disabled={!rows.length} data-testid="x-csv">下载筛选结果 CSV（{rows.length} 行）</button>
             <button className="btn" data-testid="x-share" onClick={() => { const u = shareUrl(); navigator.clipboard?.writeText(u); window.history.replaceState(null, "", u.replace(window.location.origin, "")); setCopied(true); setTimeout(() => setCopied(false), 1500); }}>{copied ? "已复制分享链接" : "复制分享链接"}</button>
             <a className="btn" href="/downloads/observations.csv">完整数据集 CSV</a>
           </div>

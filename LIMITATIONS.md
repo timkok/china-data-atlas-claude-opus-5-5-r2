@@ -17,7 +17,7 @@
 12. Provincial trade is by location of the trading enterprise and need not sum to the national customs total; USD values were not cross-checked (Yearbook table 11-8 is in RMB).
 13. SO₂ (2011/2016 scope changes), medical-insurance enrolment (2016–2019 urban–rural merger) and life expectancy (census years only) carry the caliber breaks shown on their charts.
 14. Minimum-living-allowance standards were evaluated and dropped (only 2009–2010 available in the database).
-15. Lighthouse for R2.1 was measured on a local gzip server, because the Vercel Preview requires login; numbers may differ on Vercel's CDN.
+15. R2.1 replaced the R2 version on the production URL at the user's request (2026-11-26); evaluators comparing Round 2 snapshots should use the retained R2 deployment URL listed in deployment/DEPLOYMENT_INFO.md.
 
 ## Product
 - No geographic map (see research/MAP_COMPLIANCE_RESEARCH.md). No full English UI (data fields bilingual).

@@ -25,6 +25,7 @@ test("R21-3 derived indicator is labelled and documented", async ({ page }) => {
 
 test("R21-4 explorer CSV for a USD trade indicator equals published data", async ({ page }) => {
   await page.goto("/explorer/?i=trade_total&g=440000,320000&from=2020&to=2024&c=line");
+  await expect(page.getByTestId("x-csv")).toContainText("10 行"); // wait until the series has loaded
   const [dl] = await Promise.all([page.waitForEvent("download"), page.getByTestId("x-csv").click()]);
   const rows = readCsv((await dl.path())!);
   expect(rows.length).toBe(10);
